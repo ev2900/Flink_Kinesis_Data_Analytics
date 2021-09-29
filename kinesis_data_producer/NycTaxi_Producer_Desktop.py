@@ -1,19 +1,15 @@
 import json
 import csv
 import boto3
-import os
 
 # Set up
 '''
 
 	1. Run 'pip install boto3' if you have not already
 	2. Download the yellow trip data 'wget https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2020-01.csv'
+	3. Run 'aws configure'
 
 '''
-
-# Configure the auth. Alternative you can run 'aws configure' on the console
-AWS_ACCESS_KEY_ID = os.getenv("<AWS_ACCESS_KEY_ID>")
-AWS_SECRET_ACCESS_KEY = os.getenv("<AWS_SECRET_ACCESS_KEY>")
 
 # Make JSON from the yellow cab trip data CSV files
 taxiCabRides = []
@@ -73,6 +69,8 @@ for ride in taxiCabRides:
 
 	print('Message sent #' + str(counter))
 	
+	print(response)
+
 	# If the message was not sucssfully sent print an error message
 	if response['ResponseMetadata']['HTTPStatusCode'] != 200:
 		print('Error!')
