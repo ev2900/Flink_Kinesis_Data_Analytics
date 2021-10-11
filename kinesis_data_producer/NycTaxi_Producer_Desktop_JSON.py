@@ -69,7 +69,7 @@ for ride in taxiCabRides:
 
 	print('Message sent #' + str(counter))
 	
-	print(response)
+	# print(response)
 
 	# If the message was not sucssfully sent print an error message
 	if response['ResponseMetadata']['HTTPStatusCode'] != 200:
