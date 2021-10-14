@@ -15,7 +15,21 @@ To benifit the most from the sample(s) Flink code / labs provided it will be imp
 
 ## Interactive KDA Flink Zepline Notebook(s)
 
-Under construction ... this part of the read me isn't complete yet ...
+The [```interactive_KDA_flink_zepline_notebook```][7] folder provides [Zepline][8] notebooks that are design to work with [Kinesis Data Analytics Studio][9]. Deploy a Kinesis Data Analytics Studio instance and upload the Zepline (.zpln) notebook(s). 
+
+Note - with in the the [```interactive_KDA_flink_zepline_notebook```][7] folder are subfolders 
+* [```Flink v1.11```][10]
+* [```Flink v1.13```][11]
+
+Depending on which version of Flink your notebook is configured to use. I would recommend using Flink v1.13.
+
+To upload the notebook
+
+<img width="795" alt="upload_notebook" src="https://user-images.githubusercontent.com/5414004/137349377-80cc961e-e918-4c31-85c5-bfaac7bf3da9.png">
+
+Once uploaded and opended in Zeplin. Run the notebook one cell at a time
+
+<img width="788" alt="interactive_notebook" src="https://user-images.githubusercontent.com/5414004/137350050-c962e127-f198-4819-9e2a-55dfc16571ed.PNG">
 
 ## Deployable KDA Flink Zepline Notebook(s)
 
@@ -27,3 +41,8 @@ Under construction ... this part of the read me isn't complete yet ...
 [4]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/blob/main/kinesis_data_producer/NycTaxi_Producer_Cloud9_JSON.py
 [5]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/blob/main/kinesis_data_producer/NycTaxi_Producer_Desktop_JSON.py
 [6]:https://aws.amazon.com/cloud9/
+[7]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook
+[8]:https://flink.apache.org/news/2020/06/15/flink-on-zeppelin-part1.html
+[9]:https://aws.amazon.com/blogs/aws/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/
+[10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.11
+[11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13
