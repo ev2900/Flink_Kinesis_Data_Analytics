@@ -6,15 +6,14 @@ import boto3
 '''
 
 	1. Run 'pip install boto3' if you have not already
-	2. Download the yellow trip data 'wget https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2020-01.csv'
-	3. Run 'aws configure'
+	2. Run 'aws configure'
 
 '''
 
 # Make JSON from the yellow cab trip data CSV files
 taxiCabRides = []
 
-with open('./yellow_tripdata_2020-01.csv', encoding='utf-8') as csvf:
+with open('../data/yellow_tripdata_2020-01.csv', encoding='utf-8') as csvf:
 	csvReader = csv.DictReader(csvf)
          
 	for rows in csvReader:
