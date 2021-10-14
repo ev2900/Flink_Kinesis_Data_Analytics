@@ -51,7 +51,9 @@ Once the build is complete. Select ```Deploy deployable as Kinesis Analytics app
 
 <img width="782" alt="deploy_action" src="https://user-images.githubusercontent.com/5414004/137355601-e8c495d2-ea88-4420-b21f-6f3e95801a7d.png">
 
-When the deployment is complete you will see 
+When the deployment is complete you will see the application under the analytics application section of Kinesis Data Analytics 
+
+<img width="739" alt="deployed" src="https://user-images.githubusercontent.com/5414004/137364432-45a2fa75-09bf-4c28-82e0-d007c6cd66b7.png">
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
