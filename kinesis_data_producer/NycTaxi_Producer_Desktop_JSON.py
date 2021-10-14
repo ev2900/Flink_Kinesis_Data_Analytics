@@ -57,6 +57,7 @@ for ride in taxiCabRides:
 	# print(ride)
 	# print(json.dumps(ride))
 	# print(ride['VendorID'])
+	# print(ride['tpep_pickup_datetime'])
 
 	# Send message to Kinesis DataStream
 	response = client.put_record(

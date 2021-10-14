@@ -1,0 +1,1298 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n### Helpful Flink Resources\n\n* [Flink SQL API Examples. Common SQL query patterns. Windows, aggregation ...][1]\n* [AWS Online Tech Talks (YouTube). Streaming Analytics via. Kinesis Data Analytics Studio][2]\n* [Flink on Zeppelin 13 part YouTube Series][3]\n* [Flink on Zeppeling - Streaming Blog Post][4]\n* [Flink interpreter for Apache Zeppelin (Flink Documenation)][5]\n* [Flink SQL Documentation 1.11][6]\n\n[1]:https://awsfeed.com/whats-new/big-data/get-started-with-flink-sql-apis-in-amazon-kinesis-data-analytics-studio\n[2]:https://www.youtube.com/watch?v=mRDst424mKY\n[3]:https://www.youtube.com/watch?v=YxPo0Fosjjg&list=PL4oy12nnS7FFtg3KV1iS5vDb0pTz12VcX\n[4]:https://zjffdu.medium.com/flink-on-zeppelin-part-3-streaming-5fca1e16754\n[5]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#streamexecutionenvironment-executionenvironment-streamtableenvir\n[6]:https://ci.apache.org/projects/flink/flink-docs-release-1.11/dev/table/sql/",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Helpful Flink Resources</h3>\n<ul>\n<li><a href=\"https://awsfeed.com/whats-new/big-data/get-started-with-flink-sql-apis-in-amazon-kinesis-data-analytics-studio\">Flink SQL API Examples. Common SQL query patterns. Windows, aggregation &hellip;</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=mRDst424mKY\">AWS Online Tech Talks (YouTube). Streaming Analytics via. Kinesis Data Analytics Studio</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=YxPo0Fosjjg&amp;list=PL4oy12nnS7FFtg3KV1iS5vDb0pTz12VcX\">Flink on Zeppelin 13 part YouTube Series</a></li>\n<li><a href=\"https://zjffdu.medium.com/flink-on-zeppelin-part-3-streaming-5fca1e16754\">Flink on Zeppeling - Streaming Blog Post</a></li>\n<li><a href=\"http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#streamexecutionenvironment-executionenvironment-streamtableenvir\">Flink interpreter for Apache Zeppelin (Flink Documenation)</a></li>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-release-1.11/dev/table/sql/\">Flink SQL Documentation 1.11</a></li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741110_583127764",
+      "id": "paragraph_1631920139607_1801617489",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5014"
+    },
+    {
+      "text": "%md\n### [Flink's Zeppelin Interpreters][1] \n\n| Name | Class | Description\n| --- | ----------- | --------|\n| %flink | FlinkInterpreter | Creates ExecutionEnvironment/StreamExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment and provides a Scala environment\n| %flink.pyflink | PyFlinkInterpreter | Provides a python environment\n| %flink.ipyflink | IPyFlinkInterpreter | Provides an ipython environment\n| %flink.ssql | FlinkStreamSqlInterpreter | Provides a stream sql environment\n| %flink.bsql | FlinkBatchSqlInterpreter | Provides a batch sql environment\n\n[1]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#overview",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:35+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3><a href=\"http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#overview\">Flink&rsquo;s Zeppelin Interpreters</a></h3>\n<table>\n<thead>\n<tr><th>Name</th><th>Class</th><th>Description</th></tr>\n</thead>\n<tbody>\n<tr><td>%flink</td><td>FlinkInterpreter</td><td>Creates ExecutionEnvironment/StreamExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment and provides a Scala environment</td></tr>\n<tr><td>%flink.pyflink</td><td>PyFlinkInterpreter</td><td>Provides a python environment</td></tr>\n<tr><td>%flink.ipyflink</td><td>IPyFlinkInterpreter</td><td>Provides an ipython environment</td></tr>\n<tr><td>%flink.ssql</td><td>FlinkStreamSqlInterpreter</td><td>Provides a stream sql environment</td></tr>\n<tr><td>%flink.bsql</td><td>FlinkBatchSqlInterpreter</td><td>Provides a batch sql environment</td></tr>\n</tbody>\n</table>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741111_1868783641",
+      "id": "paragraph_1631971378626_1573969879",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5015",
+      "dateFinished": "2021-10-14T08:22:35+0000",
+      "dateStarted": "2021-10-14T08:22:35+0000"
+    },
+    {
+      "text": "%md\n### Create Table in Glue Data Catalog\n\n* [Flink Supported Data Types][1]\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/python/datastream/data_types/#supported-data-types",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Create Table in Glue Data Catalog</h3>\n<ul>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/python/datastream/data_types/#supported-data-types\">Flink Supported Data Types</a></li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741111_124157693",
+      "id": "paragraph_1631910665477_501137688",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5016"
+    },
+    {
+      "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab;\n\nCREATE TABLE yellow_cab (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP,\n   `tpep_dropoff_datetime` TIMESTAMP,\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   WATERMARK FOR tpep_dropoff_datetime AS tpep_dropoff_datetime - INTERVAL '5' SECOND\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'LATEST',\n   'format' = 'json'\n);",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:39+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Table has been dropped.\nTable has been created.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741111_637623237",
+      "id": "paragraph_1631913305486_1123611150",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5017",
+      "dateFinished": "2021-10-14T08:22:41+0000",
+      "dateStarted": "2021-10-14T08:22:39+0000"
+    },
+    {
+      "text": "%flink.ssql\n\nDESCRIBE yellow_cab",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:44+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Column": "string",
+                      "Type": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Column\tType\nVendorID\tINT\ntpep_pickup_datetime\tTIMESTAMP(6)\ntpep_dropoff_datetime\tTIMESTAMP(6) *ROWTIME*\npassenger_count\tINT\ntrip_distance\tFLOAT\nRatecodeID\tINT\nstore_and_fwd_flag\tSTRING\nPULocationID\tINT\nDOLocationID\tINT\npayment_type\tINT\nfare_amount\tFLOAT\nextra\tFLOAT\nmta_tax\tFLOAT\ntip_amount\tFLOAT\ntolls_amount\tFLOAT\nimprovement_surcharge\tFLOAT\ntotal_amount\tFLOAT\ncongestion_surcharge\tFLOAT\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741112_1311667112",
+      "id": "paragraph_1633112118907_726066805",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5018",
+      "dateFinished": "2021-10-14T08:22:45+0000",
+      "dateStarted": "2021-10-14T08:22:44+0000"
+    },
+    {
+      "text": "%md\n### Select all Fields from the yellow-cab-trip stream",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Select all Fields from the yellow-cab-trip stream</h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741112_2121849494",
+      "id": "paragraph_1631913458706_1029914846",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5019"
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:54+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "VendorID": "string",
+                      "tpep_pickup_datetime": "string",
+                      "tpep_dropoff_datetime": "string",
+                      "passenger_count": "string",
+                      "trip_distance": "string",
+                      "RatecodeID": "string",
+                      "store_and_fwd_flag": "string",
+                      "PULocationID": "string",
+                      "DOLocationID": "string",
+                      "payment_type": "string",
+                      "fare_amount": "string",
+                      "extra": "string",
+                      "mta_tax": "string",
+                      "tip_amount": "string",
+                      "tolls_amount": "string",
+                      "improvement_surcharge": "string",
+                      "total_amount": "string",
+                      "congestion_surcharge": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "VendorID\ttpep_pickup_datetime\ttpep_dropoff_datetime\tpassenger_count\ttrip_distance\tRatecodeID\tstore_and_fwd_flag\tPULocationID\tDOLocationID\tpayment_type\tfare_amount\textra\tmta_tax\ttip_amount\ttolls_amount\timprovement_surcharge\ttotal_amount\tcongestion_surcharge\n1\t2020-01-01T01:24:47\t2020-01-01 01:36:14.0\t2\t1.4\t1\tN\t234\t164\t1\t9.0\t3.0\t0.5\t2.55\t0.0\t0.3\t15.35\t2.5\n1\t2020-01-01T01:49:30\t2020-01-01 02:09:25.0\t2\t3.1\t1\tN\t90\t142\t1\t15.0\t3.0\t0.5\t1.88\t0.0\t0.3\t20.68\t2.5\n1\t2020-01-01T01:24:32\t2020-01-01 01:47:00.0\t2\t3.9\t1\tN\t232\t68\t1\t17.5\t3.0\t0.5\t4.25\t0.0\t0.3\t25.55\t2.5\n1\t2020-01-01T01:49:16\t2020-01-01 02:12:37.0\t2\t4.1\t1\tN\t68\t13\t1\t18.5\t3.0\t0.5\t6.65\t0.0\t0.3\t28.95\t2.5\n1\t2020-01-01T01:47:54\t2020-01-01 02:17:31.0\t3\t10.1\t1\tN\t249\t7\t1\t32.5\t3.0\t0.5\t9.05\t0.0\t0.3\t45.35\t2.5\n1\t2020-01-01T01:21\t2020-01-01 01:46:04.0\t1\t3.9\t1\tN\t48\t249\t1\t18.0\t3.0\t0.5\t4.35\t0.0\t0.3\t26.15\t2.5\n1\t2020-01-01T01:15:33\t2020-01-01 01:23:52.0\t2\t1.6\t1\tN\t162\t107\t1\t8.0\t3.0\t0.5\t2.35\t0.0\t0.3\t14.15\t2.5\n1\t2020-01-01T01:27:15\t2020-01-01 01:48:31.0\t2\t4.0\t1\tN\t107\t239\t2\t16.5\t3.0\t0.5\t0.0\t0.0\t0.3\t20.3\t2.5\n1\t2020-01-01T01:51:11\t2020-01-01 02:01:23.0\t3\t2.4\t1\tN\t239\t166\t2\t10.0\t3.0\t0.5\t0.0\t0.0\t0.3\t13.8\t2.5\n1\t2020-01-01T01:19:45\t2020-01-01 01:26:41.0\t1\t1.0\t1\tN\t186\t158\t2\t6.5\t3.0\t0.5\t0.0\t0.0\t0.3\t10.3\t2.5\n1\t2020-01-01T01:09:59\t2020-01-01 01:18:11.0\t1\t1.7\t1\tN\t125\t186\t2\t8.5\t3.0\t0.5\t0.0\t0.0\t0.3\t12.3\t2.5\n1\t2020-01-01T01:29:23\t2020-01-01 01:32:28.0\t3\t0.9\t1\tN\t158\t186\t1\t5.0\t3.0\t0.5\t2.2\t0.0\t0.3\t11.0\t2.5\n1\t2020-01-01T01:33:42\t2020-01-01 01:56:42.0\t1\t3.1\t1\tN\t186\t229\t1\t16.0\t3.0\t0.5\t5.9\t0.0\t0.3\t25.7\t2.5\n1\t2020-01-01T01:59:19\t2020-01-01 02:16:23.0\t1\t4.4\t1\tN\t229\t7\t1\t16.5\t3.0\t0.5\t4.05\t0.0\t0.3\t24.35\t2.5\n1\t2020-01-01T01:28:28\t2020-01-01 01:40:07.0\t2\t1.9\t1\tN\t186\t211\t2\t9.0\t3.0\t0.5\t0.0\t0.0\t0.3\t12.8\t2.5\n1\t2020-01-01T01:42:48\t2020-01-01 01:42:48.0\t1\t0.0\t1\tN\t211\t264\t2\t4.5\t3.0\t0.5\t0.0\t0.0\t0.3\t8.3\t2.5\n1\t2020-01-01T01:52:28\t2020-01-01 02:06:17.0\t4\t3.5\t1\tN\t114\t237\t1\t12.5\t3.0\t0.5\t3.0\t0.0\t0.3\t19.3\t2.5\n1\t2020-01-01T01:28:56\t2020-01-01 01:56:10.0\t1\t4.1\t1\tN\t142\t79\t1\t19.0\t3.0\t0.5\t7.0\t0.0\t0.3\t29.8\t2.5\n1\t2020-01-01T01:58:10\t2020-01-01 02:15:19.0\t1\t3.9\t1\tN\t79\t145\t1\t15.5\t3.0\t0.5\t5.05\t6.12\t0.3\t30.47\t2.5\n1\t2020-01-01T01:38:44\t2020-01-01 01:59:06.0\t2\t4.8\t1\tN\t231\t137\t1\t18.0\t3.0\t0.5\t4.35\t0.0\t0.3\t26.15\t2.5\n1\t2020-01-01T01:01:57\t2020-01-01 01:20:57.0\t3\t4.3\t1\tN\t151\t233\t2\t16.0\t3.0\t0.5\t0.0\t0.0\t0.3\t19.8\t2.5\n1\t2020-01-01T01:37:10\t2020-01-01 01:38:59.0\t4\t0.4\t1\tN\t229\t229\t2\t3.5\t3.0\t0.5\t0.0\t0.0\t0.3\t7.3\t2.5\n1\t2020-01-01T01:42:17\t2020-01-01 02:05:35.0\t2\t5.7\t1\tN\t229\t129\t1\t20.5\t3.0\t0.5\t0.0\t0.0\t0.3\t24.3\t2.5\n1\t2020-01-01T01:14:38\t2020-01-01 01:26:46.0\t1\t3.4\t1\tN\t237\t226\t1\t12.5\t3.0\t0.5\t4.0\t0.0\t0.3\t20.3\t2.5\n1\t2020-01-01T01:37:48\t2020-01-01 01:50:42.0\t1\t2.6\t1\tN\t229\t90\t1\t11.5\t3.0\t0.5\t3.8\t0.0\t0.3\t19.1\t2.5\n1\t2020-01-01T01:55:33\t2020-01-01 02:18:51.0\t1\t3.9\t1\tN\t90\t261\t1\t17.5\t3.0\t0.5\t3.0\t0.0\t0.3\t24.3\t2.5\n1\t2020-01-01T01:43:14\t2020-01-01 01:48:07.0\t1\t0.9\t1\tN\t7\t223\t1\t5.5\t0.5\t0.5\t0.0\t0.0\t0.3\t6.8\t0.0\n1\t2020-01-01T01:53:04\t2020-01-01 01:56:07.0\t1\t0.5\t1\tN\t223\t223\t2\t4.0\t0.5\t0.5\t0.0\t0.0\t0.3\t5.3\t0.0\n1\t2020-01-01T01:05:04\t2020-01-01 01:12:49.0\t1\t2.0\t1\tN\t152\t244\t1\t8.5\t0.5\t0.5\t1.95\t0.0\t0.3\t11.75\t0.0\n1\t2020-01-01T01:17:27\t2020-01-01 01:29:10.0\t2\t2.1\t1\tN\t49\t225\t2\t10.0\t0.5\t0.5\t0.0\t0.0\t0.3\t11.3\t0.0\n1\t2020-01-01T01:03:30\t2020-01-01 01:13:18.0\t4\t1.4\t1\tN\t97\t49\t1\t8.0\t0.5\t0.5\t2.75\t0.0\t0.3\t12.05\t0.0\n1\t2020-01-01T01:08:38\t2020-01-01 01:29:54.0\t2\t2.5\t1\tY\t238\t50\t1\t15.0\t3.0\t0.5\t0.0\t0.0\t0.3\t18.8\t2.5\n1\t2020-01-01T01:35:13\t2020-01-01 01:47:32.0\t2\t1.6\t1\tN\t50\t246\t2\t10.0\t3.0\t0.5\t0.0\t0.0\t0.3\t13.8\t2.5\n1\t2020-01-01T01:12:32\t2020-01-01 01:16:37.0\t4\t0.7\t1\tN\t239\t238\t4\t5.0\t3.0\t0.5\t0.0\t0.0\t0.3\t8.8\t2.5\n1\t2020-01-01T01:48:20\t2020-01-01 02:18:41.0\t2\t10.1\t1\tN\t246\t223\t1\t32.0\t3.0\t0.5\t7.15\t0.0\t0.3\t42.95\t2.5\n1\t2020-01-01T01:25:51\t2020-01-01 01:35:29.0\t2\t2.1\t1\tN\t239\t48\t1\t9.0\t3.0\t0.5\t2.55\t0.0\t0.3\t15.35\t2.5\n1\t2020-01-01T01:37:37\t2020-01-01 02:05:04.0\t3\t5.2\t1\tN\t48\t261\t4\t21.0\t3.0\t0.5\t0.0\t0.0\t0.3\t24.8\t2.5\n1\t2020-01-01T01:41:08\t2020-01-01 01:54:52.0\t2\t2.4\t1\tN\t137\t262\t1\t11.5\t3.0\t0.5\t3.05\t0.0\t0.3\t18.35\t2.5\n1\t2020-01-01T01:27:43\t2020-01-01 01:45:18.0\t1\t2.7\t1\tN\t151\t48\t2\t13.5\t3.0\t0.5\t0.0\t0.0\t0.3\t17.3\t2.5\n1\t2020-01-01T01:53:06\t2020-01-01 02:04:22.0\t1\t1.3\t1\tY\t48\t233\t1\t9.0\t3.0\t0.5\t2.55\t0.0\t0.3\t15.35\t2.5\n1\t2020-01-01T01:31:47\t2020-01-01 01:47:51.0\t3\t2.2\t1\tN\t234\t4\t1\t12.0\t3.0\t0.5\t1.0\t0.0\t0.3\t16.8\t2.5\n1\t2020-01-01T01:49:45\t2020-01-01 02:26:40.0\t2\t11.2\t1\tN\t4\t247\t1\t36.0\t3.0\t0.5\t0.0\t0.0\t0.3\t39.8\t2.5\n1\t2020-01-01T01:14:31\t2020-01-01 01:43:56.0\t2\t3.6\t1\tN\t246\t239\t2\t20.5\t3.0\t0.5\t0.0\t0.0\t0.3\t24.3\t2.5\n1\t2020-01-01T01:46:17\t2020-01-01 01:58:50.0\t2\t4.5\t1\tN\t239\t244\t1\t15.0\t3.0\t0.5\t3.76\t0.0\t0.3\t22.56\t2.5\n1\t2020-01-01T01:08:40\t2020-01-01 01:17:30.0\t2\t0.8\t1\tN\t246\t246\t1\t7.0\t3.0\t0.5\t2.15\t0.0\t0.3\t12.95\t2.5\n1\t2020-01-01T01:19:46\t2020-01-01 01:44:36.0\t2\t7.8\t1\tN\t48\t243\t1\t27.0\t3.0\t0.5\t6.15\t0.0\t0.3\t36.95\t2.5\n1\t2020-01-01T01:57:05\t2020-01-01 02:28:25.0\t1\t0.0\t1\tN\t243\t246\t1\t28.2\t0.0\t0.5\t0.0\t0.0\t0.3\t29.0\t0.0\n1\t2020-01-01T01:01:21\t2020-01-01 01:09:36.0\t1\t1.1\t1\tN\t233\t140\t1\t7.0\t3.0\t0.5\t2.15\t0.0\t0.3\t12.95\t2.5\n1\t2020-01-01T01:17:38\t2020-01-01 01:32:36.0\t1\t4.1\t1\tN\t140\t179\t2\t15.0\t3.0\t0.5\t0.0\t0.0\t0.3\t18.8\t2.5\n1\t2020-01-01T01:15:57\t2020-01-01 01:36:22.0\t1\t3.4\t1\tN\t164\t13\t1\t15.5\t3.0\t0.5\t3.0\t0.0\t0.3\t22.3\t2.5\n1\t2020-01-01T01:43:29\t2020-01-01 01:55:40.0\t1\t2.4\t1\tN\t231\t79\t1\t10.5\t3.0\t0.5\t2.0\t0.0\t0.3\t16.3\t2.5\n1\t2020-01-01T01:59:48\t2020-01-01 02:16:49.0\t1\t5.0\t1\tN\t79\t25\t1\t17.5\t3.0\t0.5\t3.2\t0.0\t0.3\t24.5\t2.5\n1\t2020-01-01T01:11:39\t2020-01-01 01:14:42.0\t4\t0.6\t1\tN\t234\t90\t1\t4.0\t3.0\t0.5\t1.55\t0.0\t0.3\t9.35\t2.5\n1\t2020-01-01T01:53:18\t2020-01-01 02:19:15.0\t3\t7.0\t1\tN\t230\t80\t1\t24.0\t3.0\t0.5\t6.75\t6.12\t0.3\t40.67\t2.5\n1\t2020-01-01T01:17:56\t2020-01-01 01:41:21.0\t2\t2.8\t1\tN\t68\t237\t2\t15.5\t3.0\t0.5\t0.0\t0.0\t0.3\t19.3\t2.5\n1\t2020-01-01T01:44:58\t2020-01-01 01:51:37.0\t3\t0.9\t1\tN\t43\t161\t2\t6.0\t3.0\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n1\t2020-01-01T01:07:02\t2020-01-01 01:19:04.0\t0\t2.2\t1\tN\t234\t229\t1\t10.0\t3.0\t0.5\t2.76\t0.0\t0.3\t16.56\t2.5\n1\t2020-01-01T01:20:04\t2020-01-01 01:24:51.0\t0\t1.2\t1\tN\t229\t141\t1\t6.0\t3.0\t0.5\t1.5\t0.0\t0.3\t11.3\t2.5\n1\t2020-01-01T01:34:55\t2020-01-01 01:52:03.0\t0\t2.8\t1\tN\t233\t239\t1\t13.0\t3.0\t0.5\t3.35\t0.0\t0.3\t20.15\t2.5\n1\t2020-01-01T01:54\t2020-01-01 02:45:25.0\t0\t10.7\t1\tN\t239\t89\t2\t39.5\t3.0\t0.5\t0.0\t0.0\t0.3\t43.3\t2.5\n1\t2020-01-01T01:02:32\t2020-01-01 01:04:45.0\t1\t0.4\t1\tN\t144\t231\t1\t3.5\t3.0\t0.5\t1.45\t0.0\t0.3\t8.75\t2.5\n1\t2020-01-01T01:10:23\t2020-01-01 01:17:05.0\t4\t1.1\t1\tN\t144\t249\t1\t6.5\t3.0\t0.5\t1.0\t0.0\t0.3\t11.3\t2.5\n1\t2020-01-01T01:18:07\t2020-01-01 01:27:26.0\t2\t1.4\t1\tN\t249\t4\t1\t8.0\t3.0\t0.5\t2.95\t0.0\t0.3\t14.75\t2.5\n1\t2020-01-01T01:17:44\t2020-01-01 01:37:15.0\t1\t4.8\t1\tN\t237\t79\t1\t19.0\t3.0\t0.5\t2.0\t0.0\t0.3\t24.8\t2.5\n1\t2020-01-01T01:38:33\t2020-01-01 01:59:30.0\t3\t3.0\t1\tN\t79\t256\t1\t16.0\t3.0\t0.5\t4.95\t0.0\t0.3\t24.75\t2.5\n1\t2020-01-01T01:21:03\t2020-01-01 01:48:37.0\t2\t3.9\t1\tN\t211\t48\t1\t19.0\t3.0\t0.5\t4.55\t0.0\t0.3\t27.35\t2.5\n1\t2020-01-01T01:05:36\t2020-01-01 01:18:41.0\t2\t1.8\t1\tN\t234\t211\t1\t10.0\t3.0\t0.5\t2.0\t0.0\t0.3\t15.8\t2.5\n1\t2020-01-01T01:52:20\t2020-01-01 02:10:12.0\t2\t5.7\t1\tN\t48\t116\t1\t19.5\t3.0\t0.5\t2.0\t0.0\t0.3\t25.3\t2.5\n1\t2020-01-01T01:11:41\t2020-01-01 01:24:15.0\t1\t1.7\t1\tN\t43\t48\t2\t10.0\t3.0\t0.5\t0.0\t0.0\t0.3\t13.8\t2.5\n1\t2020-01-01T01:26:47\t2020-01-01 01:54:11.0\t4\t4.1\t1\tN\t163\t79\t1\t20.0\t3.0\t0.5\t4.75\t0.0\t0.3\t28.55\t2.5\n1\t2020-01-01T01:56:01\t2020-01-01 02:11:43.0\t2\t4.3\t1\tN\t79\t112\t1\t16.5\t3.0\t0.5\t4.05\t0.0\t0.3\t24.35\t2.5\n1\t2020-01-01T01:00:21\t2020-01-01 01:22:45.0\t1\t4.8\t1\tN\t255\t190\t1\t18.5\t0.5\t0.5\t3.95\t0.0\t0.3\t23.75\t0.0\n1\t2020-01-01T01:30:48\t2020-01-01 01:37:21.0\t1\t1.3\t1\tN\t181\t97\t1\t6.5\t0.5\t0.5\t1.55\t0.0\t0.3\t9.35\t0.0\n1\t2020-01-01T01:48:28\t2020-01-01 01:56:16.0\t1\t1.6\t1\tN\t148\t113\t1\t7.5\t3.0\t0.5\t1.0\t0.0\t0.3\t12.3\t2.5\n1\t2020-01-01T01:57:07\t2020-01-01 02:13:41.0\t1\t3.2\t1\tN\t113\t229\t1\t13.5\t3.0\t0.5\t3.45\t0.0\t0.3\t20.75\t2.5\n1\t2020-01-01T01:33:36\t2020-01-01 01:42:36.0\t2\t2.9\t1\tN\t229\t7\t1\t10.5\t3.0\t0.5\t4.25\t0.0\t0.3\t18.55\t2.5\n1\t2020-01-01T01:00:40\t2020-01-01 01:19:31.0\t1\t4.1\t1\tN\t151\t229\t2\t15.5\t3.0\t0.5\t0.0\t0.0\t0.3\t19.3\t2.5\n1\t2020-01-01T01:21:11\t2020-01-01 01:26:00.0\t1\t1.1\t1\tN\t229\t140\t1\t5.5\t3.0\t0.5\t1.0\t0.0\t0.3\t10.3\t2.5\n1\t2020-01-01T01:48:25\t2020-01-01 01:54:23.0\t1\t1.6\t1\tN\t193\t179\t2\t7.0\t0.5\t0.5\t0.0\t0.0\t0.3\t8.3\t0.0\n1\t2020-01-01T01:16:04\t2020-01-01 01:33:53.0\t0\t3.4\t1\tN\t181\t256\t2\t14.5\t0.5\t0.5\t0.0\t0.0\t0.3\t15.8\t0.0\n1\t2020-01-01T01:05:53\t2020-01-01 01:14:11.0\t3\t1.0\t1\tN\t79\t148\t1\t7.0\t3.0\t0.5\t2.15\t0.0\t0.3\t12.95\t2.5\n1\t2020-01-01T01:28:13\t2020-01-01 01:38:29.0\t0\t2.4\t1\tN\t107\t141\t1\t10.0\t3.0\t0.5\t2.75\t0.0\t0.3\t16.55\t2.5\n1\t2020-01-01T01:42:43\t2020-01-01 01:53:09.0\t1\t1.6\t1\tN\t237\t170\t1\t8.5\t3.0\t0.5\t2.7\t0.0\t0.3\t15.0\t2.5\n1\t2020-01-01T01:15:27\t2020-01-01 01:25:38.0\t1\t1.6\t1\tN\t148\t107\t1\t9.0\t3.0\t0.5\t2.0\t0.0\t0.3\t14.8\t2.5\n1\t2020-01-01T01:08:10\t2020-01-01 01:16:26.0\t1\t2.1\t1\tN\t233\t263\t1\t8.5\t3.0\t0.5\t1.0\t0.0\t0.3\t13.3\t2.5\n1\t2020-01-01T01:55:10\t2020-01-01 02:06:14.0\t1\t1.0\t1\tN\t170\t48\t2\t8.5\t3.0\t0.5\t0.0\t0.0\t0.3\t12.3\t2.5\n1\t2020-01-01T01:49:12\t2020-01-01 02:05:36.0\t2\t3.8\t1\tN\t170\t261\t1\t14.5\t3.0\t0.5\t3.65\t0.0\t0.3\t21.95\t2.5\n1\t2020-01-01T01:03:24\t2020-01-01 01:08:58.0\t1\t1.6\t1\tN\t239\t151\t1\t6.5\t3.0\t0.5\t2.05\t0.0\t0.3\t12.35\t2.5\n1\t2020-01-01T01:10:44\t2020-01-01 01:23:23.0\t1\t3.3\t1\tN\t151\t163\t1\t12.5\t3.0\t0.5\t2.45\t0.0\t0.3\t18.75\t2.5\n1\t2020-01-01T01:23:57\t2020-01-01 01:31:18.0\t1\t0.7\t1\tN\t163\t229\t1\t6.5\t3.0\t0.5\t2.05\t0.0\t0.3\t12.35\t2.5\n1\t2020-01-01T01:33:38\t2020-01-01 01:41:20.0\t1\t2.0\t1\tN\t229\t263\t1\t8.5\t3.0\t0.5\t2.45\t0.0\t0.3\t14.75\t2.5\n1\t2020-01-01T01:45:59\t2020-01-01 01:48:50.0\t1\t0.4\t1\tN\t236\t141\t2\t4.0\t3.0\t0.5\t0.0\t0.0\t0.3\t7.8\t2.5\n1\t2020-01-01T01:55:08\t2020-01-01 02:08:52.0\t1\t2.8\t1\tN\t263\t42\t2\t12.0\t3.0\t0.5\t0.0\t0.0\t0.3\t15.8\t2.5\n1\t2020-01-01T01:03:09\t2020-01-01 01:12:59.0\t2\t2.1\t1\tN\t236\t229\t2\t9.5\t3.0\t0.5\t0.0\t0.0\t0.3\t13.3\t2.5\n1\t2020-01-01T01:17:36\t2020-01-01 01:27:32.0\t1\t1.2\t1\tN\t229\t163\t1\t8.0\t3.0\t0.5\t0.0\t0.0\t0.3\t11.8\t2.5\n1\t2020-01-01T01:33:11\t2020-01-01 01:38:45.0\t2\t0.7\t1\tN\t163\t50\t1\t5.5\t3.0\t0.5\t2.0\t0.0\t0.3\t11.3\t2.5\n1\t2020-01-01T01:42:47\t2020-01-01 01:54:57.0\t2\t1.6\t1\tN\t50\t100\t1\t9.5\t3.0\t0.5\t1.0\t0.0\t0.3\t14.3\t2.5\n1\t2020-01-01T01:56:18\t2020-01-01 02:23:22.0\t2\t3.4\t1\tN\t100\t238\t2\t18.0\t3.0\t0.5\t0.0\t0.0\t0.3\t21.8\t2.5\n2\t2020-01-01T01:04:27\t2020-01-01 01:12:13.0\t1\t1.78\t1\tN\t151\t41\t1\t8.0\t0.5\t0.5\t2.33\t0.0\t0.3\t11.63\t0.0\n2\t2020-01-01T01:57:18\t2020-01-01 02:22:31.0\t1\t3.64\t1\tN\t164\t142\t1\t17.5\t0.5\t0.5\t0.0\t0.0\t0.3\t21.3\t2.5\n2\t2020-01-01T01:38:01\t2020-01-01 01:56:24.0\t1\t3.28\t1\tN\t170\t262\t1\t15.0\t0.5\t0.5\t3.76\t0.0\t0.3\t22.56\t2.5\n2\t2020-01-01T00:26\t2020-01-01 01:01:51.0\t6\t6.27\t1\tN\t231\t239\t1\t26.5\t0.5\t0.5\t6.06\t0.0\t0.3\t38.31\t2.5\n2\t2020-01-01T01:03:01\t2020-01-01 01:18:39.0\t1\t1.2\t1\tN\t237\t170\t1\t10.5\t0.5\t0.5\t4.29\t0.0\t0.3\t18.59\t2.5\n2\t2020-01-01T01:21:54\t2020-01-01 01:25:27.0\t1\t0.38\t1\tN\t170\t170\t1\t4.0\t0.5\t0.5\t2.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:29:56\t2020-01-01 01:36:06.0\t1\t0.68\t1\tN\t164\t170\t1\t5.5\t0.5\t0.5\t2.79\t0.0\t0.3\t12.09\t2.5\n2\t2020-01-01T01:09:16\t2020-01-01 01:12:21.0\t2\t0.71\t1\tN\t43\t141\t1\t4.5\t0.5\t0.5\t1.24\t0.0\t0.3\t9.54\t2.5\n2\t2020-01-01T01:28:51\t2020-01-01 01:50:46.0\t1\t6.27\t1\tN\t107\t166\t1\t20.5\t0.5\t0.5\t0.0\t0.0\t0.3\t24.3\t2.5\n2\t2020-01-01T01:52:38\t2020-01-01 02:04:56.0\t1\t2.58\t1\tN\t166\t236\t1\t11.0\t0.5\t0.5\t2.96\t0.0\t0.3\t17.76\t2.5\n2\t2020-01-01T01:54:39\t2020-01-01 02:00:00.0\t2\t0.69\t1\tN\t249\t234\t1\t5.5\t0.5\t0.5\t1.86\t0.0\t0.3\t11.16\t2.5\n2\t2020-01-01T01:43:37\t2020-01-01 01:53:03.0\t2\t1.83\t1\tN\t170\t249\t1\t9.0\t0.5\t0.5\t2.56\t0.0\t0.3\t15.36\t2.5\n2\t2020-01-01T01:19:34\t2020-01-01 01:28:15.0\t1\t2.19\t1\tN\t87\t231\t1\t9.5\t0.5\t0.5\t2.66\t0.0\t0.3\t15.96\t2.5\n2\t2020-01-01T01:32:06\t2020-01-01 01:44:47.0\t1\t2.8\t1\tN\t231\t87\t2\t12.0\t0.5\t0.5\t0.0\t0.0\t0.3\t15.8\t2.5\n2\t2020-01-01T01:46:34\t2020-01-01 02:04:33.0\t1\t4.82\t1\tN\t87\t186\t2\t17.0\t0.5\t0.5\t0.0\t0.0\t0.3\t20.8\t2.5\n2\t2020-01-01T00:58:57\t2020-01-01 01:16:21.0\t1\t4.53\t1\tN\t236\t7\t2\t16.5\t0.5\t0.5\t0.0\t0.0\t0.3\t20.3\t2.5\n2\t2020-01-01T01:28:16\t2020-01-01 01:43:52.0\t2\t3.48\t1\tN\t146\t142\t1\t14.5\t0.5\t0.5\t3.29\t0.0\t0.3\t21.59\t2.5\n2\t2020-01-01T01:45:37\t2020-01-01 02:00:16.0\t2\t3.49\t1\tN\t142\t74\t1\t13.5\t0.5\t0.5\t3.46\t0.0\t0.3\t20.76\t2.5\n2\t2020-01-01T01:09:09\t2020-01-01 01:15:19.0\t1\t0.52\t1\tN\t263\t262\t4\t-5.0\t-0.5\t-0.5\t0.0\t0.0\t-0.3\t-8.8\t-2.5\n2\t2020-01-01T01:09:09\t2020-01-01 01:15:19.0\t1\t0.52\t1\tN\t263\t262\t2\t5.0\t0.5\t0.5\t0.0\t0.0\t0.3\t8.8\t2.5\n2\t2020-01-01T01:16:41\t2020-01-01 01:19:41.0\t1\t0.68\t1\tN\t262\t263\t1\t4.5\t0.5\t0.5\t1.66\t0.0\t0.3\t9.96\t2.5\n2\t2020-01-01T01:29:26\t2020-01-01 01:30:27.0\t1\t0.22\t1\tN\t263\t263\t1\t3.0\t0.5\t0.5\t1.36\t0.0\t0.3\t8.16\t2.5\n2\t2020-01-01T01:39:26\t2020-01-01 01:53:02.0\t1\t2.76\t1\tN\t237\t234\t1\t11.5\t0.5\t0.5\t3.06\t0.0\t0.3\t18.36\t2.5\n2\t2020-01-01T01:32:05\t2020-01-01 01:34:48.0\t1\t0.74\t1\tN\t263\t141\t1\t4.5\t0.5\t0.5\t1.66\t0.0\t0.3\t9.96\t2.5\n2\t2020-01-01T01:54:24\t2020-01-01 02:00:49.0\t1\t1.24\t1\tN\t234\t114\t1\t6.5\t0.5\t0.5\t1.03\t0.0\t0.3\t11.33\t2.5\n2\t2020-01-01T01:36:09\t2020-01-01 01:47:54.0\t1\t3.78\t1\tN\t107\t87\t2\t13.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t2.5\n2\t2020-01-01T01:54:13\t2020-01-01 02:26:37.0\t1\t8.8\t1\tN\t87\t238\t2\t30.5\t0.5\t0.5\t0.0\t0.0\t0.3\t34.3\t2.5\n2\t2020-01-01T01:16:45\t2020-01-01 01:30:06.0\t2\t2.13\t1\tN\t211\t137\t1\t10.5\t0.5\t0.5\t2.0\t0.0\t0.3\t16.3\t2.5\n2\t2020-01-01T01:33:23\t2020-01-01 01:49:26.0\t3\t3.9\t1\tN\t193\t255\t2\t15.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.3\t0.0\n2\t2020-01-01T01:51:13\t2020-01-01 02:11:30.0\t1\t3.91\t1\tN\t255\t37\t1\t16.0\t0.5\t0.5\t3.46\t0.0\t0.3\t20.76\t0.0\n2\t2020-01-01T01:00:10\t2020-01-01 01:06:40.0\t1\t0.92\t1\tN\t140\t237\t1\t6.0\t0.5\t0.5\t2.94\t0.0\t0.3\t12.74\t2.5\n2\t2020-01-01T01:13:21\t2020-01-01 01:20:21.0\t2\t1.27\t1\tN\t237\t236\t1\t7.0\t0.5\t0.5\t2.16\t0.0\t0.3\t12.96\t2.5\n2\t2020-01-01T01:35:21\t2020-01-01 01:58:52.0\t2\t4.48\t1\tN\t263\t113\t2\t18.0\t0.5\t0.5\t0.0\t0.0\t0.3\t21.8\t2.5\n2\t2020-01-01T01:36:10\t2020-01-01 01:55:23.0\t1\t4.34\t1\tN\t249\t141\t1\t16.5\t0.5\t0.5\t3.04\t0.0\t0.3\t23.34\t2.5\n2\t2020-01-01T01:22:44\t2020-01-01 01:32:44.0\t1\t1.98\t1\tN\t246\t158\t1\t9.0\t0.5\t0.5\t3.84\t0.0\t0.3\t16.64\t2.5\n2\t2020-01-01T01:29:28\t2020-01-01 01:42:14.0\t1\t2.07\t1\tN\t79\t170\t1\t10.0\t0.5\t0.5\t2.76\t0.0\t0.3\t16.56\t2.5\n2\t2020-01-01T01:47:25\t2020-01-01 01:51:59.0\t1\t0.78\t1\tN\t107\t107\t1\t5.0\t0.5\t0.5\t1.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:13:40\t2020-01-01 01:28:24.0\t1\t4.6\t1\tN\t237\t79\t1\t16.0\t0.5\t0.5\t2.2\t0.0\t0.3\t22.0\t2.5\n2\t2020-01-01T01:53:02\t2020-01-01 01:58:14.0\t1\t0.46\t1\tN\t107\t79\t1\t5.0\t0.5\t0.5\t1.76\t0.0\t0.3\t10.56\t2.5\n2\t2020-01-01T01:53:29\t2020-01-01 02:07:24.0\t2\t2.87\t1\tN\t263\t239\t1\t12.0\t0.5\t0.5\t3.0\t0.0\t0.3\t18.8\t2.5\n2\t2020-01-01T01:31:54\t2020-01-01 01:43:04.0\t2\t2.31\t1\tN\t24\t42\t2\t10.0\t0.5\t0.5\t0.0\t0.0\t0.3\t11.3\t0.0\n2\t2020-01-01T01:20:06\t2020-01-01 01:31:28.0\t1\t1.61\t1\tN\t232\t107\t1\t9.0\t0.5\t0.5\t2.56\t0.0\t0.3\t15.36\t2.5\n2\t2020-01-01T01:34:57\t2020-01-01 01:40:33.0\t1\t1.28\t1\tN\t107\t4\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:43:03\t2020-01-01 01:48:44.0\t1\t1.67\t1\tN\t79\t170\t1\t6.5\t0.5\t0.5\t1.54\t0.0\t0.3\t11.84\t2.5\n2\t2020-01-01T01:04:48\t2020-01-01 01:10:53.0\t1\t1.06\t1\tN\t113\t90\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:52:33\t2020-01-01 02:02:33.0\t1\t3.29\t1\tN\t170\t232\t1\t12.0\t0.5\t0.5\t3.16\t0.0\t0.3\t18.96\t2.5\n2\t2020-01-01T01:13:58\t2020-01-01 01:30:50.0\t1\t1.13\t1\tN\t68\t48\t1\t11.0\t0.5\t0.5\t2.96\t0.0\t0.3\t17.76\t2.5\n2\t2020-01-01T01:32:51\t2020-01-01 01:38:33.0\t1\t0.97\t1\tN\t230\t142\t1\t6.0\t0.5\t0.5\t1.96\t0.0\t0.3\t11.76\t2.5\n2\t2020-01-01T01:40:06\t2020-01-01 01:54:01.0\t1\t2.25\t1\tN\t142\t68\t1\t11.0\t0.5\t0.5\t2.96\t0.0\t0.3\t17.76\t2.5\n2\t2020-01-01T01:55:38\t2020-01-01 02:04:01.0\t1\t1.52\t1\tN\t68\t164\t1\t7.5\t0.5\t0.5\t2.26\t0.0\t0.3\t13.56\t2.5\n2\t2020-01-01T01:47:10\t2020-01-01 02:12:46.0\t2\t3.57\t1\tN\t148\t48\t1\t18.0\t0.5\t0.5\t3.92\t0.0\t0.3\t27.67\t2.5\n2\t2020-01-01T01:23:41\t2020-01-01 01:58:11.0\t1\t10.91\t1\tN\t65\t166\t1\t34.5\t0.5\t0.5\t2.0\t0.0\t0.3\t40.3\t2.5\n2\t2020-01-01T01:11:44\t2020-01-01 01:35:44.0\t1\t5.09\t1\tN\t125\t236\t1\t19.5\t0.5\t0.5\t5.82\t0.0\t0.3\t29.12\t2.5\n2\t2020-01-01T01:38:13\t2020-01-01 01:46:33.0\t1\t1.51\t1\tN\t237\t161\t2\t7.5\t0.5\t0.5\t0.0\t0.0\t0.3\t11.3\t2.5\n2\t2020-01-01T01:48:38\t2020-01-01 01:58:09.0\t1\t1.41\t1\tN\t163\t233\t1\t8.0\t0.5\t0.5\t2.36\t0.0\t0.3\t14.16\t2.5\n2\t2020-01-01T01:15:34\t2020-01-01 01:30:31.0\t1\t2.4\t1\tN\t186\t79\t1\t11.5\t0.5\t0.5\t3.06\t0.0\t0.3\t18.36\t2.5\n2\t2020-01-01T01:31:41\t2020-01-01 01:40:19.0\t1\t1.13\t1\tN\t79\t144\t2\t7.0\t0.5\t0.5\t0.0\t0.0\t0.3\t10.8\t2.5\n2\t2020-01-01T01:41:06\t2020-01-01 01:50:35.0\t1\t1.68\t1\tN\t144\t107\t1\t8.5\t0.5\t0.5\t1.0\t0.0\t0.3\t13.3\t2.5\n2\t2020-01-01T01:52:43\t2020-01-01 02:03:45.0\t1\t1.51\t1\tN\t107\t211\t1\t8.5\t0.5\t0.5\t5.0\t0.0\t0.3\t17.3\t2.5\n2\t2020-01-01T01:26:43\t2020-01-01 01:43:54.0\t2\t3.16\t1\tN\t262\t143\t1\t14.0\t0.5\t0.5\t4.45\t0.0\t0.3\t22.25\t2.5\n2\t2020-01-01T01:03:07\t2020-01-01 01:21:54.0\t1\t2.28\t1\tN\t68\t143\t1\t13.0\t0.5\t0.5\t5.04\t0.0\t0.3\t21.84\t2.5\n2\t2020-01-01T01:24:57\t2020-01-01 01:28:25.0\t1\t0.55\t1\tN\t143\t239\t1\t4.5\t0.5\t0.5\t3.0\t0.0\t0.3\t11.3\t2.5\n2\t2020-01-01T01:29:44\t2020-01-01 01:58:04.0\t1\t9.32\t1\tN\t142\t25\t1\t30.0\t0.5\t0.5\t7.0\t0.0\t0.3\t40.8\t2.5\n2\t2020-01-01T01:34:08\t2020-01-01 01:44:20.0\t1\t1.81\t1\tN\t43\t42\t2\t9.0\t0.5\t0.5\t0.0\t0.0\t0.3\t10.3\t0.0\n2\t2020-01-01T01:22:03\t2020-01-01 01:31:45.0\t2\t1.71\t1\tN\t263\t239\t1\t8.5\t0.5\t0.5\t2.46\t0.0\t0.3\t14.76\t2.5\n2\t2020-01-01T01:35:41\t2020-01-01 01:39:22.0\t2\t0.88\t1\tN\t143\t48\t1\t5.0\t0.5\t0.5\t1.76\t0.0\t0.3\t10.56\t2.5\n2\t2020-01-01T01:41:08\t2020-01-01 02:05:42.0\t2\t4.41\t1\tN\t142\t74\t1\t19.0\t0.5\t0.5\t4.56\t0.0\t0.3\t27.36\t2.5\n2\t2020-01-01T01:17:47\t2020-01-01 01:55:52.0\t2\t7.18\t1\tN\t209\t143\t1\t30.0\t0.5\t0.5\t10.14\t0.0\t0.3\t43.94\t2.5\n2\t2020-01-01T01:51:15\t2020-01-01 01:55:03.0\t1\t0.68\t1\tN\t229\t141\t1\t4.5\t0.5\t0.5\t1.66\t0.0\t0.3\t9.96\t2.5\n2\t2020-01-01T01:04:15\t2020-01-01 01:10:21.0\t1\t1.09\t1\tN\t158\t231\t2\t6.5\t0.5\t0.5\t0.0\t0.0\t0.3\t10.3\t2.5\n2\t2020-01-01T01:12:29\t2020-01-01 01:24:43.0\t1\t4.3\t1\tN\t231\t4\t1\t15.0\t0.5\t0.5\t1.88\t0.0\t0.3\t20.68\t2.5\n2\t2020-01-01T01:39:55\t2020-01-01 02:08:38.0\t1\t9.9\t1\tN\t4\t7\t1\t33.0\t0.5\t0.5\t7.36\t0.0\t0.3\t44.16\t2.5\n2\t2020-01-01T01:00:48\t2020-01-01 01:06:49.0\t2\t0.84\t1\tN\t261\t261\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:11:54\t2020-01-01 01:24:21.0\t2\t2.75\t1\tN\t231\t68\t1\t11.5\t0.5\t0.5\t1.53\t0.0\t0.3\t16.83\t2.5\n2\t2020-01-01T01:34:53\t2020-01-01 01:40:12.0\t1\t0.87\t1\tN\t68\t68\t1\t5.5\t0.5\t0.5\t1.86\t0.0\t0.3\t11.16\t2.5\n2\t2020-01-01T01:45:44\t2020-01-01 01:50:35.0\t2\t0.96\t1\tN\t68\t246\t1\t5.5\t0.5\t0.5\t2.0\t0.0\t0.3\t11.3\t2.5\n2\t2020-01-01T01:26:08\t2020-01-01 01:31:38.0\t4\t1.11\t1\tN\t68\t48\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n2\t2020-01-01T01:55:39\t2020-01-01 02:22:03.0\t1\t5.23\t1\tN\t68\t33\t1\t21.0\t0.5\t0.5\t0.0\t0.0\t0.3\t24.8\t2.5\n2\t2020-01-01T01:56:20\t2020-01-01 02:02:54.0\t2\t0.88\t1\tN\t233\t170\t1\t6.0\t0.5\t0.5\t2.94\t0.0\t0.3\t12.74\t2.5\n2\t2020-01-01T01:03:29\t2020-01-01 01:17:44.0\t1\t1.98\t1\tN\t233\t90\t1\t10.5\t0.5\t0.5\t2.14\t0.0\t0.3\t16.44\t2.5\n2\t2020-01-01T01:18:23\t2020-01-01 01:21:55.0\t1\t0.69\t1\tN\t90\t113\t1\t4.5\t0.5\t0.5\t1.0\t0.0\t0.3\t9.3\t2.5\n2\t2020-01-01T01:22:20\t2020-01-01 01:28:14.0\t1\t0.85\t1\tN\t113\t249\t1\t5.5\t0.5\t0.5\t2.32\t0.0\t0.3\t11.62\t2.5\n2\t2020-01-01T01:29:50\t2020-01-01 01:55:03.0\t1\t4.13\t1\tN\t249\t50\t1\t18.0\t0.5\t0.5\t0.0\t0.0\t0.3\t21.8\t2.5\n2\t2020-01-01T01:11:53\t2020-01-01 01:18:23.0\t1\t0.72\t1\tN\t129\t129\t2\t5.5\t0.5\t0.5\t0.0\t0.0\t0.3\t6.8\t0.0\n2\t2020-01-01T01:22:06\t2020-01-01 01:41:49.0\t1\t4.24\t1\tN\t129\t36\t2\t15.5\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t0.0\n2\t2020-01-01T01:43:25\t2020-01-01 01:58:45.0\t1\t2.72\t1\tN\t36\t17\t1\t12.0\t0.5\t0.5\t3.32\t0.0\t0.3\t16.62\t0.0\n2\t2020-01-01T01:00:20\t2020-01-01 01:10:32.0\t1\t1.66\t1\tN\t79\t170\t1\t8.5\t0.5\t0.5\t2.46\t0.0\t0.3\t14.76\t2.5\n2\t2020-01-01T01:16\t2020-01-01 01:37:16.0\t1\t7.65\t1\tN\t137\t7\t1\t23.5\t0.5\t0.5\t6.68\t6.12\t0.3\t40.1\t2.5\n2\t2020-01-01T01:09:06\t2020-01-01 01:23:51.0\t1\t2.85\t1\tN\t143\t41\t1\t13.0\t0.5\t0.5\t3.36\t0.0\t0.3\t20.16\t2.5\n2\t2020-01-01T01:44:31\t2020-01-01 01:57:06.0\t1\t2.25\t1\tN\t142\t162\t1\t10.5\t0.5\t0.5\t2.86\t0.0\t0.3\t17.16\t2.5\n2\t2020-01-01T01:30:24\t2020-01-01 01:35:45.0\t1\t1.07\t1\tN\t151\t238\t1\t6.0\t0.5\t0.5\t1.96\t0.0\t0.3\t11.76\t2.5\n2\t2020-01-01T01:21:36\t2020-01-01 01:26:16.0\t1\t0.79\t1\tN\t42\t42\t2\t5.5\t0.5\t0.5\t0.0\t0.0\t0.3\t6.8\t0.0\n2\t2020-01-01T01:35:26\t2020-01-01 01:43:41.0\t1\t1.45\t1\tN\t41\t238\t2\t8.0\t0.5\t0.5\t0.0\t0.0\t0.3\t11.8\t2.5\n2\t2020-01-01T01:54:38\t2020-01-01 02:10:09.0\t1\t1.83\t1\tN\t142\t68\t1\t11.0\t0.5\t0.5\t1.0\t0.0\t0.3\t15.8\t2.5\n2\t2020-01-01T01:04:44\t2020-01-01 01:13:59.0\t1\t1.72\t1\tN\t79\t233\t2\t8.5\t0.5\t0.5\t0.0\t0.0\t0.3\t12.3\t2.5\n2\t2020-01-01T01:16:41\t2020-01-01 01:27:02.0\t2\t2.38\t1\tN\t229\t263\t1\t10.0\t0.5\t0.5\t2.07\t0.0\t0.3\t15.87\t2.5\n2\t2020-01-01T01:34:59\t2020-01-01 01:38:35.0\t2\t0.84\t1\tN\t141\t236\t2\t5.0\t0.5\t0.5\t0.0\t0.0\t0.3\t8.8\t2.5\n2\t2020-01-01T01:48:52\t2020-01-01 01:58:58.0\t2\t1.24\t1\tN\t237\t162\t1\t8.0\t0.5\t0.5\t2.36\t0.0\t0.3\t14.16\t2.5\n2\t2020-01-01T01:15:34\t2020-01-01 01:42:02.0\t1\t2.14\t1\tN\t233\t100\t2\t13.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t2.5\n2\t2020-01-01T01:06:32\t2020-01-01 01:11:54.0\t1\t1.26\t1\tN\t137\t233\t1\t6.0\t0.5\t0.5\t2.45\t0.0\t0.3\t12.25\t2.5\n2\t2020-01-01T01:43:24\t2020-01-01 02:04:04.0\t1\t9.36\t1\tN\t100\t138\t2\t28.0\t0.5\t0.5\t0.0\t6.12\t0.3\t37.92\t2.5\n2\t2020-01-01T01:28:48\t2020-01-01 01:37:00.0\t1\t1.3\t1\tN\t137\t79\t1\t7.5\t0.5\t0.5\t2.82\t0.0\t0.3\t14.12\t2.5\n2\t2020-01-01T01:22:07\t2020-01-01 01:31:19.0\t2\t1.9\t1\tN\t146\t223\t2\t9.0\t0.5\t0.5\t0.0\t0.0\t0.3\t10.3\t0.0\n2\t2020-01-01T01:39:15\t2020-01-01 01:58:57.0\t1\t3.43\t1\tN\t79\t163\t2\t15.0\t0.5\t0.5\t0.0\t0.0\t0.3\t18.8\t2.5\n2\t2020-01-01T01:15:39\t2020-01-01 01:17:01.0\t1\t0.51\t1\tN\t142\t239\t1\t3.5\t0.5\t0.5\t1.46\t0.0\t0.3\t8.76\t2.5\n2\t2020-01-01T01:21:13\t2020-01-01 01:38:37.0\t1\t2.13\t1\tN\t239\t162\t2\t12.5\t0.5\t0.5\t0.0\t0.0\t0.3\t16.3\t2.5\n2\t2020-01-01T01:46:33\t2020-01-01 02:07:18.0\t1\t2.69\t1\tN\t162\t68\t2\t11.5\t0.5\t0.5\t0.0\t0.0\t0.3\t15.3\t2.5\n2\t2020-01-01T01:14:48\t2020-01-01 01:18:27.0\t1\t0.74\t1\tN\t43\t43\t2\t5.0\t0.5\t0.5\t0.0\t0.0\t0.3\t8.8\t2.5\n2\t2020-01-01T01:19:13\t2020-01-01 01:30:01.0\t1\t2.13\t1\tN\t163\t238\t1\t9.5\t0.5\t0.5\t2.66\t0.0\t0.3\t15.96\t2.5\n2\t2020-01-01T01:37:39\t2020-01-01 01:44:59.0\t1\t1.55\t1\tN\t239\t151\t1\t7.5\t0.5\t0.5\t2.26\t0.0\t0.3\t13.56\t2.5\n2\t2020-01-01T01:13:57\t2020-01-01 01:20:11.0\t2\t1.08\t1\tN\t231\t211\t1\t6.0\t0.5\t0.5\t2.45\t0.0\t0.3\t12.25\t2.5\n2\t2020-01-01T01:47:21\t2020-01-01 01:52:24.0\t1\t1.07\t1\tN\t151\t239\t1\t6.0\t0.5\t0.5\t1.96\t0.0\t0.3\t11.76\t2.5\n2\t2020-01-01T01:21:12\t2020-01-01 01:56:10.0\t2\t6.19\t1\tN\t114\t36\t1\t26.5\t0.5\t0.5\t5.0\t0.0\t0.3\t35.3\t2.5\n2\t2020-01-01T01:07:39\t2020-01-01 01:33:50.0\t1\t10.38\t1\tN\t137\t127\t1\t31.5\t0.5\t0.5\t6.0\t0.0\t0.3\t41.3\t2.5\n2\t2020-01-01T01:11:49\t2020-01-01 01:27:09.0\t1\t3.08\t1\tN\t163\t114\t2\t13.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t2.5\n2\t2020-01-01T01:28:23\t2020-01-01 01:40:53.0\t1\t1.5\t1\tN\t114\t107\t2\t9.0\t0.5\t0.5\t0.0\t0.0\t0.3\t12.8\t2.5\n2\t2020-01-01T01:46:03\t2020-01-01 01:58:03.0\t1\t1.42\t1\tN\t170\t229\t1\t9.5\t0.5\t0.5\t3.32\t0.0\t0.3\t16.62\t2.5\n2\t2020-01-01T01:04:49\t2020-01-01 01:06:56.0\t1\t0.84\t1\tN\t140\t262\t1\t4.5\t0.5\t0.5\t2.49\t0.0\t0.3\t10.79\t2.5\n2\t2020-01-01T01:00:10\t2020-01-01 01:04:27.0\t2\t0.82\t1\tN\t238\t43\t2\t5.5\t0.5\t0.5\t0.0\t0.0\t0.3\t9.3\t2.5\n2\t2020-01-01T01:17:39\t2020-01-01 01:34:06.0\t1\t3.92\t1\tN\t237\t226\t1\t15.0\t0.5\t0.5\t4.7\t0.0\t0.3\t23.5\t2.5\n2\t2020-01-01T01:58:55\t2020-01-01 02:14:55.0\t1\t2.04\t1\tN\t161\t224\t2\t12.0\t0.5\t0.5\t0.0\t0.0\t0.3\t15.8\t2.5\n2\t2020-01-01T01:11:25\t2020-01-01 01:13:44.0\t2\t0.69\t1\tN\t239\t238\t1\t4.0\t0.5\t0.5\t1.95\t0.0\t0.3\t9.75\t2.5\n2\t2020-01-01T01:18:46\t2020-01-01 02:03:06.0\t1\t9.52\t1\tN\t238\t65\t1\t34.5\t0.5\t0.5\t7.66\t0.0\t0.3\t47.91\t2.5\n2\t2020-01-01T01:02:19\t2020-01-01 01:25:13.0\t1\t3.73\t1\tN\t79\t140\t1\t16.5\t0.5\t0.5\t3.0\t0.0\t0.3\t23.3\t2.5\n2\t2020-01-01T01:37:34\t2020-01-01 01:40:30.0\t1\t0.35\t1\tN\t161\t161\t1\t4.0\t0.5\t0.5\t1.56\t0.0\t0.3\t9.36\t2.5\n2\t2020-01-01T01:41:46\t2020-01-01 01:48:26.0\t1\t1.06\t1\tN\t161\t170\t2\t6.5\t0.5\t0.5\t0.0\t0.0\t0.3\t10.3\t2.5\n2\t2020-01-01T01:51:49\t2020-01-01 02:01:26.0\t1\t1.84\t1\tN\t164\t249\t1\t8.5\t0.5\t0.5\t2.46\t0.0\t0.3\t14.76\t2.5\n2\t2020-01-01T01:44:48\t2020-01-01 01:50:47.0\t1\t0.86\t1\tN\t116\t42\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t7.3\t0.0\n2\t2020-01-01T01:31:54\t2020-01-01 01:33:59.0\t1\t0.56\t1\tN\t244\t244\t2\t4.0\t0.5\t0.5\t0.0\t0.0\t0.3\t5.3\t0.0\n2\t2020-01-01T01:38:11\t2020-01-01 01:49:05.0\t5\t1.71\t1\tN\t4\t137\t1\t9.0\t0.5\t0.5\t2.56\t0.0\t0.3\t15.36\t2.5\n2\t2020-01-01T01:50:26\t2020-01-01 02:26:09.0\t5\t12.97\t1\tN\t137\t229\t2\t38.0\t0.5\t0.5\t0.0\t0.0\t0.3\t41.8\t2.5\n2\t2020-01-01T01:00:04\t2020-01-01 01:16:44.0\t1\t4.07\t1\tN\t48\t41\t1\t15.0\t0.5\t0.5\t4.7\t0.0\t0.3\t23.5\t2.5\n2\t2020-01-01T01:23:38\t2020-01-01 01:25:53.0\t1\t0.83\t1\tN\t238\t75\t1\t4.5\t0.5\t0.5\t1.2\t0.0\t0.3\t7.0\t0.0\n2\t2020-01-01T01:33:55\t2020-01-01 02:16:20.0\t2\t7.88\t5\tN\t263\t265\t1\t65.0\t0.0\t0.0\t15.66\t10.5\t0.3\t93.96\t2.5\n2\t2020-01-01T01:58:37\t2020-01-01 02:16:35.0\t1\t4.17\t1\tN\t264\t7\t1\t16.0\t0.5\t0.5\t5.94\t0.0\t0.3\t25.74\t2.5\n2\t2020-01-01T01:42:33\t2020-01-01 01:45:59.0\t1\t0.45\t1\tN\t264\t229\t1\t4.0\t0.5\t0.5\t1.56\t0.0\t0.3\t9.36\t2.5\n2\t2020-01-01T01:15:15\t2020-01-01 01:28:12.0\t1\t2.91\t1\tN\t263\t170\t1\t11.0\t0.5\t0.5\t2.96\t0.0\t0.3\t17.76\t2.5\n2\t2020-01-01T01:03:45\t2020-01-01 01:15:16.0\t3\t2.61\t1\tN\t233\t263\t2\t10.5\t0.5\t0.5\t0.0\t0.0\t0.3\t14.3\t2.5\n2\t2020-01-01T01:31:02\t2020-01-01 01:36:21.0\t1\t1.13\t1\tN\t170\t107\t1\t5.5\t0.5\t0.5\t1.86\t0.0\t0.3\t11.16\t2.5\n2\t2020-01-01T00:58:41\t2020-01-01 01:13:11.0\t1\t1.97\t1\tN\t113\t137\t1\t10.5\t0.5\t0.5\t3.58\t0.0\t0.3\t17.88\t2.5\n2\t2020-01-01T01:23:12\t2020-01-01 01:45:22.0\t1\t8.91\t1\tN\t170\t56\t2\t26.0\t0.5\t0.5\t0.0\t6.12\t0.3\t35.92\t2.5\n2\t2020-01-01T01:28:03\t2020-01-01 01:47:55.0\t2\t2.94\t1\tN\t229\t68\t1\t14.5\t0.5\t0.5\t3.66\t0.0\t0.3\t21.96\t2.5\n2\t2020-01-01T01:50:11\t2020-01-01 01:57:19.0\t2\t0.75\t1\tN\t68\t158\t1\t6.0\t0.5\t0.5\t1.96\t0.0\t0.3\t11.76\t2.5\n2\t2020-01-01T01:01:53\t2020-01-01 01:07:58.0\t2\t0.91\t1\tN\t224\t148\t1\t6.0\t0.5\t0.5\t1.96\t0.0\t0.3\t11.76\t2.5\n2\t2020-01-01T01:12:22\t2020-01-01 01:26:24.0\t2\t2.73\t1\tN\t148\t246\t1\t12.0\t0.5\t0.5\t2.37\t0.0\t0.3\t18.17\t2.5\n2\t2020-01-01T01:26:42\t2020-01-01 01:46:08.0\t3\t2.49\t1\tN\t246\t148\t1\t13.5\t0.5\t0.5\t2.6\t0.0\t0.3\t19.9\t2.5\n2\t2020-01-01T01:47:40\t2020-01-01 01:59:49.0\t2\t3.11\t1\tN\t148\t170\t1\t12.5\t0.5\t0.5\t3.26\t0.0\t0.3\t19.56\t2.5\n2\t2020-01-01T01:08:21\t2020-01-01 01:36:13.0\t6\t10.8\t1\tN\t161\t70\t2\t33.5\t0.5\t0.5\t0.0\t6.12\t0.3\t43.42\t2.5\n2\t2020-01-01T01:52:52\t2020-01-01 02:06:54.0\t6\t2.93\t1\tN\t232\t137\t2\t13.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t2.5\n2\t2020-01-01T01:09:28\t2020-01-01 01:46:29.0\t2\t9.76\t1\tN\t255\t75\t1\t32.5\t0.5\t0.5\t0.0\t0.0\t0.3\t36.3\t2.5\n2\t2020-01-01T01:10:51\t2020-01-01 01:13:16.0\t3\t0.35\t1\tN\t107\t137\t2\t3.5\t0.5\t0.5\t0.0\t0.0\t0.3\t7.3\t2.5\n2\t2020-01-01T01:16:16\t2020-01-01 01:26:47.0\t3\t0.9\t1\tN\t137\t164\t2\t7.5\t0.5\t0.5\t0.0\t0.0\t0.3\t11.3\t2.5\n2\t2020-01-01T01:29:17\t2020-01-01 01:40:14.0\t4\t1.7\t1\tN\t164\t79\t1\t9.0\t0.5\t0.5\t2.56\t0.0\t0.3\t15.36\t2.5\n2\t2020-01-01T01:41:38\t2020-01-01 01:47:24.0\t3\t0.85\t1\tN\t79\t107\t1\t5.5\t0.5\t0.5\t1.86\t0.0\t0.3\t11.16\t2.5\n2\t2020-01-01T01:49:41\t2020-01-01 01:52:42.0\t3\t0.7\t1\tN\t107\t137\t1\t4.5\t0.5\t0.5\t1.66\t0.0\t0.3\t9.96\t2.5\n2\t2020-01-01T01:13:57\t2020-01-01 01:17:11.0\t1\t0.53\t1\tN\t166\t166\t1\t4.5\t0.5\t0.5\t1.16\t0.0\t0.3\t6.96\t0.0\n2\t2020-01-01T01:53:46\t2020-01-01 02:04:03.0\t4\t1.31\t1\tN\t170\t48\t2\t8.5\t0.5\t0.5\t0.0\t0.0\t0.3\t12.3\t2.5\n2\t2020-01-01T01:20:41\t2020-01-01 01:34:37.0\t1\t2.8\t1\tN\t166\t75\t1\t12.5\t0.5\t0.5\t2.0\t0.0\t0.3\t15.8\t0.0\n2\t2020-01-01T01:48:09\t2020-01-01 01:53:16.0\t1\t0.64\t1\tN\t237\t163\t1\t5.5\t0.5\t0.5\t1.86\t0.0\t0.3\t11.16\t2.5\n2\t2020-01-01T01:54:02\t2020-01-01 02:13:56.0\t1\t4.02\t1\tN\t163\t152\t2\t16.5\t0.5\t0.5\t0.0\t0.0\t0.3\t20.3\t2.5\n2\t2020-01-01T01:04:49\t2020-01-01 01:23:57.0\t2\t2.15\t1\tN\t237\t100\t2\t13.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.8\t2.5\n2\t2020-01-01T01:25:40\t2020-01-01 02:00:21.0\t2\t7.72\t1\tN\t100\t160\t2\t29.0\t0.5\t0.5\t0.0\t0.0\t0.3\t32.8\t2.5\n2\t2020-01-01T01:10:55\t2020-01-01 01:19:05.0\t1\t1.61\t1\tN\t170\t79\t2\t7.5\t0.5\t0.5\t0.0\t0.0\t0.3\t11.3\t2.5\n2\t2020-01-01T01:20:39\t2020-01-01 01:42:33.0\t3\t2.68\t1\tN\t79\t68\t1\t15.0\t0.5\t0.5\t1.88\t0.0\t0.3\t20.68\t2.5\n2\t2020-01-01T01:43:10\t2020-01-01 02:00:22.0\t4\t3.15\t1\tN\t68\t238\t1\t13.5\t0.5\t0.5\t3.46\t0.0\t0.3\t20.76\t2.5\n2\t2020-01-01T01:06:52\t2020-01-01 01:14:23.0\t5\t0.65\t1\tN\t161\t170\t2\t6.0\t0.5\t0.5\t0.0\t0.0\t0.3\t9.8\t2.5\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT * FROM yellow_cab\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: ae6499bbe3b3f1b9df2312d6c2cb0a19)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: ae6499bbe3b3f1b9df2312d6c2cb0a19)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/ae6499bbe3b3f1b9df2312d6c2cb0a19",
+              "$$hashKey": "object:14796"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741112_1370900647",
+      "id": "paragraph_1631910690563_539176215",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5020",
+      "dateFinished": "2021-10-14T08:23:32+0000",
+      "dateStarted": "2021-10-14T08:22:55+0000"
+    },
+    {
+      "text": "%md\n### Filter",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Filter</h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741112_1803005141",
+      "id": "paragraph_1631910704975_12227488",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5021"
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab WHERE trip_distance > 3.0 ",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:23:36+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "VendorID": "string",
+                      "tpep_pickup_datetime": "string",
+                      "tpep_dropoff_datetime": "string",
+                      "passenger_count": "string",
+                      "trip_distance": "string",
+                      "RatecodeID": "string",
+                      "store_and_fwd_flag": "string",
+                      "PULocationID": "string",
+                      "DOLocationID": "string",
+                      "payment_type": "string",
+                      "fare_amount": "string",
+                      "extra": "string",
+                      "mta_tax": "string",
+                      "tip_amount": "string",
+                      "tolls_amount": "string",
+                      "improvement_surcharge": "string",
+                      "total_amount": "string",
+                      "congestion_surcharge": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "VendorID",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "tpep_pickup_datetime",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/bc27d0813afc9914543b9f8ba54ab2a8",
+              "$$hashKey": "object:18169"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741112_654466104",
+      "id": "paragraph_1631913531517_1873774839",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5022",
+      "dateFinished": "2021-10-14T08:24:12+0000",
+      "dateStarted": "2021-10-14T08:23:37+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "VendorID\ttpep_pickup_datetime\ttpep_dropoff_datetime\tpassenger_count\ttrip_distance\tRatecodeID\tstore_and_fwd_flag\tPULocationID\tDOLocationID\tpayment_type\tfare_amount\textra\tmta_tax\ttip_amount\ttolls_amount\timprovement_surcharge\ttotal_amount\tcongestion_surcharge\n1\t2020-01-01T01:41:14\t2020-01-01 02:01:09.0\t1\t6.4\t1\tN\t263\t116\t1\t21.5\t3.0\t0.5\t5.05\t0.0\t0.3\t30.35\t2.5\n1\t2020-01-01T01:26:47\t2020-01-01 01:49:15.0\t2\t3.2\t1\tN\t137\t143\t1\t15.5\t3.0\t0.5\t3.85\t0.0\t0.3\t23.15\t2.5\n1\t2020-01-01T01:06:13\t2020-01-01 01:20:19.0\t1\t5.2\t1\tN\t261\t137\t1\t17.5\t3.0\t0.5\t1.5\t0.0\t0.3\t22.8\t2.5\n1\t2020-01-01T01:36:19\t2020-01-01 02:01:30.0\t2\t9.0\t1\tY\t239\t87\t1\t29.0\t3.0\t0.5\t6.55\t0.0\t0.3\t39.35\t2.5\n1\t2020-01-01T01:29:39\t2020-01-01 01:52:05.0\t1\t3.1\t1\tN\t107\t48\t1\t16.0\t3.0\t0.5\t3.95\t0.0\t0.3\t23.75\t2.5\n1\t2020-01-01T01:56:23\t2020-01-01 02:09:10.0\t1\t3.3\t1\tN\t48\t146\t1\t13.0\t3.0\t0.5\t3.35\t0.0\t0.3\t20.15\t2.5\n1\t2020-01-01T01:19:10\t2020-01-01 01:49:02.0\t0\t6.7\t1\tN\t263\t82\t1\t25.0\t3.0\t0.5\t5.75\t0.0\t0.3\t34.55\t2.5\n1\t2020-01-01T01:04:56\t2020-01-01 01:19:00.0\t2\t4.6\t1\tN\t231\t170\t1\t16.0\t3.0\t0.5\t1.0\t0.0\t0.3\t20.8\t2.5\n1\t2020-01-01T01:22:10\t2020-01-01 01:41:47.0\t3\t5.2\t1\tN\t170\t166\t1\t17.5\t3.0\t0.5\t4.25\t0.0\t0.3\t25.55\t2.5\n1\t2020-01-01T01:23:05\t2020-01-01 01:46:31.0\t1\t9.1\t1\tN\t132\t37\t1\t28.5\t0.5\t0.5\t7.45\t0.0\t0.3\t37.25\t0.0\n1\t2020-01-01T01:58:09\t2020-01-01 02:44:55.0\t3\t15.8\t1\tN\t37\t116\t2\t50.0\t3.0\t0.5\t0.0\t0.0\t0.3\t53.8\t2.5\n1\t2020-01-01T01:40\t2020-01-01 01:56:46.0\t1\t3.1\t1\tN\t79\t141\t1\t14.0\t3.0\t0.5\t3.55\t0.0\t0.3\t21.35\t2.5\n1\t2020-01-01T01:10:59\t2020-01-01 01:29:48.0\t2\t4.8\t1\tN\t88\t113\t1\t18.0\t3.0\t0.5\t3.27\t0.0\t0.3\t25.07\t2.5\n1\t2020-01-01T01:10:34\t2020-01-01 01:33:51.0\t2\t4.8\t1\tN\t249\t49\t1\t19.0\t3.0\t0.5\t3.0\t0.0\t0.3\t25.8\t2.5\n1\t2020-01-01T01:25:16\t2020-01-01 02:05:04.0\t2\t9.3\t1\tN\t249\t225\t1\t33.5\t3.0\t0.5\t3.0\t0.0\t0.3\t40.3\t2.5\n1\t2020-01-01T01:36:17\t2020-01-01 02:11:53.0\t1\t4.2\t1\tN\t48\t232\t1\t22.5\t3.0\t0.5\t1.0\t0.0\t0.3\t27.3\t2.5\n1\t2020-01-01T01:30:49\t2020-01-01 02:21:31.0\t1\t11.0\t1\tN\t142\t106\t2\t40.0\t3.0\t0.5\t0.0\t0.0\t0.3\t43.8\t2.5\n1\t2020-01-01T01:07:25\t2020-01-01 01:27:13.0\t1\t4.1\t1\tN\t263\t246\t1\t16.5\t3.0\t0.5\t6.05\t0.0\t0.3\t26.35\t2.5\n1\t2020-01-01T01:29:14\t2020-01-01 01:55:22.0\t3\t3.3\t1\tN\t246\t162\t1\t18.0\t3.0\t0.5\t4.35\t0.0\t0.3\t26.15\t2.5\n1\t2020-01-01T01:22:42\t2020-01-01 01:43:37.0\t3\t3.6\t1\tN\t264\t148\t1\t16.5\t3.0\t0.5\t3.0\t0.0\t0.3\t23.3\t2.5\n1\t2020-01-01T01:44:21\t2020-01-01 02:08:02.0\t3\t5.4\t1\tN\t50\t146\t1\t20.0\t3.0\t0.5\t4.75\t0.0\t0.3\t28.55\t2.5\n2\t2020-01-01T01:13:42\t2020-01-01 01:33:05.0\t1\t4.5\t1\tN\t263\t246\t1\t17.0\t0.5\t0.5\t5.2\t0.0\t0.3\t26.0\t2.5\n2\t2020-01-01T01:18:25\t2020-01-01 01:35:13.0\t1\t3.55\t1\tN\t249\t233\t1\t13.5\t0.5\t0.5\t2.6\t0.0\t0.3\t19.9\t2.5\n2\t2020-01-01T01:44:01\t2020-01-01 02:06:21.0\t3\t3.7\t1\tN\t143\t186\t2\t16.5\t0.5\t0.5\t0.0\t0.0\t0.3\t20.3\t2.5\n2\t2020-01-01T01:36:32\t2020-01-01 01:51:37.0\t1\t4.07\t1\tN\t162\t24\t1\t14.5\t0.5\t0.5\t3.0\t0.0\t0.3\t21.3\t2.5\n2\t2020-01-01T01:55:59\t2020-01-01 02:10:28.0\t1\t3.5\t1\tN\t48\t263\t1\t13.5\t0.5\t0.5\t6.0\t0.0\t0.3\t23.3\t2.5\n2\t2020-01-01T01:06:16\t2020-01-01 01:22:04.0\t6\t4.0\t1\tN\t229\t42\t1\t14.5\t0.5\t0.5\t1.83\t0.0\t0.3\t20.13\t2.5\n2\t2020-01-01T01:34:33\t2020-01-01 01:58:49.0\t6\t6.2\t1\tN\t166\t90\t2\t22.0\t0.5\t0.5\t0.0\t0.0\t0.3\t25.8\t2.5\n2\t2020-01-01T01:50:21\t2020-01-01 02:12:42.0\t6\t5.74\t1\tN\t87\t170\t1\t20.5\t0.5\t0.5\t7.29\t0.0\t0.3\t31.59\t2.5\n2\t2020-01-01T01:16:01\t2020-01-01 01:36:52.0\t2\t3.62\t1\tN\t68\t261\t1\t16.0\t0.5\t0.5\t3.96\t0.0\t0.3\t23.76\t2.5\n2\t2020-01-01T01:45:43\t2020-01-01 02:07:09.0\t2\t4.77\t1\tN\t158\t25\t1\t18.5\t0.5\t0.5\t3.34\t0.0\t0.3\t25.64\t2.5\n2\t2020-01-01T01:59:53\t2020-01-01 02:18:50.0\t1\t4.93\t1\tN\t142\t42\t1\t18.0\t0.5\t0.5\t4.36\t0.0\t0.3\t26.16\t2.5\n2\t2020-01-01T00:58:27\t2020-01-01 01:11:22.0\t5\t3.52\t1\tN\t243\t74\t1\t14.0\t0.5\t0.5\t2.58\t0.0\t0.3\t17.88\t0.0\n2\t2020-01-01T01:18:19\t2020-01-01 01:42:45.0\t1\t3.93\t1\tN\t141\t246\t2\t17.5\t0.5\t0.5\t0.0\t0.0\t0.3\t21.3\t2.5\n2\t2020-01-01T01:21:10\t2020-01-01 02:11:09.0\t5\t21.22\t1\tN\t186\t86\t1\t64.0\t0.5\t0.5\t10.0\t6.12\t0.3\t83.92\t2.5\n2\t2020-01-01T01:32:24\t2020-01-01 02:02:58.0\t2\t8.41\t1\tN\t68\t244\t2\t29.5\t0.5\t0.5\t0.0\t0.0\t0.3\t33.3\t2.5\n2\t2020-01-01T01:47:17\t2020-01-01 02:23:37.0\t2\t9.41\t1\tN\t246\t95\t2\t33.5\t0.5\t0.5\t0.0\t6.12\t0.3\t43.42\t2.5\n2\t2020-01-01T01:15:14\t2020-01-01 01:40:54.0\t2\t5.02\t1\tN\t142\t260\t1\t20.5\t0.5\t0.5\t7.29\t0.0\t0.3\t31.59\t2.5\n2\t2020-01-01T01:19:40\t2020-01-01 01:43:42.0\t3\t4.99\t1\tN\t161\t223\t1\t20.0\t0.5\t0.5\t2.0\t0.0\t0.3\t25.8\t2.5\n2\t2020-01-01T01:16:30\t2020-01-01 01:38:59.0\t2\t3.28\t1\tN\t163\t144\t1\t16.0\t0.5\t0.5\t5.94\t0.0\t0.3\t25.74\t2.5\n2\t2020-01-01T01:40:36\t2020-01-01 02:02:57.0\t2\t5.41\t1\tN\t144\t263\t1\t19.0\t0.5\t0.5\t5.7\t0.0\t0.3\t28.5\t2.5\n2\t2020-01-01T01:11:02\t2020-01-01 01:30:23.0\t3\t4.65\t1\tN\t234\t87\t1\t17.5\t0.5\t0.5\t4.26\t0.0\t0.3\t25.56\t2.5\n2\t2020-01-01T01:31:19\t2020-01-01 01:59:17.0\t3\t8.41\t1\tN\t87\t237\t1\t28.5\t0.5\t0.5\t3.23\t0.0\t0.3\t35.53\t2.5\n2\t2020-01-01T01:10:01\t2020-01-01 01:26:18.0\t1\t3.53\t1\tN\t239\t170\t1\t14.0\t0.5\t0.5\t3.2\t0.0\t0.3\t21.0\t2.5\n2\t2020-01-01T01:58:09\t2020-01-01 02:13:50.0\t1\t3.57\t1\tN\t162\t226\t1\t14.5\t0.5\t0.5\t3.66\t0.0\t0.3\t21.96\t2.5\n2\t2020-01-01T01:13:22\t2020-01-01 01:37:39.0\t1\t3.87\t1\tN\t48\t249\t1\t17.5\t0.5\t0.5\t2.0\t0.0\t0.3\t23.3\t2.5\n2\t2020-01-01T01:39:01\t2020-01-01 01:57:08.0\t2\t3.13\t1\tN\t249\t230\t2\t14.0\t0.5\t0.5\t0.0\t0.0\t0.3\t17.8\t2.5\n2\t2020-01-01T01:26:53\t2020-01-01 01:43:39.0\t1\t4.2\t1\tN\t181\t255\t1\t16.0\t0.5\t0.5\t2.5\t0.0\t0.3\t19.8\t0.0\n2\t2020-01-01T01:34:33\t2020-01-01 01:51:32.0\t1\t5.17\t1\tN\t162\t151\t1\t17.5\t0.5\t0.5\t3.8\t0.0\t0.3\t25.1\t2.5\n2\t2020-01-01T01:02:56\t2020-01-02 01:01:30.0\t1\t3.91\t1\tN\t170\t238\t1\t14.5\t0.5\t0.5\t5.49\t0.0\t0.3\t23.79\t2.5\n2\t2020-01-01T01:21:12\t2020-01-01 01:37:14.0\t6\t7.3\t1\tN\t236\t209\t1\t22.0\t0.5\t0.5\t2.0\t0.0\t0.3\t27.8\t2.5\n2\t2020-01-01T01:05:50\t2020-01-01 01:50:21.0\t1\t11.99\t1\tN\t114\t243\t2\t42.5\t0.5\t0.5\t0.0\t0.0\t0.3\t46.3\t2.5\n2\t2020-01-01T01:08:52\t2020-01-01 01:28:24.0\t1\t3.94\t1\tN\t234\t256\t1\t16.5\t0.5\t0.5\t1.0\t0.0\t0.3\t21.3\t2.5\n2\t2020-01-01T01:32:08\t2020-01-01 01:58:02.0\t1\t11.83\t1\tN\t256\t10\t1\t34.5\t0.5\t0.5\t5.0\t0.0\t0.3\t40.8\t0.0\n2\t2020-01-01T01:12:23\t2020-01-01 01:29:03.0\t1\t3.69\t1\tN\t116\t238\t2\t14.5\t0.5\t0.5\t0.0\t0.0\t0.3\t18.3\t2.5\n2\t2020-01-01T01:19:54\t2020-01-01 01:29:49.0\t1\t3.12\t1\tN\t263\t233\t1\t12.0\t0.5\t0.5\t0.01\t0.0\t0.3\t15.81\t2.5\n2\t2020-01-01T01:30:29\t2020-01-01 01:51:02.0\t1\t4.99\t1\tN\t45\t61\t1\t18.5\t0.5\t0.5\t3.0\t0.0\t0.3\t25.3\t2.5\n2\t2020-01-01T01:14:42\t2020-01-01 01:34:43.0\t3\t4.23\t1\tN\t263\t79\t1\t16.0\t0.5\t0.5\t3.96\t0.0\t0.3\t23.76\t2.5\n2\t2020-01-01T01:30:42\t2020-01-01 01:59:03.0\t1\t9.3\t1\tN\t158\t14\t2\t30.0\t0.5\t0.5\t0.0\t0.0\t0.3\t33.8\t2.5\n2\t2020-01-01T01:36:05\t2020-01-01 01:57:17.0\t2\t4.1\t1\tN\t164\t142\t1\t17.0\t0.5\t0.5\t4.16\t0.0\t0.3\t24.96\t2.5\n2\t2020-01-01T01:24:48\t2020-01-01 01:48:35.0\t1\t5.72\t1\tN\t263\t129\t2\t21.0\t0.5\t0.5\t0.0\t0.0\t0.3\t24.8\t2.5\n2\t2020-01-01T01:21:46\t2020-01-01 01:51:34.0\t1\t3.91\t1\tN\t163\t211\t1\t20.0\t0.5\t0.5\t4.76\t0.0\t0.3\t28.56\t2.5\n2\t2020-01-01T01:15:43\t2020-01-01 01:50:18.0\t1\t5.45\t1\tN\t158\t262\t1\t24.0\t0.5\t0.5\t5.56\t0.0\t0.3\t33.36\t2.5\n2\t2019-12-31T13:44:49\t2019-12-31 13:59:39.0\t6\t4.0\t1\tN\t161\t74\t1\t14.0\t0.5\t0.5\t2.0\t0.0\t0.3\t19.8\t2.5\n2\t2020-01-01T01:01:45\t2020-01-01 01:31:41.0\t5\t5.89\t1\tN\t125\t263\t1\t23.0\t0.5\t0.5\t5.36\t0.0\t0.3\t32.16\t2.5\n2\t2020-01-01T01:07:29\t2020-01-01 01:22:11.0\t1\t3.96\t1\tN\t148\t112\t2\t15.0\t0.5\t0.5\t0.0\t0.0\t0.3\t18.8\t2.5\n2\t2020-01-01T01:36:34\t2020-01-01 02:04:32.0\t1\t19.41\t1\tN\t247\t218\t2\t52.0\t0.5\t0.5\t0.0\t6.12\t0.3\t59.42\t0.0\n2\t2020-01-01T01:25:18\t2020-01-01 01:43:24.0\t1\t3.59\t1\tN\t112\t198\t2\t15.0\t0.5\t0.5\t0.0\t0.0\t0.3\t16.3\t0.0\n2\t2020-01-01T01:24:35\t2020-01-01 01:35:29.0\t1\t4.2\t1\tN\t137\t87\t1\t14.0\t0.5\t0.5\t3.56\t0.0\t0.3\t21.36\t2.5\n2\t2020-01-01T01:36:41\t2020-01-01 02:00:20.0\t1\t5.89\t1\tN\t87\t246\t1\t22.0\t0.5\t0.5\t2.58\t0.0\t0.3\t28.38\t2.5\n2\t2020-01-01T01:34:05\t2020-01-01 02:08:59.0\t1\t7.78\t1\tN\t107\t61\t2\t28.0\t0.5\t0.5\t0.0\t0.0\t0.3\t31.8\t2.5\n2\t2020-01-01T01:37:05\t2020-01-01 02:02:03.0\t1\t6.11\t1\tN\t151\t249\t1\t22.0\t0.5\t0.5\t7.74\t0.0\t0.3\t33.54\t2.5\n2\t2020-01-01T01:37:28\t2020-01-01 02:07:30.0\t1\t6.86\t1\tN\t238\t80\t1\t25.0\t0.5\t0.5\t5.76\t0.0\t0.3\t34.56\t2.5\n2\t2020-01-01T01:28:30\t2020-01-01 01:50:53.0\t2\t4.07\t1\tN\t170\t65\t1\t17.5\t0.5\t0.5\t0.0\t0.0\t0.3\t21.3\t2.5\n2\t2020-01-01T01:55:18\t2020-01-01 02:14:45.0\t3\t6.74\t1\tN\t65\t226\t1\t21.5\t0.5\t0.5\t4.56\t0.0\t0.3\t27.36\t0.0\n2\t2020-01-01T01:23:33\t2020-01-01 01:54:30.0\t1\t20.41\t1\tN\t132\t254\t2\t55.0\t0.5\t0.5\t0.0\t6.12\t0.3\t62.42\t0.0\n2\t2020-01-01T01:24:42\t2020-01-01 01:50:51.0\t2\t4.03\t1\tN\t164\t238\t1\t19.0\t0.5\t0.5\t4.56\t0.0\t0.3\t27.36\t2.5\n2\t2020-01-01T01:33:53\t2020-01-01 01:48:37.0\t1\t4.33\t1\tN\t142\t74\t2\t15.0\t0.5\t0.5\t0.0\t0.0\t0.3\t18.8\t2.5\n2\t2020-01-01T01:01:47\t2020-01-01 01:22:14.0\t1\t7.02\t1\tN\t262\t144\t1\t22.5\t0.5\t0.5\t5.26\t0.0\t0.3\t31.56\t2.5\n2\t2020-01-01T01:48:59\t2020-01-01 02:22:33.0\t6\t5.55\t1\tN\t162\t231\t2\t24.0\t0.5\t0.5\t0.0\t0.0\t0.3\t27.8\t2.5\n2\t2020-01-01T01:05\t2020-01-01 01:20:09.0\t1\t4.05\t1\tN\t263\t116\t2\t14.5\t0.5\t0.5\t0.0\t0.0\t0.3\t18.3\t2.5\n2\t2020-01-01T01:06:24\t2020-01-01 01:35:24.0\t1\t4.46\t1\tN\t50\t45\t2\t21.5\t0.5\t0.5\t0.0\t0.0\t0.3\t25.3\t2.5\n2\t2020-01-01T01:23:21\t2020-01-01 01:49:20.0\t1\t4.9\t1\tN\t79\t143\t1\t19.5\t0.5\t0.5\t3.0\t0.0\t0.3\t26.3\t2.5\n2\t2020-01-01T01:40:38\t2020-01-01 01:57:11.0\t2\t3.08\t1\tN\t142\t262\t1\t13.5\t0.5\t0.5\t3.46\t0.0\t0.3\t20.76\t2.5\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT * FROM yellow_cab WHERE trip_distance > 3.0\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: bc27d0813afc9914543b9f8ba54ab2a8)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: bc27d0813afc9914543b9f8ba54ab2a8)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### [User Defined Function][1]\n\n[1]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#flink-udf",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3><a href=\"http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#flink-udf\">User Defined Function</a></h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_1981532439",
+      "id": "paragraph_1631913793282_1125101925",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5023"
+    },
+    {
+      "text": "%flink.pyflink\n\nclass PythonLower(ScalarFunction):\n  def eval(self, s):\n    return s.lower()\n\nbt_env.register_function(\"python_lower\", udf(PythonLower(), DataTypes.STRING(), DataTypes.STRING()))",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:24:17+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_2010159887",
+      "id": "paragraph_1631971170838_571026712",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5024",
+      "dateFinished": "2021-10-14T08:24:22+0000",
+      "dateStarted": "2021-10-14T08:24:18+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT store_and_fwd_flag, python_lower(store_and_fwd_flag) as lower_store_and_fwd_flag FROM yellow_cab\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:24:27+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "store_and_fwd_flag": "string",
+                      "lower_store_and_fwd_flag": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/09114e2e0823d8e71e392b6ed4a6ee4b",
+              "$$hashKey": "object:19123"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_162870934",
+      "id": "paragraph_1631914612998_1488006572",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5025",
+      "dateFinished": "2021-10-14T08:24:50+0000",
+      "dateStarted": "2021-10-14T08:24:27+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "store_and_fwd_flag\tlower_store_and_fwd_flag\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\nN\tn\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT store_and_fwd_flag, python_lower(store_and_fwd_flag) as lower_store_and_fwd_flag FROM yellow_cab\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 09114e2e0823d8e71e392b6ed4a6ee4b)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 09114e2e0823d8e71e392b6ed4a6ee4b)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Window\n\n* [Window Aggregation][1]\n* [Different Types of Windows][2]\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\n[2]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Window</h3>\n<ul>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\">Window Aggregation</a></li>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\">Different Types of Windows</a></li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_1096889868",
+      "id": "paragraph_1631914668464_110600702",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5026"
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT AVG(trip_distance) as avg_trip_distance FROM yellow_cab GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:25:32+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "EXPR$0": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/c73db5ea643d35bf5990bef8078a0532",
+              "$$hashKey": "object:22356"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_1775707567",
+      "id": "paragraph_1631915205025_423615600",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5027",
+      "dateFinished": "2021-10-14T08:27:22+0000",
+      "dateStarted": "2021-10-14T08:25:32+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "avg_trip_distance\n1.26\n10.41\n3.27\n3.85\n4.15\n4.28\n4.34\n4.58\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT AVG(trip_distance) as avg_trip_distance FROM yellow_cab GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND)\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: c73db5ea643d35bf5990bef8078a0532)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: c73db5ea643d35bf5990bef8078a0532)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT AVG(fare_amount) as avg_fair_amount, VendorID FROM yellow_cab GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND), VendorID",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:25:43+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/25710d45672abc8bd1a7271047f3bb32",
+              "$$hashKey": "object:22485"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_1925900708",
+      "id": "paragraph_1631973073872_1754253292",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5028",
+      "dateFinished": "2021-10-14T08:27:36+0000",
+      "dateStarted": "2021-10-14T08:25:43+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "avg_fair_amount\tVendorID\n12.0\t2\n14.5\t1\n18.0\t2\n21.0\t2\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT AVG(fare_amount) as avg_fair_amount, VendorID FROM yellow_cab GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND), VendorID\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 25710d45672abc8bd1a7271047f3bb32)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 25710d45672abc8bd1a7271047f3bb32)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Join\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Join</h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_92269109",
+      "id": "paragraph_1631973603377_196915245",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5029"
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS vendor_details;\n\nCREATE TABLE vendor_details (\n    `VendorID` INT,\n    `VendorName` STRING\n) WITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv',\n   'format' = 'csv'\n)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:25:51+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741113_193534728",
+      "id": "paragraph_1631973627142_1880378138",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5030",
+      "dateFinished": "2021-10-14T08:25:53+0000",
+      "dateStarted": "2021-10-14T08:25:51+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Table has been dropped.\nTable has been created.\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nSELECT vendor_details.VendorName, yellow_cab.passenger_count, yellow_cab.trip_distance, yellow_cab.fare_amount FROM yellow_cab \nJOIN vendor_details\nON yellow_cab.VendorID = vendor_details.VendorID",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:25:55+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/1da70128041025cbf11714957e907827",
+              "$$hashKey": "object:21611"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741114_2086859217",
+      "id": "paragraph_1631974327411_1065309976",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5031",
+      "dateFinished": "2021-10-14T08:26:24+0000",
+      "dateStarted": "2021-10-14T08:25:55+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "VendorName\tpassenger_count\ttrip_distance\tfare_amount\nCreative Mobile Technologies\t4\t0.5\t5.0\nCreative Mobile Technologies\t4\t2.7\t13.0\nCreative Mobile Technologies\t2\t0.9\t7.0\nCreative Mobile Technologies\t1\t4.0\t15.0\nCreative Mobile Technologies\t2\t0.2\t3.0\nCreative Mobile Technologies\t1\t0.0\t4.5\nCreative Mobile Technologies\t2\t6.7\t26.5\nCreative Mobile Technologies\t2\t2.2\t8.0\nCreative Mobile Technologies\t2\t1.7\t8.0\nCreative Mobile Technologies\t2\t2.7\t10.0\nCreative Mobile Technologies\t0\t1.8\t9.0\nCreative Mobile Technologies\t2\t2.6\t24.5\nCreative Mobile Technologies\t0\t1.2\t6.5\nCreative Mobile Technologies\t1\t0.8\t6.0\nCreative Mobile Technologies\t2\t1.5\t6.5\nCreative Mobile Technologies\t0\t4.8\t17.5\nCreative Mobile Technologies\t1\t0.3\t4.0\nCreative Mobile Technologies\t1\t4.9\t18.5\nCreative Mobile Technologies\t4\t1.4\t8.0\nCreative Mobile Technologies\t1\t5.6\t21.5\nCreative Mobile Technologies\t1\t1.6\t9.0\nCreative Mobile Technologies\t2\t3.6\t16.0\nCreative Mobile Technologies\t4\t1.8\t8.5\nCreative Mobile Technologies\t2\t3.7\t13.5\nCreative Mobile Technologies\t2\t2.2\t10.5\nCreative Mobile Technologies\t1\t4.3\t18.5\nCreative Mobile Technologies\t4\t1.1\t6.5\nCreative Mobile Technologies\t2\t0.1\t0.0\nCreative Mobile Technologies\t2\t2.9\t13.0\nCreative Mobile Technologies\t1\t5.6\t19.5\nCreative Mobile Technologies\t1\t0.0\t42.2\nCreative Mobile Technologies\t1\t2.0\t9.5\nCreative Mobile Technologies\t2\t1.0\t6.5\nCreative Mobile Technologies\t1\t1.8\t8.0\nCreative Mobile Technologies\t1\t1.4\t10.0\nCreative Mobile Technologies\t2\t3.0\t12.0\nCreative Mobile Technologies\t2\t0.5\t3.5\nCreative Mobile Technologies\t2\t11.9\t37.5\nCreative Mobile Technologies\t2\t5.5\t22.0\nCreative Mobile Technologies\t1\t5.0\t20.0\nCreative Mobile Technologies\t1\t2.6\t12.5\nCreative Mobile Technologies\t2\t6.3\t20.0\nCreative Mobile Technologies\t1\t0.5\t3.5\nCreative Mobile Technologies\t0\t0.5\t4.0\nCreative Mobile Technologies\t4\t4.6\t15.5\nCreative Mobile Technologies\t2\t9.3\t32.0\nCreative Mobile Technologies\t2\t5.9\t21.0\nCreative Mobile Technologies\t1\t2.9\t11.5\nCreative Mobile Technologies\t2\t2.6\t12.0\nCreative Mobile Technologies\t2\t4.4\t17.5\nCreative Mobile Technologies\t1\t0.1\t35.0\nCreative Mobile Technologies\t3\t4.8\t17.0\nCreative Mobile Technologies\t1\t1.9\t8.0\nCreative Mobile Technologies\t1\t0.4\t3.5\nCreative Mobile Technologies\t2\t2.9\t15.5\nCreative Mobile Technologies\t4\t3.3\t14.0\nCreative Mobile Technologies\t2\t0.9\t5.5\nCreative Mobile Technologies\t4\t1.9\t12.0\nCreative Mobile Technologies\t2\t0.2\t2.0\nCreative Mobile Technologies\t2\t13.6\t89.7\nCreative Mobile Technologies\t1\t1.3\t7.5\nCreative Mobile Technologies\t1\t2.3\t9.5\nCreative Mobile Technologies\t4\t0.6\t4.5\nCreative Mobile Technologies\t2\t2.2\t10.0\nVeriFone Inc\t1\t3.79\t15.0\nVeriFone Inc\t2\t1.01\t6.0\nVeriFone Inc\t1\t1.82\t8.5\nVeriFone Inc\t1\t1.8\t8.0\nVeriFone Inc\t2\t0.61\t5.5\nVeriFone Inc\t3\t1.41\t8.0\nVeriFone Inc\t2\t2.6\t16.5\nVeriFone Inc\t1\t0.95\t5.5\nVeriFone Inc\t1\t0.86\t5.0\nVeriFone Inc\t1\t0.52\t4.5\nVeriFone Inc\t1\t1.67\t9.0\nVeriFone Inc\t1\t2.62\t12.5\nVeriFone Inc\t1\t0.54\t4.5\nVeriFone Inc\t1\t6.84\t23.5\nVeriFone Inc\t1\t5.74\t19.0\nVeriFone Inc\t1\t2.75\t13.0\nVeriFone Inc\t1\t5.15\t16.5\nVeriFone Inc\t1\t0.67\t5.5\nVeriFone Inc\t2\t1.15\t6.0\nVeriFone Inc\t2\t2.86\t13.5\nVeriFone Inc\t1\t1.45\t7.0\nVeriFone Inc\t1\t1.51\t8.0\nVeriFone Inc\t2\t5.12\t20.5\nVeriFone Inc\t1\t1.41\t7.0\nVeriFone Inc\t1\t3.69\t19.0\nVeriFone Inc\t1\t1.53\t11.0\nVeriFone Inc\t1\t4.32\t17.0\nVeriFone Inc\t1\t2.37\t10.5\nVeriFone Inc\t1\t6.37\t20.0\nVeriFone Inc\t1\t7.96\t25.5\nVeriFone Inc\t1\t1.63\t7.5\nVeriFone Inc\t1\t1.07\t7.0\nVeriFone Inc\t1\t0.71\t4.5\nVeriFone Inc\t1\t1.79\t8.0\nVeriFone Inc\t1\t0.84\t5.5\nVeriFone Inc\t1\t4.08\t17.5\nVeriFone Inc\t1\t1.57\t8.0\nVeriFone Inc\t1\t4.87\t20.0\nVeriFone Inc\t1\t0.92\t6.5\nVeriFone Inc\t1\t0.75\t6.0\nVeriFone Inc\t1\t13.67\t43.5\nVeriFone Inc\t5\t0.54\t5.5\nVeriFone Inc\t5\t0.76\t5.5\nVeriFone Inc\t2\t5.18\t19.0\nVeriFone Inc\t5\t4.28\t21.0\nVeriFone Inc\t3\t0.71\t5.0\nVeriFone Inc\t2\t2.87\t10.0\nVeriFone Inc\t2\t2.72\t11.0\nVeriFone Inc\t1\t2.15\t10.0\nVeriFone Inc\t1\t7.42\t24.5\nVeriFone Inc\t2\t4.12\t14.5\nVeriFone Inc\t2\t1.93\t10.0\nVeriFone Inc\t3\t3.78\t15.5\nVeriFone Inc\t1\t0.76\t5.0\nVeriFone Inc\t1\t2.82\t12.5\nVeriFone Inc\t1\t4.59\t20.5\nVeriFone Inc\t1\t1.29\t7.5\nVeriFone Inc\t1\t3.1\t12.0\nVeriFone Inc\t5\t1.7\t8.5\nVeriFone Inc\t1\t0.44\t5.0\nVeriFone Inc\t1\t9.82\t30.5\nVeriFone Inc\t5\t1.95\t10.5\nVeriFone Inc\t5\t2.16\t9.0\nVeriFone Inc\t5\t1.43\t6.5\nVeriFone Inc\t5\t1.74\t7.5\nVeriFone Inc\t5\t1.35\t8.5\nVeriFone Inc\t5\t2.33\t11.5\nVeriFone Inc\t2\t2.79\t14.0\nVeriFone Inc\t2\t1.66\t7.5\nVeriFone Inc\t2\t0.89\t5.5\nVeriFone Inc\t1\t0.74\t5.0\nVeriFone Inc\t1\t0.79\t5.5\nVeriFone Inc\t1\t2.11\t11.0\nVeriFone Inc\t1\t2.36\t10.5\nVeriFone Inc\t2\t0.55\t4.0\nVeriFone Inc\t1\t2.73\t11.5\nVeriFone Inc\t1\t0.65\t5.5\nVeriFone Inc\t1\t2.23\t9.5\nVeriFone Inc\t2\t1.52\t14.5\nVeriFone Inc\t2\t8.21\t29.5\nVeriFone Inc\t1\t1.19\t6.0\nVeriFone Inc\t1\t0.65\t6.0\nVeriFone Inc\t1\t1.7\t9.0\nVeriFone Inc\t1\t3.37\t15.0\nVeriFone Inc\t1\t1.17\t6.0\nVeriFone Inc\t2\t3.73\t13.5\nVeriFone Inc\t1\t4.82\t17.5\nVeriFone Inc\t1\t3.27\t13.5\nVeriFone Inc\t5\t4.26\t17.0\nVeriFone Inc\t3\t0.1\t3.0\nVeriFone Inc\t1\t1.26\t7.0\nVeriFone Inc\t1\t7.82\t29.5\nVeriFone Inc\t1\t6.19\t23.0\nVeriFone Inc\t1\t0.9\t6.0\nVeriFone Inc\t1\t5.53\t18.5\nVeriFone Inc\t4\t6.33\t22.0\nVeriFone Inc\t3\t2.49\t12.0\nVeriFone Inc\t1\t0.75\t5.0\nVeriFone Inc\t2\t1.4\t7.5\nVeriFone Inc\t1\t0.97\t7.0\nVeriFone Inc\t2\t1.01\t5.0\nVeriFone Inc\t4\t0.43\t6.0\nVeriFone Inc\t1\t1.17\t8.5\nVeriFone Inc\t1\t2.76\t9.5\nVeriFone Inc\t2\t0.29\t4.0\nVeriFone Inc\t1\t0.68\t5.0\nVeriFone Inc\t1\t1.61\t8.5\nVeriFone Inc\t1\t0.88\t6.5\nVeriFone Inc\t1\t4.36\t16.0\nVeriFone Inc\t1\t3.74\t18.0\nVeriFone Inc\t1\t8.0\t30.0\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: SELECT vendor_details.VendorName, yellow_cab.passenger_count, yellow_cab.trip_distance, yellow_cab.fare_amount FROM yellow_cab \nJOIN vendor_details\nON yellow_cab.VendorID = vendor_details.VendorID\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:172)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:105)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:89)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callSelect(FlinkSqlInterrpeter.java:503)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:266)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 1da70128041025cbf11714957e907827)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:161)\n\t... 16 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 1da70128041025cbf11714957e907827)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Write Data to S3",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:22:21+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Write Data to S3</h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741114_1769840255",
+      "id": "paragraph_1631915679832_248088104",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "READY",
+      "$$hashKey": "object:5032"
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS S3_yellow_cab;\n\nCREATE TABLE S3_yellow_cab (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP,\n   `tpep_dropoff_datetime` TIMESTAMP,\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT\n)\nPARTITIONED BY (VendorID)\nWITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/sql_output',\n   'format' = 'csv',\n   'sink.partition-commit.policy.kind'='success-file',\n   'sink.partition-commit,delay' = '1 min'\n)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:26:29+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741114_2097951286",
+      "id": "paragraph_1631916735017_609781534",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5033",
+      "dateFinished": "2021-10-14T08:26:31+0000",
+      "dateStarted": "2021-10-14T08:26:29+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Table has been dropped.\nTable has been created.\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%flink.pyflink\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.mode\", \"EXACTLY_ONCE\"    \n)\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.interval\", \"1min\"    \n)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:26:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741114_1360287816",
+      "id": "paragraph_1631918993870_61737840",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:5035",
+      "dateFinished": "2021-10-14T08:26:42+0000",
+      "dateStarted": "2021-10-14T08:26:41+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%flink.ssql(type=update)\n\nINSERT INTO S3_yellow_cab SELECT * FROM yellow_cab",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-14T08:26:45+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "FLINK JOB",
+          "tooltip": "View in Flink web UI",
+          "group": "flink",
+          "values": [
+            {
+              "jobUrl": "/flinkdashboard/#/job/51469175815d0c55d8700da718a852fe",
+              "$$hashKey": "object:22526"
+            }
+          ],
+          "interpreterSettingId": "flink"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634199741114_1938220319",
+      "id": "paragraph_1631916943831_927104854",
+      "dateCreated": "2021-10-14T08:22:21+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:5036",
+      "dateFinished": "2021-10-14T08:27:45+0000",
+      "dateStarted": "2021-10-14T08:26:45+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: INSERT INTO S3_yellow_cab SELECT * FROM yellow_cab\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 51469175815d0c55d8700da718a852fe)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callInsertInto(FlinkSqlInterrpeter.java:538)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInsertInto(FlinkStreamSqlInterpreter.java:97)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:273)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.util.concurrent.ExecutionException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 51469175815d0c55d8700da718a852fe)\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)\n\tat org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1719)\n\tat org.apache.flink.table.planner.delegation.ExecutorBase.execute(ExecutorBase.java:52)\n\tat org.apache.flink.table.api.internal.TableEnvironmentImpl.execute(TableEnvironmentImpl.java:1214)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callInsertInto(FlinkSqlInterrpeter.java:532)\n\t... 14 more\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 51469175815d0c55d8700da718a852fe)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:116)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:602)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$8(FutureUtils.java:309)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:149)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:114)\n\t... 18 more\n</div>\n        </div>\n    </div>\n</div>\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "sql_1v11",
+  "id": "2GHD9EVNU",
+  "defaultInterpreterGroup": "flink",
+  "version": "0.9.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/sql_1v11"
+}
