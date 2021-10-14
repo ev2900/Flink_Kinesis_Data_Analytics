@@ -15,11 +15,11 @@ To benifit the most from the sample(s) Flink code / labs provided it will be imp
 
 ## Interactive KDA Flink Zepline Notebook(s)
 
-Under construction ... this part of the read me isn't complete yet. 
+Under construction ... this part of the read me isn't complete yet ...
 
 ## Deployable KDA Flink Zepline Notebook(s)
 
-Under construction ... this part of the read me isn't complete yet.
+Under construction ... this part of the read me isn't complete yet ...
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
