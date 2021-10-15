@@ -1,6 +1,12 @@
 # Kinesis Data Analytics Lab
 
-Processing real-time data via. Kinesis Data Analytics - Apache Flink.
+Processing real-time data via. Kinesis Data Analytics - Apache Flink
+
+Youtube Video Series
+1.    [Send Data to Kinesis from a Python Script][12]
+2.    [Set up/deploy Kinesis Data Analytics Studio][13]
+3.    [Flink Stream SQL (ssql) Interactive Notebook via. Kinesis Data Analytics Studio][14]
+4.    [Deploy a Flink application from Kinesis Data Analytics Studio][15]
 
 ## Data Producer
 In order to get started with Apache Flink via. Kinesis Data Analytics (KDA). A Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
@@ -66,3 +72,8 @@ When the deployment is complete you will see the application under the analytics
 [9]:https://aws.amazon.com/blogs/aws/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/
 [10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.11
 [11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13
+[12]:
+[13]:eifjccnfirkeitbeirkggnvnccvvnbrifnlunbvrluvt
+
+[14]:
+[15]:
