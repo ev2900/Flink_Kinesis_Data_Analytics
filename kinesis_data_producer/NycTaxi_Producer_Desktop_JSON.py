@@ -6,7 +6,8 @@ import boto3
 '''
 
 	1. Run 'pip install boto3' if you have not already
-	2. Run 'aws configure'
+	2. Install aws CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+	3. Run 'aws configure'
 
 '''
 
