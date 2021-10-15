@@ -6,7 +6,7 @@ Youtube video(s)
 1.    [Send Data to Kinesis from a Python Script][12]
 
 ## Data Producer
-In order to get started with Apache Flink via. Kinesis Data Analytics (KDA). A Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
+In order to get started with Apache Flink via. Kinesis Data Analytics (KDA), a Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
 
 Two variations of this python data producer are provided.
 * [```NycTaxi_Producer_Cloud9_JSON.py```][4]
@@ -14,7 +14,7 @@ Two variations of this python data producer are provided.
 
 The two scripts/programs are very similar. A few differences exist depending on if you want run the producer application(s) from your local computer/laptop or if you want to use  [Cloud9][6].
 
-To benifit the most from the sample(s) Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
+To benefit the most from the sample Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
 
 ## Interactive KDA Flink Zeppelin Notebook(s)
 
@@ -40,7 +40,7 @@ Kinesis Data Analytics Studio provides an excellent development environment. Whe
 
 To deploy your notebook 
 
-Ensure that when you created your notebook enviorment you configured the ```Deploy as application configuration - optional``` setting with a valid S3 bucket.
+Ensure that when you created your notebook environment you configured the ```Deploy as application configuration - optional``` setting with a valid S3 bucket.
 
 <img width="614" alt="deploy_config" src="https://user-images.githubusercontent.com/5414004/137352921-d16fc081-4190-4e42-b978-26b247139f86.png">
 
