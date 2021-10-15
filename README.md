@@ -18,7 +18,7 @@ For a step by step walk through view the Youtube video [Send Data to Kinesis fro
 
 To benefit the most from the sample Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
 
-## Interactive KDA Flink Zeppelin Notebook(s)
+## Interactive KDA Flink Zeppelin Notebook(s) 
 
 The [```interactive_KDA_flink_zepline_notebook```][7] folder provides [Zeppelin][8] notebooks that are design to work with [Kinesis Data Analytics Studio][9]. Deploy a Kinesis Data Analytics Studio instance and upload the Zeppelin (.zpln) notebook(s). 
 
