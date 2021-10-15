@@ -72,8 +72,7 @@ When the deployment is complete you will see the application under the analytics
 [9]:https://aws.amazon.com/blogs/aws/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/
 [10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.11
 [11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13
-[12]:
-[13]:eifjccnfirkeitbeirkggnvnccvvnbrifnlunbvrluvt
-
+[12]:https://www.youtube.com/watch?v=pPCg6SWhv-0
+[13]:
 [14]:
 [15]:
