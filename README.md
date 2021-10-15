@@ -14,6 +14,8 @@ Two variations of this python data producer are provided.
 
 The two scripts/programs are very similar. A few differences exist depending on if you want run the producer application(s) from your local computer/laptop or if you want to use  [Cloud9][6].
 
+For a step by step walk through view the Youtube video [Send Data to Kinesis from a Python Script][12] 
+
 To benefit the most from the sample Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
 
 ## Interactive KDA Flink Zeppelin Notebook(s)
