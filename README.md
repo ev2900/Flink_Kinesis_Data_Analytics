@@ -3,7 +3,7 @@
 Processing real-time data via. Kinesis Data Analytics - Apache Flink
 
 Youtube Video Series
-1.    [Send Data to Kinesis from a Python Producer][12]
+1.    [Send Data to Kinesis from a Python Script][12]
 2.    [Set up/deploy Kinesis Data Analytics Studio][13]
 3.    [Flink Stream SQL (ssql) Interactive Notebook via. Kinesis Data Analytics Studio][14]
 4.    [Deploy a Flink application from Kinesis Data Analytics Studio][15]
