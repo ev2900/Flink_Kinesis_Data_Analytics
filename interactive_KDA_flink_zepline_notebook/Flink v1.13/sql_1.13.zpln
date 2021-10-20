@@ -3,7 +3,7 @@
     {
       "text": "%md\n### Helpful Flink Resources\n\n* [Flink SQL API Examples. Common SQL query patterns. Windows, aggregation ...][1]\n* [AWS Online Tech Talks (YouTube). Streaming Analytics via. Kinesis Data Analytics Studio][2]\n* [Flink on Zeppelin 13 part YouTube Series][3]\n* [Flink on Zeppeling - Streaming Blog Post][4]\n* [Flink interpreter for Apache Zeppelin (Flink Documenation)][5]\n* [Flink SQL Documentation 1.13][6]\n* [Flink Kinesis Connector][7]\n\n[1]:https://awsfeed.com/whats-new/big-data/get-started-with-flink-sql-apis-in-amazon-kinesis-data-analytics-studio\n[2]:https://www.youtube.com/watch?v=mRDst424mKY\n[3]:https://www.youtube.com/watch?v=YxPo0Fosjjg&list=PL4oy12nnS7FFtg3KV1iS5vDb0pTz12VcX\n[4]:https://zjffdu.medium.com/flink-on-zeppelin-part-3-streaming-5fca1e16754\n[5]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#streamexecutionenvironment-executionenvironment-streamtableenvir\n[6]:https://ci.apache.org/projects/flink/flink-docs-release-1.13/dev/table/sql/\n[7]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/kinesis/",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T09:03:59+0000",
+      "dateUpdated": "2021-10-20T18:03:53+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -39,16 +39,16 @@
       "jobName": "paragraph_1634180088584_1412421771",
       "id": "paragraph_1634180088584_1412421771",
       "dateCreated": "2021-10-14T02:54:48+0000",
-      "dateStarted": "2021-10-14T09:04:00+0000",
-      "dateFinished": "2021-10-14T09:04:00+0000",
+      "dateStarted": "2021-10-20T18:03:53+0000",
+      "dateFinished": "2021-10-20T18:03:53+0000",
       "status": "FINISHED",
       "focus": true,
-      "$$hashKey": "object:198"
+      "$$hashKey": "object:24244"
     },
     {
       "text": "%md\n### [Flink's Zeppelin Interpreters][1] \n\n| Name | Class | Description\n| --- | ----------- | --------|\n| %flink | FlinkInterpreter | Creates ExecutionEnvironment/StreamExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment and provides a Scala environment\n| %flink.pyflink | PyFlinkInterpreter | Provides a python environment\n| %flink.ipyflink | IPyFlinkInterpreter | Provides an ipython environment\n| %flink.ssql | FlinkStreamSqlInterpreter | Provides a stream sql environment\n| %flink.bsql | FlinkBatchSqlInterpreter | Provides a batch sql environment\n\n[1]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#overview",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T09:05:31+0000",
+      "dateUpdated": "2021-10-20T18:03:56+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -84,15 +84,15 @@
       "jobName": "paragraph_1634198240376_858784231",
       "id": "paragraph_1634198240376_858784231",
       "dateCreated": "2021-10-14T07:57:20+0000",
-      "dateStarted": "2021-10-14T09:05:31+0000",
-      "dateFinished": "2021-10-14T09:05:31+0000",
+      "dateStarted": "2021-10-20T18:03:56+0000",
+      "dateFinished": "2021-10-20T18:03:56+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:199"
+      "$$hashKey": "object:24245"
     },
     {
       "text": "%md\n### Create Table in Glue Data Catalog\n\n* [Flink Supported Data Types][1]\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-release-1.13/docs/dev/table/types/",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T09:04:01+0000",
+      "dateUpdated": "2021-10-20T18:04:01+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -128,10 +128,10 @@
       "jobName": "paragraph_1634198356985_158700888",
       "id": "paragraph_1634198356985_158700888",
       "dateCreated": "2021-10-14T07:59:16+0000",
-      "dateStarted": "2021-10-14T09:04:01+0000",
-      "dateFinished": "2021-10-14T09:04:01+0000",
+      "dateStarted": "2021-10-20T18:04:01+0000",
+      "dateFinished": "2021-10-20T18:04:01+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:200"
+      "$$hashKey": "object:24246"
     },
     {
       "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab_1v13;\n\nCREATE TABLE yellow_cab_1v13 (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP(3),\n   `tpep_dropoff_datetime` TIMESTAMP(3),\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3) METADATA FROM 'timestamp' VIRTUAL,\n   `shard_id` VARCHAR(128) NOT NULL METADATA FROM 'shard-id' VIRTUAL,\n   `sequence_number` VARCHAR(128) NOT NULL METADATA FROM 'sequence-number' VIRTUAL,\n   WATERMARK FOR tpep_dropoff_datetime AS tpep_dropoff_datetime - INTERVAL '5' SECOND\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'LATEST',\n   'format' = 'json'\n);",
@@ -173,12 +173,12 @@
       "dateStarted": "2021-10-14T09:05:36+0000",
       "dateFinished": "2021-10-14T09:05:39+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:201"
+      "$$hashKey": "object:24247"
     },
     {
       "text": "%flink.ssql\n\n-- SHOW CATALOGS;\n-- SHOW DATABASES;\n-- SHOW TABLES;\n\nDESCRIBE yellow_cab_1v13;",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T12:23:02+0000",
+      "dateUpdated": "2021-10-14T12:26:49+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -201,7 +201,8 @@
                   "tableGridState": {},
                   "tableColumnTypeState": {
                     "names": {
-                      "database": "string"
+                      "Column": "string",
+                      "Type": "string"
                     },
                     "updated": false
                   },
@@ -325,12 +326,12 @@
       "dateStarted": "2021-10-14T12:22:55+0000",
       "dateFinished": "2021-10-14T12:22:55+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:202"
+      "$$hashKey": "object:24248"
     },
     {
       "text": "%md\n\n### Select all Fields from the yellow-cab-trip stream",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T09:04:04+0000",
+      "dateUpdated": "2021-10-20T18:04:08+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -366,10 +367,10 @@
       "jobName": "paragraph_1634198755389_1141638486",
       "id": "paragraph_1634198755389_1141638486",
       "dateCreated": "2021-10-14T08:05:55+0000",
-      "dateStarted": "2021-10-14T09:04:05+0000",
-      "dateFinished": "2021-10-14T09:04:05+0000",
+      "dateStarted": "2021-10-20T18:04:08+0000",
+      "dateFinished": "2021-10-20T18:04:08+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:203"
+      "$$hashKey": "object:24249"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13;",
@@ -468,7 +469,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/70ccb7c6793291988c5bb72b0080d1cb",
-              "$$hashKey": "object:13384"
+              "$$hashKey": "object:25498"
             }
           ],
           "interpreterSettingId": "flink"
@@ -481,12 +482,12 @@
       "dateStarted": "2021-10-14T12:19:49+0000",
       "dateFinished": "2021-10-14T12:20:09+0000",
       "status": "ABORT",
-      "$$hashKey": "object:204"
+      "$$hashKey": "object:24250"
     },
     {
       "text": "%md\n### Filter",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T08:07:11+0000",
+      "dateUpdated": "2021-10-20T18:04:13+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -522,10 +523,10 @@
       "jobName": "paragraph_1634179574809_297509121",
       "id": "paragraph_1634179574809_297509121",
       "dateCreated": "2021-10-14T02:46:14+0000",
-      "dateStarted": "2021-10-14T08:07:11+0000",
-      "dateFinished": "2021-10-14T08:07:11+0000",
+      "dateStarted": "2021-10-20T18:04:13+0000",
+      "dateFinished": "2021-10-20T18:04:13+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:205"
+      "$$hashKey": "object:24251"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13 WHERE trip_distance > 3.0 ",
@@ -624,7 +625,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/1acdc2d608009a6c810c16b30db9d7db",
-              "$$hashKey": "object:1277"
+              "$$hashKey": "object:25658"
             }
           ],
           "interpreterSettingId": "flink"
@@ -637,12 +638,12 @@
       "dateStarted": "2021-10-14T08:39:45+0000",
       "dateFinished": "2021-10-14T08:40:24+0000",
       "status": "ABORT",
-      "$$hashKey": "object:206"
+      "$$hashKey": "object:24252"
     },
     {
       "text": "%md\n### User Defined Function",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T08:08:52+0000",
+      "dateUpdated": "2021-10-20T18:04:18+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -678,10 +679,10 @@
       "jobName": "paragraph_1634198882367_874990863",
       "id": "paragraph_1634198882367_874990863",
       "dateCreated": "2021-10-14T08:08:02+0000",
-      "dateStarted": "2021-10-14T08:08:52+0000",
-      "dateFinished": "2021-10-14T08:08:52+0000",
+      "dateStarted": "2021-10-20T18:04:18+0000",
+      "dateFinished": "2021-10-20T18:04:18+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:207"
+      "$$hashKey": "object:24253"
     },
     {
       "text": "%flink.pyflink\n\nclass PythonLower(ScalarFunction):\n  def eval(self, s):\n    return s.lower()\n\nbt_env.register_function(\"python_lower\", udf(PythonLower(), DataTypes.STRING(), DataTypes.STRING()))",
@@ -720,7 +721,7 @@
       "dateStarted": "2021-10-14T08:40:33+0000",
       "dateFinished": "2021-10-14T08:40:34+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:208"
+      "$$hashKey": "object:24254"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT store_and_fwd_flag, python_lower(store_and_fwd_flag) as lower_store_and_fwd_flag FROM yellow_cab_1v13\n",
@@ -800,7 +801,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/d8429d6369dcdc0762a7f69644130633",
-              "$$hashKey": "object:1403"
+              "$$hashKey": "object:25860"
             }
           ],
           "interpreterSettingId": "flink"
@@ -813,12 +814,12 @@
       "dateStarted": "2021-10-14T08:40:38+0000",
       "dateFinished": "2021-10-14T08:41:06+0000",
       "status": "ABORT",
-      "$$hashKey": "object:209"
+      "$$hashKey": "object:24255"
     },
     {
       "text": "%md\n### Window\n\n* [Window Aggregation][1]\n* [Different Types of Windows][2]\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\n[2]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\n",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T08:10:57+0000",
+      "dateUpdated": "2021-10-20T18:04:27+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -854,15 +855,15 @@
       "jobName": "paragraph_1634198999194_1033065886",
       "id": "paragraph_1634198999194_1033065886",
       "dateCreated": "2021-10-14T08:09:59+0000",
-      "dateStarted": "2021-10-14T08:10:57+0000",
-      "dateFinished": "2021-10-14T08:10:57+0000",
+      "dateStarted": "2021-10-20T18:04:27+0000",
+      "dateFinished": "2021-10-20T18:04:27+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:210"
+      "$$hashKey": "object:24256"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT AVG(trip_distance) as avg_trip_distance FROM yellow_cab_1v13 GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND)",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T12:20:19+0000",
+      "dateUpdated": "2021-10-14T13:01:44+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -874,7 +875,35 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
-        "results": {},
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "avg_trip_distance": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
         "enabled": true
       },
       "settings": {
@@ -908,7 +937,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/ef9ab6d28e4750c4e4c8228092c84dfc",
-              "$$hashKey": "object:14294"
+              "$$hashKey": "object:26020"
             }
           ],
           "interpreterSettingId": "flink"
@@ -921,7 +950,7 @@
       "dateStarted": "2021-10-14T12:20:20+0000",
       "dateFinished": "2021-10-14T12:20:49+0000",
       "status": "ABORT",
-      "$$hashKey": "object:211"
+      "$$hashKey": "object:24257"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT AVG(fare_amount) as avg_fair_amount, VendorID FROM yellow_cab_1v13 GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND), VendorID",
@@ -1001,7 +1030,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/6471ed5b6cdfe7090abea4d104582cd1",
-              "$$hashKey": "object:1529"
+              "$$hashKey": "object:26134"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1014,12 +1043,12 @@
       "dateStarted": "2021-10-14T08:12:51+0000",
       "dateFinished": "2021-10-14T08:13:47+0000",
       "status": "ABORT",
-      "$$hashKey": "object:212"
+      "$$hashKey": "object:24258"
     },
     {
-      "text": "%md\n### Join",
+      "text": "%md\n### Join\n\n***Note*** before completing this next section ensure that you upload the [vendor_ref.csv][1] to an S3 bucket and update the ``` 'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv' ``` in the paragraph below with the path of the CSV [vendor_ref.csv][1] file you uploaded.\n\n[1]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/vendor_ref.csv",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T08:13:07+0000",
+      "dateUpdated": "2021-10-20T18:43:02+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1045,7 +1074,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Join</h3>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<h3>Join</h3>\n<p><em><strong>Note</strong></em> before completing this next section ensure that you upload the <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/vendor_ref.csv\">vendor_ref.csv</a> to an S3 bucket and update the <code>'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv'</code> in the paragraph below with the path of the CSV <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/vendor_ref.csv\">vendor_ref.csv</a> file you uploaded.</p>\n\n</div>"
           }
         ]
       },
@@ -1055,10 +1084,10 @@
       "jobName": "paragraph_1634199171630_1379577203",
       "id": "paragraph_1634199171630_1379577203",
       "dateCreated": "2021-10-14T08:12:51+0000",
-      "dateStarted": "2021-10-14T08:13:07+0000",
-      "dateFinished": "2021-10-14T08:13:07+0000",
+      "dateStarted": "2021-10-20T18:43:02+0000",
+      "dateFinished": "2021-10-20T18:43:02+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:213"
+      "$$hashKey": "object:24259"
     },
     {
       "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS vendor_details_1v13;\n\nCREATE TABLE vendor_details_1v13 (\n    `VendorID` INT,\n    `VendorName` STRING\n) WITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv',\n   'format' = 'csv'\n)",
@@ -1100,7 +1129,7 @@
       "dateStarted": "2021-10-14T08:14:26+0000",
       "dateFinished": "2021-10-14T08:14:27+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:214"
+      "$$hashKey": "object:24260"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT vendor_details_1v13.VendorName, yellow_cab_1v13.passenger_count, yellow_cab_1v13.trip_distance, yellow_cab_1v13.fare_amount FROM yellow_cab_1v13 \nJOIN vendor_details_1v13\nON yellow_cab_1v13.VendorID = vendor_details_1v13.VendorID\n",
@@ -1182,7 +1211,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/e012fbff9fd8c2db42b80beee7eb7cfd",
-              "$$hashKey": "object:1655"
+              "$$hashKey": "object:26346"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1195,7 +1224,7 @@
       "dateStarted": "2021-10-14T08:16:03+0000",
       "dateFinished": "2021-10-14T08:16:33+0000",
       "status": "ABORT",
-      "$$hashKey": "object:215"
+      "$$hashKey": "object:24261"
     },
     {
       "text": "%md\n### Write Data to S3",
@@ -1239,7 +1268,7 @@
       "dateStarted": "2021-10-14T12:20:58+0000",
       "dateFinished": "2021-10-14T12:20:59+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:216"
+      "$$hashKey": "object:24262"
     },
     {
       "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS S3_yellow_cab_1v13;\n\nCREATE TABLE S3_yellow_cab_1v13 (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP,\n   `tpep_dropoff_datetime` TIMESTAMP,\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3),\n   `shard_id` VARCHAR(128),\n   `sequence_number` VARCHAR(128)\n)\nPARTITIONED BY (VendorID)\nWITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/sql_output_1v13',\n   'format' = 'csv',\n   'sink.partition-commit.policy.kind'='success-file',\n   'sink.partition-commit.delay' = '1 min'\n)",
@@ -1281,7 +1310,7 @@
       "dateStarted": "2021-10-14T08:20:26+0000",
       "dateFinished": "2021-10-14T08:20:28+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:217"
+      "$$hashKey": "object:24263"
     },
     {
       "text": "%flink.pyflink\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.mode\", \"EXACTLY_ONCE\"    \n)\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.interval\", \"1min\"    \n)",
@@ -1323,7 +1352,7 @@
       "dateStarted": "2021-10-14T08:20:31+0000",
       "dateFinished": "2021-10-14T08:20:32+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:218"
+      "$$hashKey": "object:24264"
     },
     {
       "text": "%flink.ssql(type=update)\n\nINSERT INTO S3_yellow_cab_1v13 SELECT * FROM yellow_cab_1v13",
@@ -1370,7 +1399,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/f24c550bf5abd3494d797628cd1df83f",
-              "$$hashKey": "object:1821"
+              "$$hashKey": "object:26560"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1383,12 +1412,12 @@
       "dateStarted": "2021-10-14T08:20:34+0000",
       "dateFinished": "2021-10-14T08:22:50+0000",
       "status": "ABORT",
-      "$$hashKey": "object:219"
+      "$$hashKey": "object:24265"
     },
     {
-      "text": "%md\n### Start (restart) processing the yellow-cab-trip data stream from the begining of the kinesis data stream\n\n```\n'scan.stream.initpos' = 'TRIM_HORIZON'\n```\n\nin the create table statement. Reference [start reading position for more information][1]\n\n[1]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/kinesis/#start-reading-position\n\n",
+      "text": "%md\n### Start (restart) processing the yellow-cab-trip data stream from the begining of the kinesis data stream\n\n```\n'scan.stream.initpos' = 'TRIM_HORIZON'\n```\n\nin the create table statement. Reference [start reading position for more information][1]\n\n[1]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/kinesis/#start-reading-position",
       "user": "anonymous",
-      "dateUpdated": "2021-10-14T12:21:25+0000",
+      "dateUpdated": "2021-10-20T18:03:37+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1424,10 +1453,10 @@
       "jobName": "paragraph_1634200235049_1444638872",
       "id": "paragraph_1634200235049_1444638872",
       "dateCreated": "2021-10-14T08:30:35+0000",
-      "dateStarted": "2021-10-14T12:21:25+0000",
-      "dateFinished": "2021-10-14T12:21:25+0000",
+      "dateStarted": "2021-10-20T18:03:37+0000",
+      "dateFinished": "2021-10-20T18:03:37+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:220"
+      "$$hashKey": "object:24266"
     },
     {
       "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab_1v13_Restart;\n\nCREATE TABLE yellow_cab_1v13_Restart (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP(3),\n   `tpep_dropoff_datetime` TIMESTAMP(3),\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3) METADATA FROM 'timestamp' VIRTUAL,\n   `shard_id` VARCHAR(128) NOT NULL METADATA FROM 'shard-id' VIRTUAL,\n   `sequence_number` VARCHAR(128) NOT NULL METADATA FROM 'sequence-number' VIRTUAL,\n   WATERMARK FOR tpep_dropoff_datetime AS tpep_dropoff_datetime - INTERVAL '5' SECOND\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'TRIM_HORIZON',\n   'format' = 'json'\n);",
@@ -1469,7 +1498,7 @@
       "dateStarted": "2021-10-14T08:52:45+0000",
       "dateFinished": "2021-10-14T08:52:48+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:221"
+      "$$hashKey": "object:24267"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13_Restart;",
@@ -1564,7 +1593,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/81bdf99b6b11a8acc20781023d790514",
-              "$$hashKey": "object:1947"
+              "$$hashKey": "object:26762"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1577,38 +1606,7 @@
       "dateStarted": "2021-10-14T08:52:50+0000",
       "dateFinished": "2021-10-14T08:54:13+0000",
       "status": "ABORT",
-      "$$hashKey": "object:222"
-    },
-    {
-      "text": "%flink.ssql\n",
-      "user": "anonymous",
-      "dateUpdated": "2021-10-14T08:52:50+0000",
-      "progress": 0,
-      "config": {
-        "colWidth": 12,
-        "fontSize": 9,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/sql"
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1634201570596_686261932",
-      "id": "paragraph_1634201570596_686261932",
-      "dateCreated": "2021-10-14T08:52:50+0000",
-      "status": "READY",
-      "$$hashKey": "object:223"
+      "$$hashKey": "object:24268"
     }
   ],
   "name": "sql_1.13",
