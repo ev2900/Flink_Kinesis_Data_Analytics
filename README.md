@@ -4,6 +4,7 @@ Processing real-time data via. Kinesis Data Analytics - Apache Flink
 
 Youtube video(s)
 1.    [Send Data to Kinesis from a Python Script][12]
+2.    Create a Kinesis Data Analytics Studio and Upload a Notebook
 
 ## Data Producer
 In order to get started with Apache Flink via. Kinesis Data Analytics (KDA), a Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
