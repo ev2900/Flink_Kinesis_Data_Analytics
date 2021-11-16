@@ -61,9 +61,9 @@ When the deployment is complete you will see the application under the analytics
 
 <img width="739" alt="deployed" src="https://user-images.githubusercontent.com/5414004/137364432-45a2fa75-09bf-4c28-82e0-d007c6cd66b7.png">
 
-## Future Improvements Planned for this Workshop
-* Raw Format Tables
-* Versioned Tables
+## Future Improvements Planned for this Repository
+* [Raw Format Tables][14]
+* [Versioned Tables][15]
 * Managed Managed Streaming for Kafka (MSK)
 * Additional YouTube videos
 
@@ -80,3 +80,5 @@ When the deployment is complete you will see the application under the analytics
 [11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13
 [12]:https://www.youtube.com/watch?v=pPCg6SWhv-0
 [13]:https://www.youtube.com/watch?v=5--oWB2udCc
+[14]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/formats/raw/
+[15]:https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/concepts/versioned_tables/
