@@ -61,6 +61,12 @@ When the deployment is complete you will see the application under the analytics
 
 <img width="739" alt="deployed" src="https://user-images.githubusercontent.com/5414004/137364432-45a2fa75-09bf-4c28-82e0-d007c6cd66b7.png">
 
+## Future Improvements Planned for this Workshop
+* Raw Format Tables
+* Versioned Tables
+* Managed Managed Streaming for Kafka (MSK)
+* Additional YouTube videos
+
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
 [3]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/blob/main/data/yellow_tripdata_2020-01.csv
