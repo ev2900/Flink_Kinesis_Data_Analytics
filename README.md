@@ -5,6 +5,7 @@ Processing real-time data via. Kinesis Data Analytics - Apache Flink
 Youtube video(s)
 1.    [Send Data to Kinesis from a Python Script][12]
 2.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
+3.    [Running the Interactive Flink Zeppelin Notebook][16]
 
 ## Data Producer
 In order to get started with Apache Flink via. Kinesis Data Analytics (KDA), a Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
@@ -36,6 +37,8 @@ To upload the notebook
 Once uploaded and opended in Zeppelin. Run the notebook one cell at a time
 
 <img width="788" alt="interactive_notebook" src="https://user-images.githubusercontent.com/5414004/137350050-c962e127-f198-4819-9e2a-55dfc16571ed.PNG">
+
+For a step by step walk through of the notebook running view the Youtube video [Running the Interactive Flink Zeppelin Notebook][16]
 
 ## Deployable KDA Flink Zeppelin Notebook(s)
 
@@ -81,3 +84,4 @@ When the deployment is complete you will see the application under the analytics
 [13]:https://www.youtube.com/watch?v=5--oWB2udCc
 [14]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/formats/raw/
 [15]:https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/concepts/versioned_tables/
+[16]:https://youtu.be/dO9GFcAy-YM
