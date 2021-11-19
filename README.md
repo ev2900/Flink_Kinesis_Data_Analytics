@@ -68,7 +68,7 @@ When the deployment is complete you will see the application under the analytics
 * [Versioned Tables][15]
 * [Data Gen][17]
 * Managed Managed Streaming for Kafka (MSK)
-* Additional YouTube videos
+* YouTube video - Deployable KDA Flink Zeppelin Notebook
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
