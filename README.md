@@ -66,6 +66,7 @@ When the deployment is complete you will see the application under the analytics
 
 ## Future Improvements Planned for this Repository
 * [Versioned Tables][15]
+* [Data Gen][17]
 * Managed Managed Streaming for Kafka (MSK)
 * Additional YouTube videos
 
@@ -85,3 +86,4 @@ When the deployment is complete you will see the application under the analytics
 [14]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/formats/raw/
 [15]:https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/concepts/versioned_tables/
 [16]:https://youtu.be/dO9GFcAy-YM
+[17]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/datagen/
