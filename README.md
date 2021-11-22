@@ -69,6 +69,7 @@ When the deployment is complete you will see the application under the analytics
 * [Data Gen][17]
 * Managed Managed Streaming for Kafka (MSK)
 * YouTube video - Deployable KDA Flink Zeppelin Notebook
+* KDA notebook that can send data to Kinesis ie. replaces the need to the python data producer
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
