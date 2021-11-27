@@ -79,7 +79,7 @@ When the deployment is complete you will see the application under the analytics
 [4]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/blob/main/kinesis_data_producer/NycTaxi_Producer_Cloud9_JSON.py
 [5]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/blob/main/kinesis_data_producer/NycTaxi_Producer_Desktop_JSON.py
 [6]:https://aws.amazon.com/cloud9/
-[7]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook
+[7]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zeppelin_notebook
 [8]:https://flink.apache.org/news/2020/06/15/flink-on-zeppelin-part1.html
 [9]:https://aws.amazon.com/blogs/aws/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/
 [10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.11
