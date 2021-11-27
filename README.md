@@ -8,6 +8,9 @@ Youtube video(s)
 3.    [Running the Interactive Flink Zeppelin Notebook][16]
 
 ## Data Producer
+
+***Note*** if you want to get started and do not want to set up a Kinesis Data Stream & load data into the stream / set up a [data simulator][19], use the [sql_1.13_DataGen.zpln][18] notebook. This Zeppelin notebook uses the Flink [DataGen][17] connector to generate data with in the Zeppelin notebook **without needing a connnection to Kineis, Kafka**.   
+
 In order to get started with Apache Flink via. Kinesis Data Analytics (KDA), a Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
 
 Two variations of this python data producer are provided.
@@ -22,9 +25,9 @@ To benefit the most from the sample Flink code / labs provided it will be import
 
 ## Interactive KDA Flink Zeppelin Notebook(s) 
 
-The [```interactive_KDA_flink_zepline_notebook```][7] folder provides [Zeppelin][8] notebooks that are design to work with [Kinesis Data Analytics Studio][9]. Deploy a Kinesis Data Analytics Studio instance and upload the Zeppelin (.zpln) notebook(s). 
+The [```interactive_KDA_flink_zeppelin_notebook```][7] folder provides [Zeppelin][8] notebooks that are design to work with [Kinesis Data Analytics Studio][9]. Deploy a Kinesis Data Analytics Studio instance and upload the Zeppelin (.zpln) notebook(s). 
 
-Note - with in the the [```interactive_KDA_flink_zepline_notebook```][7] folder are subfolders 
+Note - with in the the [```interactive_KDA_flink_zeppelin_notebook```][7] folder are subfolders 
 * [```Flink v1.11```][10]
 * [```Flink v1.13```][11]
 
@@ -66,7 +69,6 @@ When the deployment is complete you will see the application under the analytics
 
 ## Future Improvements Planned for this Repository
 * [Versioned Tables][15]
-* [Data Gen][17]
 * Managed Managed Streaming for Kafka (MSK)
 * YouTube video - Deployable KDA Flink Zeppelin Notebook
 * KDA notebook that can send data to Kinesis ie. replaces the need to the python data producer
@@ -88,3 +90,5 @@ When the deployment is complete you will see the application under the analytics
 [15]:https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/concepts/versioned_tables/
 [16]:https://youtu.be/dO9GFcAy-YM
 [17]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/datagen/
+[18]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13/sql_1.13_DataGen.zpln
+[19]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/tree/main/kinesis_data_producer
