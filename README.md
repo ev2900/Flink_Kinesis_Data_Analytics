@@ -82,13 +82,13 @@ When the deployment is complete you will see the application under the analytics
 [7]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook
 [8]:https://flink.apache.org/news/2020/06/15/flink-on-zeppelin-part1.html
 [9]:https://aws.amazon.com/blogs/aws/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/
-[10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.11
-[11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13
+[10]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.11
+[11]:https://github.com/ev2900/Apache_Flink_via_Kinesis_Data_Analytics/tree/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.13
 [12]:https://www.youtube.com/watch?v=pPCg6SWhv-0
 [13]:https://www.youtube.com/watch?v=5--oWB2udCc
 [14]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/formats/raw/
 [15]:https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/dev/table/concepts/versioned_tables/
 [16]:https://youtu.be/dO9GFcAy-YM
 [17]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/datagen/
-[18]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/interactive_KDA_flink_zepline_notebook/Flink%20v1.13/sql_1.13_DataGen.zpln
+[18]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.13/sql_1.13_DataGen.zpln
 [19]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/tree/main/kinesis_data_producer
