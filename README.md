@@ -71,9 +71,10 @@ When the deployment is complete you will see the application under the analytics
 
 ## Future Improvements Planned for this Repository
 * [Versioned Tables][15]
-* Managed Managed Streaming for Kafka (MSK)
+* Examples for Managed Streaming for Kafka (MSK)
 * YouTube video - Deployable KDA Flink Zeppelin Notebook
-* KDA notebook that can send data to Kinesis ie. replaces the need to the python data producer
+* YouTube video - DataGen based interactive_KDA_flink_zeppelin_notebook [sql_1.13_DataGen.zpln][18]
+* YouTube video - KDA Notebook producer [Nyc_Taxi_Produce_KDA_Zeppelin_Notebook][20]
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
