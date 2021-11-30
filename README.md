@@ -9,7 +9,7 @@ Youtube video(s)
 
 ## Data Producer
 
-***Note*** if you want to get started and do not want to set up a Kinesis Data Stream & load data into the stream / set up a [data simulator][19], use the [sql_1.13_DataGen.zpln][18] notebook. This Zeppelin notebook uses the Flink [DataGen][17] connector to generate data with in the Zeppelin notebook **without needing a connnection to Kineis, Kafka**.   
+***Note*** if you want to get started and do not want to set up a Kinesis Data Stream & load data into the stream / set up a [data simulator][19], use the [sql_1.13_DataGen.zpln][18] notebook. This Zeppelin notebook uses the Flink [DataGen][17] connector to generate data with in the Zeppelin notebook **without needing a connnection to Kineis or Kafka**.
 
 In order to get started with Apache Flink via. Kinesis Data Analytics (KDA), a Kinesis Data Stream with sample data is required. The [```kinesis_data_producer```][1] folder provides two python scripts that will read the data from the CSV file [```yellow_tripdata_2020-01.csv```][3] in the [```data```][2] folder and stream each line in the file as a JSON record/message to a Kineis Data Stream specified.
 
@@ -20,6 +20,8 @@ Two variations of this python data producer are provided.
 The two scripts/programs are very similar. A few differences exist depending on if you want run the producer application(s) from your local computer/laptop or if you want to use  [Cloud9][6].
 
 For a step by step walk through view the Youtube video [Send Data to Kinesis from a Python Script][12] 
+
+An alternative method to send sample data to a Kinesis Data Stream - without the need to set up the python data producer(s) described above - is to use the [```Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln```][20] notebook in KDA Studio. This notebook can be uploaded and has instructions to sends sample data from S3 to a Kinesis Data Stream.
 
 To benefit the most from the sample Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
 
@@ -92,3 +94,4 @@ When the deployment is complete you will see the application under the analytics
 [17]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/datagen/
 [18]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.13/sql_1.13_DataGen.zpln
 [19]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/tree/main/kinesis_data_producer
+[20]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/kinesis_data_producer/Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln
