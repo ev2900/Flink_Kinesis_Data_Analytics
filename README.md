@@ -21,7 +21,7 @@ The two scripts/programs are very similar. A few differences exist depending on 
 
 For a step by step walk through view the Youtube video [Send Data to Kinesis from a Python Script][12] 
 
-An alternative method to send sample data to a Kinesis Data Stream - without the need to set up the python data producer(s) described above - is to use the [```Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln```][20] notebook in KDA Studio. This notebook can be uploaded and has instructions to sends sample data from S3 to a Kinesis Data Stream.
+**An alternative method to send sample data to a Kinesis Data Stream - without the need to set up the python data producer**(s) described above - is to use the [```Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln```][20] notebook in KDA Studio. This notebook can be uploaded and has instructions to sends sample data from S3 to a Kinesis Data Stream.
 
 To benefit the most from the sample Flink code / labs provided it will be important that you can easily start and stop a python data producer. 
 
