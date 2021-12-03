@@ -4,8 +4,10 @@ Processing real-time data via. Kinesis Data Analytics - Apache Flink
 
 Youtube video(s)
 1.    [Send Data to Kinesis from a Python Script][12]
-2.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
-3.    [Running the Interactive Flink Zeppelin Notebook][16]
+2.    Send Data to Kinesis from a KDA Notebook
+3.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
+4.    [Running the Interactive Flink Zeppelin Notebook][16]
+5.    Deployable KDA Flink Zeppelin Notebook
 
 ## Data Producer
 
@@ -74,7 +76,7 @@ When the deployment is complete you will see the application under the analytics
 * Examples for Managed Streaming for Kafka (MSK)
 * YouTube video - Deployable KDA Flink Zeppelin Notebook
 * YouTube video - DataGen based interactive_KDA_flink_zeppelin_notebook [sql_1.13_DataGen.zpln][18]
-* YouTube video - KDA Notebook producer [Nyc_Taxi_Produce_KDA_Zeppelin_Notebook][20]
+* YouTube video - Send Data to Kinesis from a KDA Notebook ie. [Nyc_Taxi_Produce_KDA_Zeppelin_Notebook][20]
 
 [1]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/kinesis_data_producer
 [2]:https://github.com/ev2900/Kinesis_Data_Analytics_Lab/tree/main/data
