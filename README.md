@@ -4,7 +4,7 @@ Processing real-time data via. Kinesis Data Analytics - Apache Flink
 
 Youtube video(s)
 1.    [Send Data to Kinesis from a Python Script][12]
-2.    Send Data to Kinesis from a KDA Notebook
+2.    [Send Data to Kinesis from a KDA Notebook][22]
 3.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
 4.    [Running the Interactive Flink Zeppelin Notebook][16]
 5.    [Deploy a Kinesis Data Analytics Studio Notebook][21]
@@ -98,3 +98,4 @@ When the deployment is complete you will see the application under the analytics
 [19]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/tree/main/kinesis_data_producer
 [20]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/kinesis_data_producer/Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln
 [21]:https://youtu.be/0GO8drcWv3c
+[22]:https://youtu.be/oAQO8cmip7Q
