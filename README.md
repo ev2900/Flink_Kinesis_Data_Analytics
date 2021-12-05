@@ -73,7 +73,6 @@ When the deployment is complete you will see the application under the analytics
 
 ## Future Improvements Planned for this Repository
 * YouTube video - DataGen based interactive_KDA_flink_zeppelin_notebook [sql_1.13_DataGen.zpln][18]
-* YouTube video - Send Data to Kinesis from a KDA Notebook ie. [Nyc_Taxi_Produce_KDA_Zeppelin_Notebook][20]
 * [Versioned Tables][15]
 * Examples for Managed Streaming for Kafka (MSK)
 
