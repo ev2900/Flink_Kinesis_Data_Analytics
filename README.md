@@ -7,7 +7,7 @@ Youtube video(s)
 2.    Send Data to Kinesis from a KDA Notebook
 3.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
 4.    [Running the Interactive Flink Zeppelin Notebook][16]
-5.    [Deployable KDA Flink Zeppelin Notebook][21]
+5.    [Deploy a Kinesis Data Analytics Studio Notebook][21]
 
 ## Data Producer
 
