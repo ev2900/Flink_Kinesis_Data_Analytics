@@ -7,7 +7,7 @@ Youtube video(s)
 2.    Send Data to Kinesis from a KDA Notebook
 3.    [Create a Kinesis Data Analytics Studio and Upload a Notebook][13]
 4.    [Running the Interactive Flink Zeppelin Notebook][16]
-5.    Deployable KDA Flink Zeppelin Notebook
+5.    [Deploy a Kinesis Data Analytics Studio Notebook][21]
 
 ## Data Producer
 
@@ -98,3 +98,4 @@ When the deployment is complete you will see the application under the analytics
 [18]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/interactive_KDA_flink_zeppelin_notebook/Flink%20v1.13/sql_1.13_DataGen.zpln
 [19]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/tree/main/kinesis_data_producer
 [20]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/kinesis_data_producer/Nyc_Taxi_Produce_KDA_Zeppelin_Notebook.zpln
+[21]:https://youtu.be/0GO8drcWv3c
