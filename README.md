@@ -72,7 +72,6 @@ When the deployment is complete you will see the application under the analytics
 <img width="739" alt="deployed" src="https://user-images.githubusercontent.com/5414004/137364432-45a2fa75-09bf-4c28-82e0-d007c6cd66b7.png">
 
 ## Future Improvements Planned for this Repository
-* YouTube video - Deployable KDA Flink Zeppelin Notebook
 * YouTube video - DataGen based interactive_KDA_flink_zeppelin_notebook [sql_1.13_DataGen.zpln][18]
 * YouTube video - Send Data to Kinesis from a KDA Notebook ie. [Nyc_Taxi_Produce_KDA_Zeppelin_Notebook][20]
 * [Versioned Tables][15]
