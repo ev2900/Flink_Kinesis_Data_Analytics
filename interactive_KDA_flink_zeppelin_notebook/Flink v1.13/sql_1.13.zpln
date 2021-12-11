@@ -1,6 +1,51 @@
 ﻿{
   "paragraphs": [
     {
+      "text": "%md\n\n# IMPORTANT READ THIS BEFORE STARTING ... How to run a Zeppelin Notebook\n\nZeppelin notebooks (ie. this notebook) is organized into blocks of code know as paragraphs. \n\nYou can run a paragraph by clicking on the play button in the top right corner of each paragraph or by clicking on the paragraph and using the keyboard shortcut [SHIFT] + [ENTER]\n\nTo stop the execution of a paragraph click the pause button in the top right corner of each paragraph or click on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-11T22:15:48+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>IMPORTANT READ THIS BEFORE STARTING &hellip; How to run a Zeppelin Notebook</h1>\n<p>Zeppelin notebooks (ie. this notebook) is organized into blocks of code know as paragraphs.</p>\n<p>You can run a paragraph by clicking on the play button in the top right corner of each paragraph or by clicking on the paragraph and using the keyboard shortcut [SHIFT] + [ENTER]</p>\n<p>To stop the execution of a paragraph click the pause button in the top right corner of each paragraph or click on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639249985290_1226348394",
+      "id": "paragraph_1639249985290_1226348394",
+      "dateCreated": "2021-12-11T19:13:05+0000",
+      "dateStarted": "2021-12-11T22:15:48+0000",
+      "dateFinished": "2021-12-11T22:15:48+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14988"
+    },
+    {
       "text": "%md\n### Helpful Flink Resources\n\n* [Flink SQL API Examples. Common SQL query patterns. Windows, aggregation ...][1]\n* [AWS Online Tech Talks (YouTube). Streaming Analytics via. Kinesis Data Analytics Studio][2]\n* [Flink on Zeppelin 13 part YouTube Series][3]\n* [Flink on Zeppeling - Streaming Blog Post][4]\n* [Flink interpreter for Apache Zeppelin (Flink Documenation)][5]\n* [Flink SQL Documentation 1.13][6]\n* [Flink Kinesis Connector][7]\n\n[1]:https://awsfeed.com/whats-new/big-data/get-started-with-flink-sql-apis-in-amazon-kinesis-data-analytics-studio\n[2]:https://www.youtube.com/watch?v=mRDst424mKY\n[3]:https://www.youtube.com/watch?v=YxPo0Fosjjg&list=PL4oy12nnS7FFtg3KV1iS5vDb0pTz12VcX\n[4]:https://zjffdu.medium.com/flink-on-zeppelin-part-3-streaming-5fca1e16754\n[5]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#streamexecutionenvironment-executionenvironment-streamtableenvir\n[6]:https://ci.apache.org/projects/flink/flink-docs-release-1.13/dev/table/sql/\n[7]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/kinesis/",
       "user": "anonymous",
       "dateUpdated": "2021-12-11T19:55:23+0000",
@@ -42,8 +87,7 @@
       "dateStarted": "2021-12-11T19:55:23+0000",
       "dateFinished": "2021-12-11T19:55:23+0000",
       "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:198"
+      "$$hashKey": "object:14989"
     },
     {
       "text": "%md\n### [Flink's Zeppelin Interpreters][1] \n\n| Name | Class | Description\n| --- | ----------- | --------|\n| %flink | FlinkInterpreter | Creates ExecutionEnvironment/StreamExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment and provides a Scala environment\n| %flink.pyflink | PyFlinkInterpreter | Provides a python environment\n| %flink.ipyflink | IPyFlinkInterpreter | Provides an ipython environment\n| %flink.ssql | FlinkStreamSqlInterpreter | Provides a stream sql environment\n| %flink.bsql | FlinkBatchSqlInterpreter | Provides a batch sql environment\n\n[1]:http://zeppelin.apache.org/docs/0.9.0/interpreter/flink.html#overview",
@@ -84,59 +128,15 @@
       "jobName": "paragraph_1639249768911_2007817069",
       "id": "paragraph_1634198240376_858784231",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:199",
+      "dateStarted": "2021-12-11T19:55:27+0000",
       "dateFinished": "2021-12-11T19:55:27+0000",
-      "dateStarted": "2021-12-11T19:55:27+0000"
-    },
-    {
-      "text": "%md\n\n# IMPORTANT READ THIS BEFORE STARTING ... How to run a Zeppelin Notebook\n\nZeppelin noteboos (ie. this notebook) is organized into blocks of code know as paragraphs. \n\nYou can run a paragraphs by clicking on the play button in the top right corner of each paragraph or by clicking on the paragraph and using the key board short cut [SHIFT] + [ENTER]\n\nTo stop the execution of a paragraph click the pause button in the top right corner of each paragraph or click on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
-      "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:55:37+0000",
-      "progress": 0,
-      "config": {
-        "tableHide": false,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": true,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12,
-        "editorMode": "ace/mode/markdown",
-        "fontSize": 9,
-        "editorHide": true,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h1>IMPORTANT READ THIS BEFORE STARTING &hellip; How to run a Zeppelin Notebook</h1>\n<p>Zeppelin noteboos (ie. this notebook) is organized into blocks of code know as paragraphs.</p>\n<p>You can run a paragraphs by clicking on the play button in the top right corner of each paragraph or by clicking on the paragraph and using the key board short cut [SHIFT] + [ENTER]</p>\n<p>To stop the execution of a paragraph click the pause button in the top right corner of each paragraph or click on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639249985290_1226348394",
-      "id": "paragraph_1639249985290_1226348394",
-      "dateCreated": "2021-12-11T19:13:05+0000",
-      "dateStarted": "2021-12-11T19:55:37+0000",
-      "dateFinished": "2021-12-11T19:55:37+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:200"
+      "$$hashKey": "object:14990"
     },
     {
-      "text": "%md\n### Create Table in Glue Data Catalog\n\nFirst lets create using ```format = raw``` this will allow us to visually inspect the data sent to Kinesis unformated. After we inspect the raw data we will define a new table with a proper schema",
+      "text": "%md\n### Create Table in Glue Data Catalog\n\nFirst lets create a table using ```format = raw``` this will allow us to visually inspect the data sent to Kinesis unformatted. After we inspect the raw data we will define a new table with a proper schema",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:55:36+0000",
+      "dateUpdated": "2021-12-11T22:16:33+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -162,7 +162,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Create Table in Glue Data Catalog</h3>\n<p>First lets create using <code>format = raw</code> this will allow us to visually inspect the data sent to Kinesis unformated. After we inspect the raw data we will define a new table with a proper schema</p>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<h3>Create Table in Glue Data Catalog</h3>\n<p>First lets create a table using <code>format = raw</code> this will allow us to visually inspect the data sent to Kinesis unformatted. After we inspect the raw data we will define a new table with a proper schema</p>\n\n</div>"
           }
         ]
       },
@@ -172,10 +172,10 @@
       "jobName": "paragraph_1639249768911_1753266827",
       "id": "paragraph_1634198356985_158700888",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "dateStarted": "2021-12-11T19:55:36+0000",
-      "dateFinished": "2021-12-11T19:55:36+0000",
+      "dateStarted": "2021-12-11T22:16:33+0000",
+      "dateFinished": "2021-12-11T22:16:33+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:201"
+      "$$hashKey": "object:14991"
     },
     {
       "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab_raw_1v13;\n\nCREATE TABLE yellow_cab_raw_1v13 (\n   `raw_data` STRING\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'LATEST',\n   'format' = 'raw'\n);",
@@ -214,10 +214,10 @@
       "jobName": "paragraph_1639249768911_1023539863",
       "id": "paragraph_1637175996656_908941914",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:202",
+      "dateStarted": "2021-12-11T19:55:39+0000",
       "dateFinished": "2021-12-11T19:55:42+0000",
-      "dateStarted": "2021-12-11T19:55:39+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:14992"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_raw_1v13;",
@@ -292,7 +292,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/bf570df04dddffb707ec9f42160b9e56",
-              "$$hashKey": "object:13113"
+              "$$hashKey": "object:16469"
             }
           ],
           "interpreterSettingId": "flink"
@@ -305,7 +305,7 @@
       "dateStarted": "2021-12-11T19:55:43+0000",
       "dateFinished": "2021-12-11T19:56:07+0000",
       "status": "ABORT",
-      "$$hashKey": "object:203"
+      "$$hashKey": "object:14993"
     },
     {
       "text": "%md\n\nWhen you have finished inspecting the raw data table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]\n",
@@ -331,17 +331,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251338883_245546231",
-      "id": "paragraph_1639251338883_245546231",
-      "dateCreated": "2021-12-11T19:35:38+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:10083",
-      "dateFinished": "2021-12-11T19:56:11+0000",
-      "dateStarted": "2021-12-11T19:56:11+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -350,7 +339,17 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished inspecting the raw data table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251338883_245546231",
+      "id": "paragraph_1639251338883_245546231",
+      "dateCreated": "2021-12-11T19:35:38+0000",
+      "dateStarted": "2021-12-11T19:56:11+0000",
+      "dateFinished": "2021-12-11T19:56:11+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:14994"
     },
     {
       "text": "%md\n\nNow that we have inspected the raw data, we can create a table with a proper schema\n\n* [Flink Supported Data Types][1]\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-release-1.13/docs/dev/table/types/\n",
@@ -391,10 +390,10 @@
       "jobName": "paragraph_1639249768914_906719275",
       "id": "paragraph_1637178537916_1530076655",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:204",
+      "dateStarted": "2021-12-11T19:56:12+0000",
       "dateFinished": "2021-12-11T19:56:12+0000",
-      "dateStarted": "2021-12-11T19:56:12+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:14995"
     },
     {
       "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab_1v13;\n\nCREATE TABLE yellow_cab_1v13 (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP(3),\n   `tpep_dropoff_datetime` TIMESTAMP(3),\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3) METADATA FROM 'timestamp' VIRTUAL,\n   `shard_id` VARCHAR(128) NOT NULL METADATA FROM 'shard-id' VIRTUAL,\n   `sequence_number` VARCHAR(128) NOT NULL METADATA FROM 'sequence-number' VIRTUAL,\n   WATERMARK FOR tpep_dropoff_datetime AS tpep_dropoff_datetime - INTERVAL '5' SECOND\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'LATEST',\n   'format' = 'json'\n);",
@@ -433,10 +432,10 @@
       "jobName": "paragraph_1639249768914_122282193",
       "id": "paragraph_1634179631380_175392235",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:205",
+      "dateStarted": "2021-12-11T19:56:14+0000",
       "dateFinished": "2021-12-11T19:56:17+0000",
-      "dateStarted": "2021-12-11T19:56:14+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:14996"
     },
     {
       "text": "%md\n\nWe can use different SQL statment to describe the table(s) that we have created",
@@ -462,17 +461,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251441738_606137460",
-      "id": "paragraph_1639251441738_606137460",
-      "dateCreated": "2021-12-11T19:37:21+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:10264",
-      "dateFinished": "2021-12-11T19:56:18+0000",
-      "dateStarted": "2021-12-11T19:56:18+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -481,7 +469,17 @@
             "data": "<div class=\"markdown-body\">\n<p>We can use different SQL statment to describe the table(s) that we have created</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251441738_606137460",
+      "id": "paragraph_1639251441738_606137460",
+      "dateCreated": "2021-12-11T19:37:21+0000",
+      "dateStarted": "2021-12-11T19:56:18+0000",
+      "dateFinished": "2021-12-11T19:56:18+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:14997"
     },
     {
       "text": "%flink.ssql\n\n-- SHOW CATALOGS;\n-- SHOW DATABASES;\n-- SHOW TABLES;\n\nDESCRIBE yellow_cab_1v13;",
@@ -631,10 +629,10 @@
       "jobName": "paragraph_1639249768914_918872445",
       "id": "paragraph_1634198499021_1936771221",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:206",
+      "dateStarted": "2021-12-11T19:56:20+0000",
       "dateFinished": "2021-12-11T19:56:20+0000",
-      "dateStarted": "2021-12-11T19:56:20+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:14998"
     },
     {
       "text": "%md\n\n### Select all Fields from the yellow-cab-trip stream\n\nLets inspect that data being recieved by Kinesis Data Streams using the new table we just created ",
@@ -675,10 +673,10 @@
       "jobName": "paragraph_1639249768914_373198014",
       "id": "paragraph_1634198755389_1141638486",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:207",
+      "dateStarted": "2021-12-11T19:56:22+0000",
       "dateFinished": "2021-12-11T19:56:22+0000",
-      "dateStarted": "2021-12-11T19:56:22+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:14999"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13;",
@@ -773,7 +771,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/46a264104ce0f3a773e8bed30ad7e63d",
-              "$$hashKey": "object:23269"
+              "$$hashKey": "object:16901"
             }
           ],
           "interpreterSettingId": "flink"
@@ -783,10 +781,10 @@
       "jobName": "paragraph_1639249768914_1805635054",
       "id": "paragraph_1634179428238_2142036293",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:208",
+      "dateStarted": "2021-12-11T19:56:24+0000",
       "dateFinished": "2021-12-11T19:57:20+0000",
-      "dateStarted": "2021-12-11T19:56:24+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15000"
     },
     {
       "text": "%md \n\nWhen you have finished inspecting the data from the yellow_cab_1v13 table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]\n",
@@ -812,17 +810,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251520748_1729617094",
-      "id": "paragraph_1639251520748_1729617094",
-      "dateCreated": "2021-12-11T19:38:40+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:10380",
-      "dateFinished": "2021-12-11T19:56:27+0000",
-      "dateStarted": "2021-12-11T19:56:27+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -831,7 +818,17 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished inspecting the data from the yellow_cab_1v13 table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251520748_1729617094",
+      "id": "paragraph_1639251520748_1729617094",
+      "dateCreated": "2021-12-11T19:38:40+0000",
+      "dateStarted": "2021-12-11T19:56:27+0000",
+      "dateFinished": "2021-12-11T19:56:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15001"
     },
     {
       "text": "%md\n### Filter\n\nWe can apply filters to the queries we run",
@@ -872,10 +869,10 @@
       "jobName": "paragraph_1639249768916_1417862681",
       "id": "paragraph_1634179574809_297509121",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:209",
+      "dateStarted": "2021-12-11T19:56:30+0000",
       "dateFinished": "2021-12-11T19:56:30+0000",
-      "dateStarted": "2021-12-11T19:56:30+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15002"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13 WHERE trip_distance > 3.0 ",
@@ -970,7 +967,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/50c148119384396a3986069a5895ee0b",
-              "$$hashKey": "object:41882"
+              "$$hashKey": "object:17097"
             }
           ],
           "interpreterSettingId": "flink"
@@ -980,10 +977,10 @@
       "jobName": "paragraph_1639249768916_1881758015",
       "id": "paragraph_1634198831178_1509982364",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:210",
+      "dateStarted": "2021-12-11T20:02:18+0000",
       "dateFinished": "2021-12-11T20:02:40+0000",
-      "dateStarted": "2021-12-11T20:02:18+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15003"
     },
     {
       "text": "%md \n\nWhen you have finished viewing the **filtered** data from the yellow_cab_1v13 table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]\n",
@@ -1009,17 +1006,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251571026_1269947166",
-      "id": "paragraph_1639251571026_1269947166",
-      "dateCreated": "2021-12-11T19:39:31+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:10494",
-      "dateFinished": "2021-12-11T19:56:34+0000",
-      "dateStarted": "2021-12-11T19:56:34+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -1028,7 +1014,17 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished viewing the <strong>filtered</strong> data from the yellow_cab_1v13 table stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251571026_1269947166",
+      "id": "paragraph_1639251571026_1269947166",
+      "dateCreated": "2021-12-11T19:39:31+0000",
+      "dateStarted": "2021-12-11T19:56:34+0000",
+      "dateFinished": "2021-12-11T19:56:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15004"
     },
     {
       "text": "%md\n### User Defined Function\n\nWe can create Python and Scala user defined functions to enhance our queries",
@@ -1069,10 +1065,10 @@
       "jobName": "paragraph_1639249768917_1666965329",
       "id": "paragraph_1634198882367_874990863",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:211",
+      "dateStarted": "2021-12-11T19:40:42+0000",
       "dateFinished": "2021-12-11T19:40:42+0000",
-      "dateStarted": "2021-12-11T19:40:42+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15005"
     },
     {
       "text": "%flink.pyflink\n\nclass PythonLower(ScalarFunction):\n  def eval(self, s):\n    return s.lower()\n\nbt_env.register_function(\"python_lower\", udf(PythonLower(), DataTypes.STRING(), DataTypes.STRING()))",
@@ -1108,10 +1104,10 @@
       "jobName": "paragraph_1639249768917_2022893662",
       "id": "paragraph_1634198932879_616240178",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:212",
+      "dateStarted": "2021-12-11T19:56:35+0000",
       "dateFinished": "2021-12-11T19:56:43+0000",
-      "dateStarted": "2021-12-11T19:56:35+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15006"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT store_and_fwd_flag, python_lower(store_and_fwd_flag) as lower_store_and_fwd_flag FROM yellow_cab_1v13\n",
@@ -1187,7 +1183,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/24a3ad233ec479f3171f5b2381ffa0a6",
-              "$$hashKey": "object:40555"
+              "$$hashKey": "object:17335"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1197,10 +1193,10 @@
       "jobName": "paragraph_1639249768917_35299760",
       "id": "paragraph_1634198964532_87927632",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:213",
+      "dateStarted": "2021-12-11T20:01:56+0000",
       "dateFinished": "2021-12-11T20:02:27+0000",
-      "dateStarted": "2021-12-11T20:01:56+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15007"
     },
     {
       "text": "%md \n\nWhen you have finished inspecting the output of the query with the user defined function stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
@@ -1226,17 +1222,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251646975_270692473",
-      "id": "paragraph_1639251646975_270692473",
-      "dateCreated": "2021-12-11T19:40:46+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:10958",
-      "dateFinished": "2021-12-11T19:41:08+0000",
-      "dateStarted": "2021-12-11T19:41:08+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -1245,12 +1230,22 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished inspecting the output of the query with the user defined function stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251646975_270692473",
+      "id": "paragraph_1639251646975_270692473",
+      "dateCreated": "2021-12-11T19:40:46+0000",
+      "dateStarted": "2021-12-11T19:41:08+0000",
+      "dateFinished": "2021-12-11T19:41:08+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15008"
     },
     {
-      "text": "%md\n### Window\n\nWindowing allow us to use aggregate function like sum, average, group by ...\n\n* [Window Aggregation][1]\n* [Different Types of Windows][2]\n\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\n[2]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\n",
+      "text": "%md\n### Window\n\nWindowing allow us to use aggregate function like sum, average, group by ...\n\n* [Window Aggregation][1]\n* [Different Types of Windows][2]\n\nBelow we can compute the average trip_distance with a tumbling window\n\n[1]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\n[2]:https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:41:51+0000",
+      "dateUpdated": "2021-12-11T22:56:36+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1276,7 +1271,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Window</h3>\n<p>Windowing allow us to use aggregate function like sum, average, group by &hellip;</p>\n<ul>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\">Window Aggregation</a></li>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\">Different Types of Windows</a></li>\n</ul>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<h3>Window</h3>\n<p>Windowing allow us to use aggregate function like sum, average, group by &hellip;</p>\n<ul>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/window-agg/\">Window Aggregation</a></li>\n<li><a href=\"https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/datastream/operators/windows/\">Different Types of Windows</a></li>\n</ul>\n<p>Below we can compute the average trip_distance with a tumbling window</p>\n\n</div>"
           }
         ]
       },
@@ -1286,10 +1281,10 @@
       "jobName": "paragraph_1639249768917_925439586",
       "id": "paragraph_1634198999194_1033065886",
       "dateCreated": "2021-12-11T19:09:28+0000",
+      "dateStarted": "2021-12-11T22:56:36+0000",
+      "dateFinished": "2021-12-11T22:56:36+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:214",
-      "dateFinished": "2021-12-11T19:41:51+0000",
-      "dateStarted": "2021-12-11T19:41:51+0000"
+      "$$hashKey": "object:15009"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT AVG(trip_distance) as avg_trip_distance FROM yellow_cab_1v13 GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND)",
@@ -1368,7 +1363,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/af856d99036671b7a1d06217e6898c21",
-              "$$hashKey": "object:42504"
+              "$$hashKey": "object:17541"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1378,10 +1373,10 @@
       "jobName": "paragraph_1639249768917_1842658311",
       "id": "paragraph_1634199057841_332820783",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:215",
+      "dateStarted": "2021-12-11T20:02:57+0000",
       "dateFinished": "2021-12-11T20:03:23+0000",
-      "dateStarted": "2021-12-11T20:02:57+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15010"
     },
     {
       "text": "%md \n\nWhen you have finished viewing the output from this query the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
@@ -1407,17 +1402,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251716744_1248731593",
-      "id": "paragraph_1639251716744_1248731593",
-      "dateCreated": "2021-12-11T19:41:56+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:11078",
-      "dateFinished": "2021-12-11T19:42:21+0000",
-      "dateStarted": "2021-12-11T19:42:21+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -1426,12 +1410,67 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished viewing the output from this query the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251716744_1248731593",
+      "id": "paragraph_1639251716744_1248731593",
+      "dateCreated": "2021-12-11T19:41:56+0000",
+      "dateStarted": "2021-12-11T19:42:21+0000",
+      "dateFinished": "2021-12-11T19:42:21+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15011"
+    },
+    {
+      "text": "%md\n\nWe can also compute the average fare amount for each vendor (ie group by vendorID). This will give us the average fare amount for vendor 1 and 2 every 10 seconds using a tumbling window",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-11T22:58:01+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639263405774_1816459049",
+      "id": "paragraph_1639263405774_1816459049",
+      "dateCreated": "2021-12-11T22:56:45+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:27776",
+      "dateFinished": "2021-12-11T22:58:01+0000",
+      "dateStarted": "2021-12-11T22:58:01+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>We can also compute the average fare amount for each vendor (ie group by vendorID). This will give us the average fare amount for vendor 1 and 2 every 10 seconds using a tumbling window</p>\n\n</div>"
+          }
+        ]
       }
     },
     {
-      "text": "%flink.ssql(type=update)\n\nSELECT AVG(fare_amount) as avg_fair_amount, VendorID FROM yellow_cab_1v13 GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND), VendorID",
+      "text": "%flink.ssql(type=update)\n\nSELECT AVG(fare_amount) as avg_fare_amount, VendorID FROM yellow_cab_1v13 GROUP BY TUMBLE(tpep_dropoff_datetime, INTERVAL '10' SECOND), VendorID",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:09:28+0000",
+      "dateUpdated": "2021-12-11T22:28:36+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1503,7 +1542,7 @@
       "id": "paragraph_1634199072204_715270364",
       "dateCreated": "2021-12-11T19:09:28+0000",
       "status": "READY",
-      "$$hashKey": "object:216"
+      "$$hashKey": "object:15012"
     },
     {
       "text": "%md \n\nWhen you have finished viewing the output from this query the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
@@ -1529,17 +1568,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639251745792_325147116",
-      "id": "paragraph_1639251745792_325147116",
-      "dateCreated": "2021-12-11T19:42:25+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:11168",
-      "dateFinished": "2021-12-11T19:46:50+0000",
-      "dateStarted": "2021-12-11T19:46:50+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -1548,12 +1576,22 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished viewing the output from this query the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639251745792_325147116",
+      "id": "paragraph_1639251745792_325147116",
+      "dateCreated": "2021-12-11T19:42:25+0000",
+      "dateStarted": "2021-12-11T19:46:50+0000",
+      "dateFinished": "2021-12-11T19:46:50+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15013"
     },
     {
-      "text": "%md\n### Join\n\nPlease complete the following prerequisite steps before running the paragraph below\n\n1. Have the [vendor_ref.csv][1] file in your S3 bucket\n2. Update the ```'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv'``` in the paragraph below. Update the path to match the path of the CSV file [vendor_ref.csv][1] that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the ```yellowcabsharkech``` part of the path with the name of the S3 bucket you created earlier\n\nOnce you have completed these steps continue on. Run the paragraph below to see how we can join our streaming data with our static data in S3\n\nIn the example below you will see that we join the steaming data from table ```yellow_cab_1v13``` with static data in S3 ```vendor_details_1v13``` \n\nWe join the tables on VendorID and display the full name for each vendor from the vendor_details_1v13 table\n\nRun the paragraph below to see how it works\n\n[1]:https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv",
+      "text": "%md\n### Join\n\nPlease complete the following prerequisite steps before running the paragraph below\n\n1. Ensure you have the [vendor_ref.csv][1] file in your S3 bucket\n2. Update the ```'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv'``` in the paragraph below. Update the path to match the path of the CSV file [vendor_ref.csv][1] that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the ```yellowcabsharkech``` part of the path with the name of the S3 bucket you created earlier\n\nOnce you have completed these steps continue on. Run the paragraph below to see how we can join our streaming data with our static data in S3\n\nIn the example below you will see that we join the steaming data from table ```yellow_cab_1v13``` with static data in S3 ```vendor_details_1v13``` \n\nWe join the tables on VendorID and display the full name for each vendor from the vendor_details_1v13 table\n\nRun the paragraph below to see how it works\n\n[1]:https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:49:31+0000",
+      "dateUpdated": "2021-12-11T22:31:19+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1579,7 +1617,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Join</h3>\n<p>Please complete the following prerequisite steps before running the paragraph below</p>\n<ol>\n<li>Have the <a href=\"https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv\">vendor_ref.csv</a> file in your S3 bucket</li>\n<li>Update the <code>'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv'</code> in the paragraph below. Update the path to match the path of the CSV file <a href=\"https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv\">vendor_ref.csv</a> that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the <code>yellowcabsharkech</code> part of the path with the name of the S3 bucket you created earlier</li>\n</ol>\n<p>Once you have completed these steps continue on. Run the paragraph below to see how we can join our streaming data with our static data in S3</p>\n<p>In the example below you will see that we join the steaming data from table <code>yellow_cab_1v13</code> with static data in S3 <code>vendor_details_1v13</code></p>\n<p>We join the tables on VendorID and display the full name for each vendor from the vendor_details_1v13 table</p>\n<p>Run the paragraph below to see how it works</p>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<h3>Join</h3>\n<p>Please complete the following prerequisite steps before running the paragraph below</p>\n<ol>\n<li>Ensure you have the <a href=\"https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv\">vendor_ref.csv</a> file in your S3 bucket</li>\n<li>Update the <code>'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv'</code> in the paragraph below. Update the path to match the path of the CSV file <a href=\"https://sharkech-public.s3.amazonaws.com/flink-on-kda/vendor_ref.csv\">vendor_ref.csv</a> that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the <code>yellowcabsharkech</code> part of the path with the name of the S3 bucket you created earlier</li>\n</ol>\n<p>Once you have completed these steps continue on. Run the paragraph below to see how we can join our streaming data with our static data in S3</p>\n<p>In the example below you will see that we join the steaming data from table <code>yellow_cab_1v13</code> with static data in S3 <code>vendor_details_1v13</code></p>\n<p>We join the tables on VendorID and display the full name for each vendor from the vendor_details_1v13 table</p>\n<p>Run the paragraph below to see how it works</p>\n\n</div>"
           }
         ]
       },
@@ -1589,10 +1627,10 @@
       "jobName": "paragraph_1639249768917_203224213",
       "id": "paragraph_1634199171630_1379577203",
       "dateCreated": "2021-12-11T19:09:28+0000",
+      "dateStarted": "2021-12-11T22:31:19+0000",
+      "dateFinished": "2021-12-11T22:31:19+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:217",
-      "dateFinished": "2021-12-11T19:49:31+0000",
-      "dateStarted": "2021-12-11T19:49:31+0000"
+      "$$hashKey": "object:15014"
     },
     {
       "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS vendor_details_1v13;\n\nCREATE TABLE vendor_details_1v13 (\n    `VendorID` INT,\n    `VendorName` STRING\n) WITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/reference_data/vendor_ref.csv',\n   'format' = 'csv'\n)",
@@ -1631,10 +1669,10 @@
       "jobName": "paragraph_1639249768918_1138225840",
       "id": "paragraph_1634199187934_556734267",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:218",
+      "dateStarted": "2021-12-11T19:57:48+0000",
       "dateFinished": "2021-12-11T19:57:50+0000",
-      "dateStarted": "2021-12-11T19:57:48+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15015"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT vendor_details_1v13.VendorName, yellow_cab_1v13.passenger_count, yellow_cab_1v13.trip_distance, yellow_cab_1v13.fare_amount FROM yellow_cab_1v13 \nJOIN vendor_details_1v13\nON yellow_cab_1v13.VendorID = vendor_details_1v13.VendorID\n",
@@ -1712,7 +1750,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/a40f8e1f395cd6bb475ce5e5591e1335",
-              "$$hashKey": "object:27834"
+              "$$hashKey": "object:17943"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1722,10 +1760,10 @@
       "jobName": "paragraph_1639249768918_1701582210",
       "id": "paragraph_1634199242985_519040563",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:219",
+      "dateStarted": "2021-12-11T19:57:52+0000",
       "dateFinished": "2021-12-11T19:58:57+0000",
-      "dateStarted": "2021-12-11T19:57:52+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15016"
     },
     {
       "text": "%md \n\nWhen you have finished inspecting the results of the join stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
@@ -1751,17 +1789,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639252001913_1187927741",
-      "id": "paragraph_1639252001913_1187927741",
-      "dateCreated": "2021-12-11T19:46:41+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:11291",
-      "dateFinished": "2021-12-11T19:49:39+0000",
-      "dateStarted": "2021-12-11T19:49:39+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -1770,7 +1797,17 @@
             "data": "<div class=\"markdown-body\">\n<p>When you have finished inspecting the results of the join stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639252001913_1187927741",
+      "id": "paragraph_1639252001913_1187927741",
+      "dateCreated": "2021-12-11T19:46:41+0000",
+      "dateStarted": "2021-12-11T19:49:39+0000",
+      "dateFinished": "2021-12-11T19:49:39+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15017"
     },
     {
       "text": "%md\n### Write Data to S3\n\nWe can write data into using an ```INSERT INTO``` statement",
@@ -1811,10 +1848,10 @@
       "jobName": "paragraph_1639249768918_1902861309",
       "id": "paragraph_1634199281457_81243601",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:220",
+      "dateStarted": "2021-12-11T19:50:49+0000",
       "dateFinished": "2021-12-11T19:50:49+0000",
-      "dateStarted": "2021-12-11T19:50:49+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15018"
     },
     {
       "text": "%flink.ssql(type=update)\n\nDROP TABLE IF EXISTS S3_yellow_cab_1v13;\n\nCREATE TABLE S3_yellow_cab_1v13 (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP,\n   `tpep_dropoff_datetime` TIMESTAMP,\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3),\n   `shard_id` VARCHAR(128),\n   `sequence_number` VARCHAR(128)\n)\nPARTITIONED BY (VendorID)\nWITH (\n   'connector'='filesystem',\n   'path' = 's3://yellowcabsharkech/sql_output_1v13',\n   'format' = 'csv',\n   'sink.partition-commit.policy.kind'='success-file',\n   'sink.partition-commit.delay' = '1 min'\n)",
@@ -1853,10 +1890,10 @@
       "jobName": "paragraph_1639249768918_224129506",
       "id": "paragraph_1634199375620_1725503216",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:221",
+      "dateStarted": "2021-12-11T19:59:09+0000",
       "dateFinished": "2021-12-11T19:59:11+0000",
-      "dateStarted": "2021-12-11T19:59:09+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15019"
     },
     {
       "text": "%flink.pyflink\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.mode\", \"EXACTLY_ONCE\"    \n)\n\nst_env.get_config().get_configuration().set_string(\n    \"execution.checkpointing.interval\", \"1min\"    \n)",
@@ -1895,10 +1932,10 @@
       "jobName": "paragraph_1639249768918_799641812",
       "id": "paragraph_1634199483237_1684971318",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:222",
+      "dateStarted": "2021-12-11T19:59:11+0000",
       "dateFinished": "2021-12-11T19:59:12+0000",
-      "dateStarted": "2021-12-11T19:59:11+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15020"
     },
     {
       "text": "%flink.ssql(type=update)\n\nINSERT INTO S3_yellow_cab_1v13 SELECT * FROM yellow_cab_1v13",
@@ -1945,7 +1982,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/2ebdb77733ca2e4d3e1889d087cdaaaa",
-              "$$hashKey": "object:33202"
+              "$$hashKey": "object:18203"
             }
           ],
           "interpreterSettingId": "flink"
@@ -1955,10 +1992,10 @@
       "jobName": "paragraph_1639249768918_29890246",
       "id": "paragraph_1634199506238_682068144",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:223",
+      "dateStarted": "2021-12-11T19:59:13+0000",
       "dateFinished": "2021-12-11T19:59:56+0000",
-      "dateStarted": "2021-12-11T19:59:13+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15021"
     },
     {
       "text": "%md \n\nAt this point data is being written to S3. If you open a different window and browse your S3 bucket you will see a folder under the path ```s3://yellowcabsharkech/sql_output_1v13`` this folder will have data that is being sent from the code in the paragraph to S3.\n\nWhen you have finished viewing the results of write to S3 stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]",
@@ -1984,17 +2021,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639252254561_1770118489",
-      "id": "paragraph_1639252254561_1770118489",
-      "dateCreated": "2021-12-11T19:50:54+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:11626",
-      "dateFinished": "2021-12-11T19:54:44+0000",
-      "dateStarted": "2021-12-11T19:54:44+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -2003,7 +2029,17 @@
             "data": "<div class=\"markdown-body\">\n<p>At this point data is being written to S3. If you open a different window and browse your S3 bucket you will see a folder under the path ```<a href=\"s3://yellowcabsharkech/sql_output_1v13``\">s3://yellowcabsharkech/sql_output_1v13``</a> this folder will have data that is being sent from the code in the paragraph to S3.</p>\n<p>When you have finished viewing the results of write to S3 stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639252254561_1770118489",
+      "id": "paragraph_1639252254561_1770118489",
+      "dateCreated": "2021-12-11T19:50:54+0000",
+      "dateStarted": "2021-12-11T19:54:44+0000",
+      "dateFinished": "2021-12-11T19:54:44+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15022"
     },
     {
       "text": "%md\n### Start (restart) processing the yellow-cab-trip data stream from the begining of the kinesis data stream\n\nAll of the data we have been using for this workshop has been the latest data being send to Kinesis Data Streams. Kinesis Data Streams retains data for a short period of time (default is 3 days). Adjusting\n\n```\n'scan.stream.initpos' = 'TRIM_HORIZON'\n```\n\nin the create table statement allows use to reprocess all of the data in the Kinesis Data Stream instead of just the new data.\n\nRun the sample below to reprocess data from Kinesis Data Streams\n\nReference [start reading position for more information][1]\n\n[1]:https://nightlies.apache.org/flink/flink-docs-master/docs/connectors/table/kinesis/#start-reading-position",
@@ -2044,10 +2080,10 @@
       "jobName": "paragraph_1639249768918_1200076613",
       "id": "paragraph_1634200235049_1444638872",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:224",
+      "dateStarted": "2021-12-11T19:56:54+0000",
       "dateFinished": "2021-12-11T19:56:54+0000",
-      "dateStarted": "2021-12-11T19:56:54+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15023"
     },
     {
       "text": "%flink.ssql\n\nDROP TABLE IF EXISTS yellow_cab_1v13_Restart;\n\nCREATE TABLE yellow_cab_1v13_Restart (\n   `VendorID` INT,\n   `tpep_pickup_datetime` TIMESTAMP(3),\n   `tpep_dropoff_datetime` TIMESTAMP(3),\n   `passenger_count` INT,\n   `trip_distance` FLOAT,\n   `RatecodeID` INT,\n   `store_and_fwd_flag` STRING,\n   `PULocationID` INT,\n   `DOLocationID` INT,\n   `payment_type` INT,\n   `fare_amount` FLOAT,\n   `extra` FLOAT,\n   `mta_tax` FLOAT,\n   `tip_amount` FLOAT,\n   `tolls_amount` FLOAT,\n   `improvement_surcharge` FLOAT,\n   `total_amount` FLOAT,\n   `congestion_surcharge` FLOAT,\n   `arrival_time` TIMESTAMP(3) METADATA FROM 'timestamp' VIRTUAL,\n   `shard_id` VARCHAR(128) NOT NULL METADATA FROM 'shard-id' VIRTUAL,\n   `sequence_number` VARCHAR(128) NOT NULL METADATA FROM 'sequence-number' VIRTUAL,\n   WATERMARK FOR tpep_dropoff_datetime AS tpep_dropoff_datetime - INTERVAL '5' SECOND\n) \n WITH (\n   'connector' = 'kinesis',\n   'stream' = 'yellow-cab-trip',\n   'aws.region' = 'us-east-1',\n   'scan.stream.initpos' = 'TRIM_HORIZON',\n   'format' = 'json'\n);",
@@ -2086,10 +2122,10 @@
       "jobName": "paragraph_1639249768919_782034175",
       "id": "paragraph_1634200321294_1662977497",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:225",
+      "dateStarted": "2021-12-11T19:59:29+0000",
       "dateFinished": "2021-12-11T19:59:31+0000",
-      "dateStarted": "2021-12-11T19:59:29+0000"
+      "status": "FINISHED",
+      "$$hashKey": "object:15024"
     },
     {
       "text": "%flink.ssql(type=update)\n\nSELECT * FROM yellow_cab_1v13_Restart;",
@@ -2184,7 +2220,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/77a7c267d3c7bfab9a4a4aa8ced59850",
-              "$$hashKey": "object:32893"
+              "$$hashKey": "object:18451"
             }
           ],
           "interpreterSettingId": "flink"
@@ -2194,10 +2230,10 @@
       "jobName": "paragraph_1639249768919_1401977018",
       "id": "paragraph_1634201055361_776785947",
       "dateCreated": "2021-12-11T19:09:28+0000",
-      "status": "ABORT",
-      "$$hashKey": "object:226",
+      "dateStarted": "2021-12-11T19:59:32+0000",
       "dateFinished": "2021-12-11T19:59:54+0000",
-      "dateStarted": "2021-12-11T19:59:32+0000"
+      "status": "ABORT",
+      "$$hashKey": "object:15025"
     },
     {
       "text": "%md\n\nWhen you have finished viewing the results of write to S3 stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]\n",
@@ -2223,23 +2259,67 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639252492263_1395081878",
-      "id": "paragraph_1639252492263_1395081878",
-      "dateCreated": "2021-12-11T19:54:52+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:11997",
-      "dateFinished": "2021-12-11T19:55:04+0000",
-      "dateStarted": "2021-12-11T19:55:04+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
           {
             "type": "HTML",
             "data": "<div class=\"markdown-body\">\n<p>When you have finished viewing the results of write to S3 stop the execution of the paragraph by clicking the pause button in the top right corner or clicking on the paragraph and use the key board short cut [CLT] + [ALT] + [C]</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639252492263_1395081878",
+      "id": "paragraph_1639252492263_1395081878",
+      "dateCreated": "2021-12-11T19:54:52+0000",
+      "dateStarted": "2021-12-11T19:55:04+0000",
+      "dateFinished": "2021-12-11T19:55:04+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:15026"
+    },
+    {
+      "text": "%md\n\nCongrates! You have now finished running this notebook, great work",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-11T22:59:20+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639263523651_1836256739",
+      "id": "paragraph_1639263523651_1836256739",
+      "dateCreated": "2021-12-11T22:58:43+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:28094",
+      "dateFinished": "2021-12-11T22:59:20+0000",
+      "dateStarted": "2021-12-11T22:59:20+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Congrates! You have now finished running this notebook, great work</p>\n\n</div>"
           }
         ]
       }

@@ -43,7 +43,7 @@
       "dateFinished": "2021-12-11T19:44:57+0000",
       "status": "FINISHED",
       "focus": true,
-      "$$hashKey": "object:189"
+      "$$hashKey": "object:13745"
     },
     {
       "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS s3_yellow_trips;\n\nCREATE TEMPORARY TABLE s3_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n)  \n WITH (\n  'connector' = 'filesystem',\n  'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv',\n  'format' = 'csv'\n);",
@@ -85,7 +85,7 @@
       "dateStarted": "2021-12-11T20:33:30+0000",
       "dateFinished": "2021-12-11T20:33:31+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:190"
+      "$$hashKey": "object:13746"
     },
     {
       "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS kinesis_yellow_trips;\n\nCREATE TEMPORARY TABLE kinesis_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n) \n WITH (\n  'connector' = 'kinesis',\n  'stream' = 'yellow-cab-trip',\n  'aws.region' = 'us-east-1',\n  'format' = 'json'\n);",
@@ -127,7 +127,7 @@
       "dateStarted": "2021-12-11T20:33:32+0000",
       "dateFinished": "2021-12-11T20:33:32+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:191"
+      "$$hashKey": "object:13747"
     },
     {
       "text": "%md\n\nRunning the next paragraph will send data to the Kinesis Data Stream ```yellow-cab-trip```. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.\n\nThe top right hand corner of the paragraph indicates if job is RUNNING or FINISHED\n\nIf you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks. \n\n**Note** closing this web browser window will stop the execution of any running code. Keep this notebook open it's own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.\n\nThe paragraph below will send data to Kinesis Data Stream for ~ 30 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.",
@@ -171,7 +171,7 @@
       "dateStarted": "2021-12-11T20:59:43+0000",
       "dateFinished": "2021-12-11T20:59:43+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:192"
+      "$$hashKey": "object:13748"
     },
     {
       "text": "%flink.ssql(type=update, parallelism=1)\n\nINSERT INTO kinesis_yellow_trips SELECT * FROM s3_yellow_trips",
@@ -214,7 +214,7 @@
           "values": [
             {
               "jobUrl": "/flinkdashboard/#/job/a052cc39caf364d5fed2a8332c9d83b9",
-              "$$hashKey": "object:1235"
+              "$$hashKey": "object:14106"
             }
           ],
           "interpreterSettingId": "flink"
@@ -227,7 +227,52 @@
       "dateStarted": "2021-12-11T20:33:34+0000",
       "dateFinished": "2021-12-11T21:02:30+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:193"
+      "$$hashKey": "object:13749"
+    },
+    {
+      "text": "%md\n\nYou have now completed running this notebook. Leave the paragraph above running and leave this window in your web browser open. It will continue to send data to Kinesis Data Stream. \n\n**Again** this notebook will send data to your Kinesis Data Stream for ~ 30 minutes. You will need to rerun the paragraph above in ~ 30 minutes if you want to continue sending data to Kinesis Data Stream past ~ 30 minutes",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-11T22:54:17+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639262932864_1797854656",
+      "id": "paragraph_1639262932864_1797854656",
+      "dateCreated": "2021-12-11T22:48:52+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14165",
+      "dateFinished": "2021-12-11T22:54:17+0000",
+      "dateStarted": "2021-12-11T22:54:17+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>You have now completed running this notebook. Leave the paragraph above running and leave this window in your web browser open. It will continue to send data to Kinesis Data Stream.</p>\n<p><strong>Again</strong> this notebook will send data to your Kinesis Data Stream for ~ 30 minutes. You will need to rerun the paragraph above in ~ 30 minutes if you want to continue sending data to Kinesis Data Stream past ~ 30 minutes</p>\n\n</div>"
+          }
+        ]
+      }
     }
   ],
   "name": "Nyc_Taxi_Produce_KDA_Zeppelin_Notebook",
