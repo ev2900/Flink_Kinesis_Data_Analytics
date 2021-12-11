@@ -1,9 +1,9 @@
 ﻿{
   "paragraphs": [
     {
-      "text": "%md\n\n### Notebook Producer\n\nThe purpose of this notebook is to send sample [NYC Taxi Cab data][1] to the Kinesis Data Stream ```yellow-cab-trip```\n\nPlease complete the following prerequisite steps\n1. Ensure have the [yellow_tripdata_2020-01_noHeader.csv][2] file in your S3 bucket\n2. Update the ```'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv'``` in the paragraph below. Update the path to match the path of the CSV file [yellow_tripdata_2020-01_noHeader.csv][2] that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the ```yellowcabsharkech``` part of the path with the name of the S3 bucket you created earlier\n\nRun each of the paragraphs below\n\nYou can run a paragraph by clicking on the play button in top right hand corner of each paragraph or by using the key board short cut [CTL] + [ALT] + [SHIFT]\n\n[1]:https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\n[2]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv",
+      "text": "%md\n\n### Notebook Producer\n\nThe purpose of this notebook is to send sample [NYC Taxi Cab data][1] to the Kinesis Data Stream ```yellow-cab-trip```\n\nPlease complete the following prerequisite steps\n1. Ensure have the [yellow_tripdata_2020-01_noHeader.csv][2] file in your S3 bucket\n2. Update the ```'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv'``` in the paragraph below. Update the path to match the path of the CSV file [yellow_tripdata_2020-01_noHeader.csv][2] that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the ```yellowcabsharkech``` part of the path with the name of the S3 bucket you created earlier\n\nRun each of the paragraphs below\n\nYou can run a paragraph by clicking on the play button in top right hand corner of each paragraph or by using the key board short cut [SHIFT] + [ENTER]\n\n[1]:https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\n[2]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T15:13:30+0000",
+      "dateUpdated": "2021-12-11T19:44:57+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -29,7 +29,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Notebook Producer</h3>\n<p>The purpose of this notebook is to send sample <a href=\"https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\">NYC Taxi Cab data</a> to the Kinesis Data Stream <code>yellow-cab-trip</code></p>\n<p>Please complete the following prerequisite steps</p>\n<ol>\n<li>Ensure have the <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv\">yellow_tripdata_2020-01_noHeader.csv</a> file in your S3 bucket</li>\n<li>Update the <code>'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv'</code> in the paragraph below. Update the path to match the path of the CSV file <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv\">yellow_tripdata_2020-01_noHeader.csv</a> that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the <code>yellowcabsharkech</code> part of the path with the name of the S3 bucket you created earlier</li>\n</ol>\n<p>Run each of the paragraphs below</p>\n<p>You can run a paragraph by clicking on the play button in top right hand corner of each paragraph or by using the key board short cut [CTL] + [ALT] + [SHIFT]</p>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<h3>Notebook Producer</h3>\n<p>The purpose of this notebook is to send sample <a href=\"https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\">NYC Taxi Cab data</a> to the Kinesis Data Stream <code>yellow-cab-trip</code></p>\n<p>Please complete the following prerequisite steps</p>\n<ol>\n<li>Ensure have the <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv\">yellow_tripdata_2020-01_noHeader.csv</a> file in your S3 bucket</li>\n<li>Update the <code>'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv'</code> in the paragraph below. Update the path to match the path of the CSV file <a href=\"https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv\">yellow_tripdata_2020-01_noHeader.csv</a> that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the <code>yellowcabsharkech</code> part of the path with the name of the S3 bucket you created earlier</li>\n</ol>\n<p>Run each of the paragraphs below</p>\n<p>You can run a paragraph by clicking on the play button in top right hand corner of each paragraph or by using the key board short cut [SHIFT] + [ENTER]</p>\n\n</div>"
           }
         ]
       },
@@ -39,16 +39,16 @@
       "jobName": "paragraph_1638742747311_178286726",
       "id": "paragraph_1638309918534_1797088415",
       "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T15:13:30+0000",
-      "dateFinished": "2021-12-11T15:13:30+0000",
+      "dateStarted": "2021-12-11T19:44:57+0000",
+      "dateFinished": "2021-12-11T19:44:57+0000",
       "status": "FINISHED",
       "focus": true,
-      "$$hashKey": "object:253"
+      "$$hashKey": "object:189"
     },
     {
       "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS s3_yellow_trips;\n\nCREATE TEMPORARY TABLE s3_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n)  \n WITH (\n  'connector' = 'filesystem',\n  'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv',\n  'format' = 'csv'\n);",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T15:11:48+0000",
+      "dateUpdated": "2021-12-11T20:33:30+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -82,15 +82,15 @@
       "jobName": "paragraph_1638742747313_1319523316",
       "id": "paragraph_1638207313440_1890651512",
       "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T15:11:48+0000",
-      "dateFinished": "2021-12-11T15:11:49+0000",
+      "dateStarted": "2021-12-11T20:33:30+0000",
+      "dateFinished": "2021-12-11T20:33:31+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:254"
+      "$$hashKey": "object:190"
     },
     {
       "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS kinesis_yellow_trips;\n\nCREATE TEMPORARY TABLE kinesis_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n) \n WITH (\n  'connector' = 'kinesis',\n  'stream' = 'yellow-cab-trip',\n  'aws.region' = 'us-east-1',\n  'format' = 'json'\n);",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T15:11:50+0000",
+      "dateUpdated": "2021-12-11T20:33:32+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -124,15 +124,15 @@
       "jobName": "paragraph_1638742747316_1524732264",
       "id": "paragraph_1638207933788_1987496158",
       "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T15:11:51+0000",
-      "dateFinished": "2021-12-11T15:11:51+0000",
+      "dateStarted": "2021-12-11T20:33:32+0000",
+      "dateFinished": "2021-12-11T20:33:32+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:256"
+      "$$hashKey": "object:191"
     },
     {
-      "text": "%md\n\nRunning the next paragraph will send data to the Kinesis Data Stream ```yellow-cab-trip```. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.\n\nThe top right hand corner of the paragraph indicates if job is RUNNING or FINISHED\n\nIf you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks. \n\n**Note** closing this web browser window will stop the execution of any running code. Keep this notebook open it's own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.\n\nThe paragraph below will send data to Kinesis Data Stream for ~ 50 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.",
+      "text": "%md\n\nRunning the next paragraph will send data to the Kinesis Data Stream ```yellow-cab-trip```. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.\n\nThe top right hand corner of the paragraph indicates if job is RUNNING or FINISHED\n\nIf you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks. \n\n**Note** closing this web browser window will stop the execution of any running code. Keep this notebook open it's own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.\n\nThe paragraph below will send data to Kinesis Data Stream for ~ 30 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T15:42:08+0000",
+      "dateUpdated": "2021-12-11T20:59:43+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -158,7 +158,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<p>Running the next paragraph will send data to the Kinesis Data Stream <code>yellow-cab-trip</code>. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.</p>\n<p>The top right hand corner of the paragraph indicates if job is RUNNING or FINISHED</p>\n<p>If you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks.</p>\n<p><strong>Note</strong> closing this web browser window will stop the execution of any running code. Keep this notebook open it&rsquo;s own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.</p>\n<p>The paragraph below will send data to Kinesis Data Stream for ~ 50 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.</p>\n\n</div>"
+            "data": "<div class=\"markdown-body\">\n<p>Running the next paragraph will send data to the Kinesis Data Stream <code>yellow-cab-trip</code>. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.</p>\n<p>The top right hand corner of the paragraph indicates if job is RUNNING or FINISHED</p>\n<p>If you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks.</p>\n<p><strong>Note</strong> closing this web browser window will stop the execution of any running code. Keep this notebook open it&rsquo;s own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.</p>\n<p>The paragraph below will send data to Kinesis Data Stream for ~ 30 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.</p>\n\n</div>"
           }
         ]
       },
@@ -168,15 +168,15 @@
       "jobName": "paragraph_1639185317301_862435113",
       "id": "paragraph_1639185317301_862435113",
       "dateCreated": "2021-12-11T01:15:17+0000",
-      "dateStarted": "2021-12-11T15:42:08+0000",
-      "dateFinished": "2021-12-11T15:42:08+0000",
+      "dateStarted": "2021-12-11T20:59:43+0000",
+      "dateFinished": "2021-12-11T20:59:43+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:257"
+      "$$hashKey": "object:192"
     },
     {
       "text": "%flink.ssql(type=update, parallelism=1)\n\nINSERT INTO kinesis_yellow_trips SELECT * FROM s3_yellow_trips",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T15:12:09+0000",
+      "dateUpdated": "2021-12-11T20:33:33+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -213,8 +213,8 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "/flinkdashboard/#/job/a8a37d93267998f56d725408b44d770c",
-              "$$hashKey": "object:1252"
+              "jobUrl": "/flinkdashboard/#/job/a052cc39caf364d5fed2a8332c9d83b9",
+              "$$hashKey": "object:1235"
             }
           ],
           "interpreterSettingId": "flink"
@@ -224,10 +224,10 @@
       "jobName": "paragraph_1638742747316_610743776",
       "id": "paragraph_1638212895990_1071721456",
       "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T15:12:09+0000",
-      "dateFinished": "2021-12-11T15:24:53+0000",
+      "dateStarted": "2021-12-11T20:33:34+0000",
+      "dateFinished": "2021-12-11T21:02:30+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:258"
+      "$$hashKey": "object:193"
     }
   ],
   "name": "Nyc_Taxi_Produce_KDA_Zeppelin_Notebook",
