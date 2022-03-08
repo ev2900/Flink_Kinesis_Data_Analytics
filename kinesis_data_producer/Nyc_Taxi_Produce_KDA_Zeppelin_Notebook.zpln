@@ -3,7 +3,7 @@
     {
       "text": "%md\n\n### Notebook Producer\n\nThe purpose of this notebook is to send sample [NYC Taxi Cab data][1] to the Kinesis Data Stream ```yellow-cab-trip```\n\nPlease complete the following prerequisite steps\n1. Ensure have the [yellow_tripdata_2020-01_noHeader.csv][2] file in your S3 bucket\n2. Update the ```'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv'``` in the paragraph below. Update the path to match the path of the CSV file [yellow_tripdata_2020-01_noHeader.csv][2] that you have in S3. If you are running this notebook as part of the KDA workshop you can just replace the ```yellowcabsharkech``` part of the path with the name of the S3 bucket you created earlier\n\nRun each of the paragraphs below\n\nYou can run a paragraph by clicking on the play button in top right hand corner of each paragraph or by using the key board short cut [SHIFT] + [ENTER]\n\n[1]:https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\n[2]:https://github.com/ev2900/Flink_Kinesis_Data_Analytics/blob/main/data/yellow_tripdata_2020-01_noHeader.csv",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T19:44:57+0000",
+      "dateUpdated": "2022-03-08T19:24:57+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -36,19 +36,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638742747311_178286726",
+      "jobName": "paragraph_1646767497164_1531085883",
       "id": "paragraph_1638309918534_1797088415",
-      "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T19:44:57+0000",
-      "dateFinished": "2021-12-11T19:44:57+0000",
-      "status": "FINISHED",
+      "dateCreated": "2022-03-08T19:24:57+0000",
+      "status": "READY",
       "focus": true,
-      "$$hashKey": "object:13745"
+      "$$hashKey": "object:926"
     },
     {
-      "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS s3_yellow_trips;\n\nCREATE TEMPORARY TABLE s3_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n)  \n WITH (\n  'connector' = 'filesystem',\n  'path' = 's3://yellowcabsharkech/reference_data/yellow_tripdata_2020-01_noHeader.csv',\n  'format' = 'csv'\n);",
+      "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS s3_yellow_trips;\n\nCREATE TEMPORARY TABLE s3_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n)  \n WITH (\n  'connector' = 'filesystem',\n  'path' = 's3://sharkech-public/misc-public/yellow_tripdata_2020-01_noHeader.csv',\n  'format' = 'csv'\n);",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T20:33:30+0000",
+      "dateUpdated": "2022-03-08T19:38:43+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -79,18 +77,18 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638742747313_1319523316",
+      "jobName": "paragraph_1646767497170_1502312783",
       "id": "paragraph_1638207313440_1890651512",
-      "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T20:33:30+0000",
-      "dateFinished": "2021-12-11T20:33:31+0000",
+      "dateCreated": "2022-03-08T19:24:57+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:13746"
+      "$$hashKey": "object:927",
+      "dateFinished": "2022-03-08T19:38:44+0000",
+      "dateStarted": "2022-03-08T19:38:43+0000"
     },
     {
       "text": "%flink.ssql\n\nDROP TEMPORARY TABLE IF EXISTS kinesis_yellow_trips;\n\nCREATE TEMPORARY TABLE kinesis_yellow_trips (\n    `VendorID` INT,\n    `tpep_pickup_datetime` TIMESTAMP(3),\n    `tpep_dropoff_datetime` TIMESTAMP(3),\n    `passenger_count` INT,\n    `trip_distance` FLOAT,\n    `RatecodeID` INT,\n    `store_and_fwd_flag` STRING,\n    `PULocationID` INT,\n    `DOLocationID` INT,\n    `payment_type` INT,\n    `fare_amount` FLOAT,\n    `extra` FLOAT,\n    `mta_tax` FLOAT,\n    `tip_amount` FLOAT,\n    `tolls_amount` FLOAT,\n    `improvement_surcharge` FLOAT,\n    `total_amount` FLOAT,\n    `congestion_surcharge` FLOAT\n) \n WITH (\n  'connector' = 'kinesis',\n  'stream' = 'yellow-cab-trip',\n  'aws.region' = 'us-east-1',\n  'format' = 'json'\n);",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T20:33:32+0000",
+      "dateUpdated": "2022-03-08T19:38:46+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -121,18 +119,18 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638742747316_1524732264",
+      "jobName": "paragraph_1646767497171_1905844049",
       "id": "paragraph_1638207933788_1987496158",
-      "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T20:33:32+0000",
-      "dateFinished": "2021-12-11T20:33:32+0000",
+      "dateCreated": "2022-03-08T19:24:57+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:13747"
+      "$$hashKey": "object:928",
+      "dateFinished": "2022-03-08T19:38:46+0000",
+      "dateStarted": "2022-03-08T19:38:46+0000"
     },
     {
       "text": "%md\n\nRunning the next paragraph will send data to the Kinesis Data Stream ```yellow-cab-trip```. When the paragraph is running data is being sent to the Kinesis Data Stream. When the paragraph is not running data is not being sent to Kinesis Data Stream.\n\nThe top right hand corner of the paragraph indicates if job is RUNNING or FINISHED\n\nIf you are running this notebook as part of the KDA workshop you will want to ensure that the paragraph below is running while you are running the code in the other Zeppelin notebooks. You want sample data being sent to Kinesis while you work in the other notebooks. \n\n**Note** closing this web browser window will stop the execution of any running code. Keep this notebook open it's own broswer window or tab, this way the paragraph below can continue to run and send sample data to Kinesis.\n\nThe paragraph below will send data to Kinesis Data Stream for ~ 30 minutes. You may need to perodicly come back to this notebook and rerun the paragraph to keep data sample data flowing to the Kinesis Data Stream.",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T20:59:43+0000",
+      "dateUpdated": "2022-03-08T19:24:57+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -165,18 +163,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639185317301_862435113",
+      "jobName": "paragraph_1646767497171_1255697346",
       "id": "paragraph_1639185317301_862435113",
-      "dateCreated": "2021-12-11T01:15:17+0000",
-      "dateStarted": "2021-12-11T20:59:43+0000",
-      "dateFinished": "2021-12-11T20:59:43+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:13748"
+      "dateCreated": "2022-03-08T19:24:57+0000",
+      "status": "READY",
+      "$$hashKey": "object:929"
     },
     {
       "text": "%flink.ssql(type=update, parallelism=1)\n\nINSERT INTO kinesis_yellow_trips SELECT * FROM s3_yellow_trips",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T20:33:33+0000",
+      "dateUpdated": "2022-03-08T19:38:49+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -196,11 +192,15 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "Insertion successfully.\n"
+            "data": "Fail to run sql command: INSERT INTO kinesis_yellow_trips SELECT * FROM s3_yellow_trips\n"
+          },
+          {
+            "type": "ANGULAR",
+            "data": "<div class='container ng-scope' style='padding-left:0px;padding-right:0px;'>\n    <div class='panel panel-danger'>\n        <div class='panel-heading' ng-click='isOpen=!isOpen' ng-init='isOpen=false' style=\"cursor:pointer\">\n            <div class='plainTextContainer' style='font-weight:bolder'><i class=\"fa fa-caret-right fa-fw\" style=\"padding-right:7px;transition:all 0.3s;{{isOpen?'transform:rotate(90deg);transform-origin:25% 45%':''}}\"></i>Job was cancelled.</div>\n        </div>\n        <div class='panel-collapse' uib-collapse='!isOpen'>\n            <div class='text' style='max-height:300px;overflow:auto;padding:10px'>java.io.IOException: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: e86e0e7c9a7c410666b25dc111b51e54)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callInsertInto(FlinkSqlInterrpeter.java:538)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInsertInto(FlinkStreamSqlInterpreter.java:97)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.callCommand(FlinkSqlInterrpeter.java:273)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.runSqlList(FlinkSqlInterrpeter.java:160)\n\tat org.apache.zeppelin.flink.FlinkSqlInterrpeter.internalInterpret(FlinkSqlInterrpeter.java:112)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:47)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: e86e0e7c9a7c410666b25dc111b51e54)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:125)\n\tat java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$9(FutureUtils.java:394)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$24(RestClusterClient.java:670)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$9(FutureUtils.java:394)\n\tat java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)\n\tat java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)\n\tat java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)\n\tat java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610)\n\tat java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085)\n\tat java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:146)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$getJobExecutionResult$6(ClusterClientJobClientAdapter.java:123)\n\t... 23 more\n</div>\n        </div>\n    </div>\n</div>\n"
           }
         ]
       },
@@ -213,26 +213,26 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "/flinkdashboard/#/job/a052cc39caf364d5fed2a8332c9d83b9",
-              "$$hashKey": "object:14106"
+              "jobUrl": "/flinkdashboard/#/job/e86e0e7c9a7c410666b25dc111b51e54",
+              "$$hashKey": "object:1600"
             }
           ],
           "interpreterSettingId": "flink"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638742747316_610743776",
+      "jobName": "paragraph_1646767497174_258781457",
       "id": "paragraph_1638212895990_1071721456",
-      "dateCreated": "2021-12-05T22:19:07+0000",
-      "dateStarted": "2021-12-11T20:33:34+0000",
-      "dateFinished": "2021-12-11T21:02:30+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:13749"
+      "dateCreated": "2022-03-08T19:24:57+0000",
+      "status": "ABORT",
+      "$$hashKey": "object:930",
+      "dateFinished": "2022-03-08T19:44:06+0000",
+      "dateStarted": "2022-03-08T19:38:49+0000"
     },
     {
       "text": "%md\n\nYou have now completed running this notebook. Leave the paragraph above running and leave this window in your web browser open. It will continue to send data to Kinesis Data Stream. \n\n**Again** this notebook will send data to your Kinesis Data Stream for ~ 30 minutes. You will need to rerun the paragraph above in ~ 30 minutes if you want to continue sending data to Kinesis Data Stream past ~ 30 minutes",
       "user": "anonymous",
-      "dateUpdated": "2021-12-11T22:54:17+0000",
+      "dateUpdated": "2022-03-08T19:24:57+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -253,17 +253,6 @@
         "params": {},
         "forms": {}
       },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639262932864_1797854656",
-      "id": "paragraph_1639262932864_1797854656",
-      "dateCreated": "2021-12-11T22:48:52+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:14165",
-      "dateFinished": "2021-12-11T22:54:17+0000",
-      "dateStarted": "2021-12-11T22:54:17+0000",
       "results": {
         "code": "SUCCESS",
         "msg": [
@@ -272,11 +261,19 @@
             "data": "<div class=\"markdown-body\">\n<p>You have now completed running this notebook. Leave the paragraph above running and leave this window in your web browser open. It will continue to send data to Kinesis Data Stream.</p>\n<p><strong>Again</strong> this notebook will send data to your Kinesis Data Stream for ~ 30 minutes. You will need to rerun the paragraph above in ~ 30 minutes if you want to continue sending data to Kinesis Data Stream past ~ 30 minutes</p>\n\n</div>"
           }
         ]
-      }
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1646767497174_1819673981",
+      "id": "paragraph_1639262932864_1797854656",
+      "dateCreated": "2022-03-08T19:24:57+0000",
+      "status": "READY",
+      "$$hashKey": "object:931"
     }
   ],
   "name": "Nyc_Taxi_Produce_KDA_Zeppelin_Notebook",
-  "id": "2GS37RN2R",
+  "id": "2GX1DKVAF",
   "defaultInterpreterGroup": "flink",
   "version": "0.9.0",
   "noteParams": {},
