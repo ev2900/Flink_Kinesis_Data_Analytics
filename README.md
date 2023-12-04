@@ -1,5 +1,7 @@
 # Kinesis Data Analytics Lab
 
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+
 Processing real-time data via. Kinesis Data Analytics - Apache Flink
 
 Youtube video(s)
